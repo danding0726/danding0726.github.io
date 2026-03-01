@@ -21,9 +21,11 @@ html {
 
 body {
   font-family: $base-font;
-  color: $base-color;
+  color: #d8e3ff;
   line-height: 1.7em;
-  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 35%);
+  background: radial-gradient(1200px 500px at 75% -20%, rgba(67, 124, 255, 0.22), transparent 60%),
+              radial-gradient(900px 420px at -20% 8%, rgba(0, 194, 255, 0.18), transparent 55%),
+              linear-gradient(180deg, #070b14 0%, #0b1220 45%, #0a1326 100%);
 }
 
 .container {
@@ -759,8 +761,8 @@ nav {
 // Footer
 .wrapper-footer-desktop {
   margin-top: 50px;
-  border-top: 1px solid $footer-border-color;
-  background-color: $footer-background-color;
+  border-top: 1px solid rgba(140, 166, 255, 0.18);
+  background-color: rgba(8, 15, 30, 0.8);
   position: absolute;
   clear:both;
   width:100%;
@@ -789,7 +791,7 @@ footer {
 
   p {
     font-size: $small-font-size;
-    color: $base-lighten-color;
+    color: #8da2d8;
   }
 
   .svg-icon {
@@ -828,8 +830,106 @@ footer {
   }
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+/* =========================
+   Neo Minimal Tech Theme
+========================= */
+a { color: #7db2ff; }
+a:hover, a:active { color: #9ec5ff; }
+
+p, li, dd { color: #b9c8ea; }
+h1, h2, h3, h4, h5, h6, .site-name a { color: #e9f0ff; }
+
+.wrapper-sidebar {
+  border-right: 1px solid rgba(140, 166, 255, 0.18);
+  background: linear-gradient(180deg, rgba(8, 14, 28, 0.96) 0%, rgba(11, 20, 38, 0.92) 100%);
+  backdrop-filter: blur(8px);
+}
+
+.site-avatar img {
+  border-radius: 14px !important;
+  border: 1px solid rgba(135, 178, 255, 0.35);
+  box-shadow: 0 8px 28px rgba(31, 91, 220, 0.35);
+}
+
+.site-name { letter-spacing: 0.5px; }
+.site-description { color: #8da2d8; }
+nav a {
+  color: #b5c6ef;
+  border-bottom: 1px solid transparent;
+}
+nav a:hover {
+  color: #dce8ff;
+  border-bottom-color: rgba(140, 186, 255, 0.45);
+}
+
+.hero-card {
+  border: 1px solid rgba(145, 184, 255, 0.24);
+  background: linear-gradient(130deg, rgba(15, 27, 52, 0.85) 0%, rgba(16, 37, 74, 0.7) 100%);
+  box-shadow: 0 12px 30px rgba(17, 53, 129, 0.28);
+}
+.hero-card h1 { color: #f2f7ff; font-size: 34px; letter-spacing: 0.3px; }
+.hero-card p { color: #b8c9ee; }
+.hero-card .hero-kicker {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  color: #8fb7ff;
+  font-weight: 700;
+}
+
+.search-container #search-input {
+  background: rgba(9, 18, 34, 0.8);
+  border: 1px solid rgba(141, 181, 255, 0.28);
+  color: #dce8ff;
+  box-shadow: inset 0 0 0 1px rgba(112, 162, 255, 0.05), 0 4px 16px rgba(27, 67, 145, 0.2);
+}
+.search-container #search-input:focus {
+  border-color: rgba(132, 182, 255, 0.7);
+  box-shadow: 0 0 0 3px rgba(108, 159, 255, 0.2);
+}
+
+.posts > .post {
+  border: 1px solid rgba(124, 166, 241, 0.22);
+  background: linear-gradient(180deg, rgba(11, 20, 38, 0.92) 0%, rgba(11, 22, 44, 0.82) 100%);
+  box-shadow: 0 8px 24px rgba(18, 46, 112, 0.22);
+}
+.posts > .post:hover {
+  border-color: rgba(150, 192, 255, 0.4);
+  box-shadow: 0 12px 30px rgba(25, 62, 146, 0.35);
+}
+.post .entry { color: #aebfe4; }
+
+.post .read-more {
+  border: 1px solid rgba(138, 177, 247, 0.4);
+  background: rgba(14, 31, 60, 0.9);
+  color: #c8dcff;
+}
+.post .read-more:hover {
+  background: rgba(21, 45, 82, 0.95);
+  border-color: rgba(170, 206, 255, 0.65);
+}
+
+.pagination { border-top: 1px solid rgba(136, 168, 234, 0.2); }
+.pagination > .prev a,
+.pagination > .next a {
+  color: #b7caef;
+  border: 1px solid rgba(133, 168, 239, 0.25);
+  background: rgba(8, 18, 34, 0.85);
+}
+.pagination > .prev a:hover,
+.pagination > .next a:hover {
+  color: #e5efff;
+  border-color: rgba(170, 205, 255, 0.55);
+  background: rgba(19, 40, 74, 0.95);
+}
+
+.wrapper-footer-mobile {
+  border-top: 1px solid rgba(140, 166, 255, 0.18);
+  background-color: rgba(8, 15, 30, 0.8);
+}
+
+/* Settled on moving the import of syntax highlighting to the bottom of the CSS
+   ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start */
 @import "highlights";
 @import "gitalk";
 
