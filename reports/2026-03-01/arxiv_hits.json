@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
+    "id": "http://arxiv.org/abs/2602.23330v1",
+    "published": "2026-02-26T18:37:36Z",
+    "updated": "2026-02-26T18:37:36Z",
+    "summary": "The advancement of large language models (LLMs) has accelerated the development of autonomous financial trading systems. While mainstream approaches deploy multi-agent systems mimicking analyst and manager roles, they often rely on abstract instructions that overlook the intricacies of real-world wo"
+  },
+  {
+    "title": "ESAA: Event Sourcing for Autonomous Agents in LLM-Based Software Engineering",
+    "id": "http://arxiv.org/abs/2602.23193v1",
+    "published": "2026-02-26T16:45:59Z",
+    "updated": "2026-02-26T16:45:59Z",
+    "summary": "Autonomous agents based on Large Language Models (LLMs) have evolved from reactive assistants to systems capable of planning, executing actions via tools, and iterating over environment observations. However, they remain vulnerable to structural limitations: lack of native state, context degradation"
+  },
+  {
+    "title": "Three AI-agents walk into a bar . . . . `Lord of the Flies' tribalism emerges among smart AI-Agents",
+    "id": "http://arxiv.org/abs/2602.23093v1",
+    "published": "2026-02-26T15:12:26Z",
+    "updated": "2026-02-26T15:12:26Z",
+    "summary": "Near-future infrastructure systems may be controlled by autonomous AI agents that repeatedly request access to limited resources such as energy, bandwidth, or computing power. We study a simplified version of this setting using a framework where N AI-agents independently decide at each round whether"
+  },
+  {
+    "title": "Assessing Deanonymization Risks with Stylometry-Assisted LLM Agent",
+    "id": "http://arxiv.org/abs/2602.23079v1",
+    "published": "2026-02-26T15:05:13Z",
+    "updated": "2026-02-26T15:05:13Z",
+    "summary": "The rapid advancement of large language models (LLMs) has enabled powerful authorship inference capabilities, raising growing concerns about unintended deanonymization risks in textual data such as news articles. In this work, we introduce an LLM agent designed to evaluate and mitigate such risks th"
+  },
+  {
+    "title": "Accelerated Online Risk-Averse Policy Evaluation in POMDPs with Theoretical Guarantees and Novel CVaR Bounds",
+    "id": "http://arxiv.org/abs/2602.23073v1",
+    "published": "2026-02-26T15:01:40Z",
+    "updated": "2026-02-26T15:01:40Z",
+    "summary": "Risk-averse decision-making under uncertainty in partially observable domains is a central challenge in artificial intelligence and is essential for developing reliable autonomous agents. The formal framework for such problems is the partially observable Markov decision process (POMDP), where risk s"
+  },
+  {
+    "title": "Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization",
+    "id": "http://arxiv.org/abs/2602.23008v1",
+    "published": "2026-02-26T13:50:57Z",
+    "updated": "2026-02-26T13:50:57Z",
+    "summary": "Exploration remains the key bottleneck for large language model agents trained with reinforcement learning. While prior methods exploit pretrained knowledge, they fail in environments requiring the discovery of novel states. We propose Exploratory Memory-Augmented On- and Off-Policy Optimization (EM"
+  },
+  {
+    "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+    "id": "http://arxiv.org/abs/2602.22897v1",
+    "published": "2026-02-26T11:35:04Z",
+    "updated": "2026-02-26T11:35:04Z",
+    "summary": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world. However, current multi-modal LLMs are primarily confined to bi-modal interactions (e.g., vision-language), lacking the unified c"
+  },
+  {
+    "title": "Decentralized Ranking Aggregation: Gossip Algorithms for Borda and Copeland Consensus",
+    "id": "http://arxiv.org/abs/2602.22847v1",
+    "published": "2026-02-26T10:37:23Z",
+    "updated": "2026-02-26T10:37:23Z",
+    "summary": "The concept of ranking aggregation plays a central role in preference analysis, and numerous algorithms for calculating median rankings, often originating in social choice theory, have been documented in the literature, offering theoretical guarantees in a centralized setting, i.e., when all the ran"
+  },
+  {
+    "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+    "id": "http://arxiv.org/abs/2602.22769v1",
+    "published": "2026-02-26T08:59:31Z",
+    "updated": "2026-02-26T08:59:31Z",
+    "summary": "Large Language Models (LLMs) are deployed as autonomous agents in increasingly complex applications, where enabling long-horizon memory is critical for achieving strong performance. However, a significant gap exists between practical applications and current evaluation standards for agent memory: ex"
+  },
+  {
+    "title": "AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification",
+    "id": "http://arxiv.org/abs/2602.22724v1",
+    "published": "2026-02-26T07:59:10Z",
+    "updated": "2026-02-26T07:59:10Z",
+    "summary": "Large language model (LLM) agents increasingly rely on external tools and retrieval systems to autonomously complete complex tasks. However, this design exposes agents to indirect prompt injection (IPI), where attacker-controlled context embedded in tool outputs or retrieved content silently steers "
+  },
+  {
+    "title": "Requesting Expert Reasoning: Augmenting LLM Agents with Learned Collaborative Intervention",
+    "id": "http://arxiv.org/abs/2602.22546v1",
+    "published": "2026-02-26T02:38:25Z",
+    "updated": "2026-02-26T02:38:25Z",
+    "summary": "Large Language Model (LLM) based agents excel at general reasoning but often fail in specialized domains where success hinges on long-tail knowledge absent from their training data. While human experts can provide this missing knowledge, their guidance is often unstructured and unreliable, making it"
+  },
+  {
+    "title": "Agentic AI for Intent-driven Optimization in Cell-free O-RAN",
+    "id": "http://arxiv.org/abs/2602.22539v1",
+    "published": "2026-02-26T02:26:58Z",
+    "updated": "2026-02-26T02:26:58Z",
+    "summary": "Agentic artificial intelligence (AI) is emerging as a key enabler for autonomous radio access networks (RANs), where multiple large language model (LLM)-based agents reason and collaborate to achieve operator-defined intents. The open RAN (O-RAN) architecture enables the deployment and coordination "
+  },
+  {
+    "title": "Systems-Level Attack Surface of Edge Agent Deployments on IoT",
+    "id": "http://arxiv.org/abs/2602.22525v1",
+    "published": "2026-02-26T01:48:46Z",
+    "updated": "2026-02-26T01:48:46Z",
+    "summary": "Edge deployment of LLM agents on IoT hardware introduces attack surfaces absent from cloud-hosted orchestration. We present an empirical security analysis of three architectures (cloud-hosted, edge-local swarm, and hybrid) using a multi-device home-automation testbed with local MQTT messaging and an"
+  },
+  {
+    "title": "Silent Egress: When Implicit Prompt Injection Makes LLM Agents Leak Without a Trace",
+    "id": "http://arxiv.org/abs/2602.22450v1",
+    "published": "2026-02-25T22:26:23Z",
+    "updated": "2026-02-25T22:26:23Z",
+    "summary": "Agentic large language model systems increasingly automate tasks by retrieving URLs and calling external tools. We show that this workflow gives rise to implicit prompt injection: adversarial instructions embedded in automatically generated URL previews, including titles, metadata, and snippets, can"
+  },
+  {
+    "title": "A Framework for Assessing AI Agent Decisions and Outcomes in AutoML Pipelines",
+    "id": "http://arxiv.org/abs/2602.22442v1",
+    "published": "2026-02-25T22:02:00Z",
+    "updated": "2026-02-25T22:02:00Z",
+    "summary": "Agent-based AutoML systems rely on large language models to make complex, multi-stage decisions across data processing, model selection, and evaluation. However, existing evaluation practices remain outcome-centric, focusing primarily on final task performance. Through a review of prior work, we fin"
+  }
+]
