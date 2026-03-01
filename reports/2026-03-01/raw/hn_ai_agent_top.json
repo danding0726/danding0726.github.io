@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Show HN: Xmloxide – an agent-made Rust replacement for libxml2",
+    "url": "https://github.com/jonwiggins/xmloxide",
+    "points": 57,
+    "comments": 57,
+    "created_at": "2026-02-28T23:44:41Z"
+  },
+  {
+    "title": "Show HN: SQLite for Rivet Actors – one database per agent, tenant, or document",
+    "url": "https://github.com/rivet-dev/rivet",
+    "points": 40,
+    "comments": 13,
+    "created_at": "2026-02-28T16:11:58Z"
+  },
+  {
+    "title": "Show HN: Mowgli – Figma for the agent era, with Claude Code and design export",
+    "url": "https://mowgli.ai/",
+    "points": 5,
+    "comments": 1,
+    "created_at": "2026-02-28T17:06:03Z"
+  },
+  {
+    "title": "Show HN: Memctl v0.1.0 Open source shared persistent memory for AI coding agents",
+    "url": "https://memctl.com",
+    "points": 5,
+    "comments": 0,
+    "created_at": "2026-03-01T02:47:58Z"
+  },
+  {
+    "title": "Ask HN: How do we solve the bot flooding problem without destroying anonymity?",
+    "url": "https://news.ycombinator.com/item?id=47204278",
+    "points": 4,
+    "comments": 3,
+    "created_at": "2026-03-01T06:41:24Z"
+  },
+  {
+    "title": "Show HN: ClawNet – Agent-first communication infrastructure (email, DMs, feed)",
+    "url": "https://clwnt.com",
+    "points": 3,
+    "comments": 3,
+    "created_at": "2026-02-28T22:36:20Z"
+  },
+  {
+    "title": "Show HN: GitShow Repo Showroom – a landing page for any GitHub repo",
+    "url": "https://news.ycombinator.com/item?id=47198151",
+    "points": 3,
+    "comments": 1,
+    "created_at": "2026-02-28T17:47:50Z"
+  },
+  {
+    "title": "Show HN: Computer Agents – Agents that work while you sleep",
+    "url": "https://computer-agents.com",
+    "points": 3,
+    "comments": 0,
+    "created_at": "2026-03-01T03:28:41Z"
+  },
+  {
+    "title": "Show HN: Fava Trails – Git-backed memory for AI agents using Jujutsu (JJ)",
+    "url": "https://github.com/MachineWisdomAI/fava-trails",
+    "points": 3,
+    "comments": 0,
+    "created_at": "2026-02-28T16:12:47Z"
+  },
+  {
+    "title": "I built AI agents that do the grunt work solo founders hate",
+    "url": "https://news.ycombinator.com/item?id=47203220",
+    "points": 2,
+    "comments": 3,
+    "created_at": "2026-03-01T03:03:50Z"
+  },
+  {
+    "title": "Show HN: SkillFortify, Formal verification for AI agents (auto-discovers)",
+    "url": "https://github.com/varun369/skillfortify",
+    "points": 2,
+    "comments": 1,
+    "created_at": "2026-03-01T05:51:06Z"
+  },
+  {
+    "title": "Queuelo – Approval infrastructure for AI agents",
+    "url": "https://queuelo.com",
+    "points": 2,
+    "comments": 1,
+    "created_at": "2026-02-28T22:51:48Z"
+  },
+  {
+    "title": "Claw21 – Blackjack for Agents",
+    "url": "https://clawhub.ai/stainlu/blackjack",
+    "points": 2,
+    "comments": 1,
+    "created_at": "2026-02-28T18:26:52Z"
+  },
+  {
+    "title": "Show HN: Ghostty Pane Splitter – Split terminal panes for AI coding agents",
+    "url": "https://github.com/rikeda71/ghostty-pane-splitter",
+    "points": 2,
+    "comments": 0,
+    "created_at": "2026-03-01T07:59:16Z"
+  },
+  {
+    "title": "Show HN: ClaudeTerminal – A tabbed terminal manager for Claude Code",
+    "url": "https://github.com/Mr8BitHK/claude-terminal",
+    "points": 2,
+    "comments": 0,
+    "created_at": "2026-03-01T03:39:17Z"
+  }
+]
