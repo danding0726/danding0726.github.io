@@ -15,10 +15,12 @@
   const thoughtSearch = document.getElementById('thought-search');
   const thoughtList = document.getElementById('thought-list');
   const thoughtStats = document.getElementById('thought-stats');
+  const clearDoneBtn = document.getElementById('clear-done-btn');
 
   if (!todoForm || !thoughtForm) return;
 
   const uid = () => `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  const isMobile = () => window.innerWidth <= 768;
 
   const load = (key) => {
     try {
@@ -38,6 +40,26 @@
   let todos = load(TODO_KEY);
   let thoughts = load(THOUGHT_KEY);
   let todoFilter = 'all';
+
+  // Clear completed
+  if (clearDoneBtn) {
+    clearDoneBtn.addEventListener('click', () => {
+      if (confirm('确定清除所有已完成项？')) {
+        todos = todos.filter(x => !x.done);
+        renderTodos();
+      }
+    });
+  }
+
+  // Mobile: Enter to submit
+  if (isMobile()) {
+    todoInput.addEventListener('keypress', e => {
+      if (e.key === 'Enter') todoForm.dispatchEvent(new Event('submit'));
+    });
+    thoughtInput.addEventListener('keypress', e => {
+      if (e.key === 'Enter') thoughtForm.dispatchEvent(new Event('submit'));
+    });
+  }
 
   function formatTime(ts) {
     const d = new Date(ts);

@@ -26,6 +26,7 @@ permalink: /tools/
       <button data-filter="all" class="active">全部</button>
       <button data-filter="active">进行中</button>
       <button data-filter="done">已完成</button>
+      <button id="clear-done-btn" class="clear-btn">清除已完成</button>
     </div>
 
     <ul id="todo-list" class="item-list"></ul>
