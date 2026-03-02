@@ -331,6 +331,35 @@
 
   thoughtSearch.addEventListener('input', renderThoughts);
 
+  // Escape to clear search
+  thoughtSearch.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      thoughtSearch.value = '';
+      renderThoughts();
+    }
+  });
+
+  // Auto-save indicator
+  const showSaveIndicator = (msg, container) => {
+    const indicator = document.createElement('span');
+    indicator.className = 'save-indicator';
+    indicator.textContent = msg;
+    indicator.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#22c55e;color:#fff;padding:8px 12px;border-radius:8px;font-size:12px;z-index:9999;animation:fadeIn 0.2s';
+    document.body.appendChild(indicator);
+    setTimeout(() => indicator.remove(), 1500);
+  };
+
+  const originalSave = save;
+  save = (key, data) => {
+    originalSave(key, data);
+    const isTodo = key === TODO_KEY;
+    const indicator = document.querySelector('.save-indicator');
+    if (!indicator) {
+      setTimeout(() => showSaveIndicator(isTodo ? '✓ Todo已保存' : '✓ 想法已保存'), 100);
+    }
+  };
+
+  // Initial render
   renderTodos();
   renderThoughts();
 })();
