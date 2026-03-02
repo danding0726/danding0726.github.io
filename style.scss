@@ -962,37 +962,59 @@ body.reading-deep .blog-only { display: none; }
 
 /* light theme (blog mode) */
 body.theme-light {
-  background: #f7f9fc;
+  background: #f5f6f8;
+  color: #2b2f36;
 }
-body.theme-light .wrapper-content { background: #f7f9fc; }
+body.theme-light .wrapper-content {
+  background: #f5f6f8;
+}
 body.theme-light .posts > .post,
 body.theme-light article.posts {
   background: #ffffff;
-  border: 1px solid #e4e9f3;
-  box-shadow: 0 6px 16px rgba(38, 65, 122, 0.06);
+  border: 1px solid #e7e9ee;
+  box-shadow: 0 4px 14px rgba(24, 32, 56, 0.05);
 }
 body.theme-light p,
 body.theme-light li,
 body.theme-light dd,
 body.theme-light .post .entry,
-body.theme-light .entry { color: #2d3a55; }
+body.theme-light .entry {
+  color: #2f3440;
+}
 body.theme-light h1,
 body.theme-light h2,
 body.theme-light h3,
 body.theme-light h4,
 body.theme-light h5,
-body.theme-light h6 { color: #17233c; }
+body.theme-light h6 {
+  color: #1f2430;
+}
+body.theme-light a {
+  color: #2a5db0;
+}
+body.theme-light a:hover {
+  color: #234f95;
+}
 body.theme-light .reading-toggle button {
-  background: #f0f5ff;
-  color: #203258;
-  border-color: #c9d8f5;
+  background: #ffffff;
+  color: #374151;
+  border-color: #d7dce5;
+}
+body.theme-light .reading-toggle button.active {
+  background: #2f3a4d;
+  color: #ffffff;
+  border-color: #2f3a4d;
+  box-shadow: none;
 }
 body.theme-light .wrapper-sidebar {
-  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
-  border-right: 1px solid #dbe6fb;
+  background: #f0f2f5;
+  border-right: 1px solid #e1e5ec;
 }
-body.theme-light .site-name a { color: #1c2b4a; }
-body.theme-light .site-description { color: #5f7198; }
-body.theme-light nav a { color: #3d527f; }
-body.theme-light nav a:hover { color: #22355f; border-bottom-color: rgba(99, 130, 190, 0.35); }
+body.theme-light .site-name a { color: #1f2430; }
+body.theme-light .site-description { color: #6b7280; }
+body.theme-light nav a { color: #4b5563; }
+body.theme-light nav a:hover {
+  color: #111827;
+  border-bottom-color: rgba(55, 65, 81, 0.28);
+}
 
