@@ -1,201 +1,216 @@
 ---
 layout: post
-title: "大模型量化入门到实践：QAT/PTQ、QLoRA、GPTQ、AWQ 一文讲清"
+title: "模型量化：从基础概念到工程落地（全覆盖整理版）"
 date: 2026-03-02 09:30:00 +0800
-tags: [AI, 大模型, 量化]
+tags: [AI, 大模型, 工程实践]
 ---
 
-> 这篇文章把“模型量化”从概念、方法到落地路径做一次结构化整理，适合做团队内部笔记，也适合直接对外分享。
+> 说明：本文按原始文档内容做“全覆盖重构”。除原文本身未展开的部分（如 GGUF、AIMET 下的 Post-Training Quantization 小节）外，其他信息均保留并结构化呈现。
 
-## 1. 为什么量化是大模型落地的必修课
+## 1. 量化的基本定义
 
-一句话：**量化是在尽量保留效果的前提下，把浮点计算改造成更省显存、更快推理的低比特计算**。
+模型量化可以理解为：把浮点数表示转换成低比特（定点/离散）表示，同时尽可能减少精度损失。
 
-在真实工程里，量化最核心的价值有三个：
+常见量化对象包括：
 
-- **省显存**：同样硬件能跑更大模型，或同模型能跑更大 batch。
-- **提速度**：低比特算子通常有更好的吞吐与时延。
-- **降成本**：推理资源单价下降，线上部署更可控。
+- 参数（weight）
+- 激活值（activation）
+- 梯度（gradient）
 
-常见量化对象：
+其中，**weight 分布通常更稳定**，而 **activation 更容易出现异常值（outlier）**。
 
-- **Weight（权重）**：分布相对稳定，最常优先量化。
-- **Activation（激活）**：动态变化大，且容易有异常值（outlier）。
-- **Gradient（梯度）**：更多见于训练环节优化场景。
+### 图1：浮点表示背景
 
-<img src="/images/posts/2026-03-02-llm-quantization/image1.png" alt="浮点表示与量化背景" style="width:78%; margin: 12px auto;" />
+下图用于说明浮点表示与后续量化映射问题的背景。
 
----
-
-## 2. 两条主路线：QAT 与 PTQ
-
-## QAT（Quantization-Aware Training，量化感知训练）
-
-先在训练/微调阶段“模拟量化”，再通过反向传播把精度拉回来。
-
-**优点**
-- 精度通常更稳，掉点更小。
-
-**代价**
-- 训练成本更高，工程链路更复杂。
-
-适合：对精度敏感、且可接受再训练成本的场景。
-
-## PTQ（Post-Training Quantization，后训练量化）
-
-在已训练模型上直接做量化，通常无需完整再训练。
-
-主要分两类：
-
-1. **动态量化（Post Dynamic Quantization）**
-   - 不依赖校准集或依赖极少。
-   - 工程上接入快，适合快速验证。
-   - QLoRA 常归到这一思路体系下理解。
-
-2. **校准量化（Post Calibration Quantization）**
-   - 需要代表性数据做 calibration。
-   - 通常精度-性能权衡更可控。
-   - GPTQ 是典型代表。
+<img src="/images/posts/2026-03-02-llm-quantization/image1.png" alt="浮点表示背景图" style="width:78%; margin: 12px auto;" />
 
 ---
 
-## 3. 量化公式视角：对称 vs 非对称
+## 2. QAT 与 PTQ
 
-## 对称量化
+按流程可分为：
 
-- 零点通常固定在 0，形式简单。
-- 算法和硬件实现较直接。
+## 2.1 QAT（Quant-Aware Training）
 
-## 非对称量化
+也叫在线量化。核心是：
 
-- 允许 zero-point 偏移，动态范围利用率更高。
-- 对于激活值最小值大于 0（如 ReLU 后）时更友好。
+- 在训练阶段引入量化模拟
+- 用反向传播调整权重
+- 目标是减少量化后的精度掉点
 
-**实战判断**：
-- 若分布明显偏正、且想尽量吃满有效区间，优先考虑非对称量化。
-- 若追求实现简单/算子路径成熟，对称量化仍是高频选择。
+## 2.2 PTQ（Post-Training Quantization）
 
-<img src="/images/posts/2026-03-02-llm-quantization/image2.png" alt="对称与非对称量化" style="width:78%; margin: 12px auto;" />
+也叫离线量化。核心是：
 
-<img src="/images/posts/2026-03-02-llm-quantization/image3.png" alt="非对称量化计算代价" style="width:78%; margin: 12px auto;" />
+- 在已训练模型上直接做量化
+- 使用少量或不使用额外数据完成校准
 
----
+进一步可分为：
 
-## 4. 量化粒度：Per-Tensor、Per-Channel、Per-Token
-
-量化精度和复杂度，很大程度由“粒度”决定。
-
-1. **Per-Tensor**：整个张量一组 scale/zero-point（最粗，最省事）。
-2. **Per-Channel**：每个通道独立量化（权重量化中很常见，精度更稳）。
-3. **Per-Token**：每个 token 或时间步独立量化（激活动态量化常见）。
-
-此外，工程中常把张量再切成 **block** 做量化（每个 block 独立 scale/zero-point），以降低 outlier 影响。
-
-<img src="/images/posts/2026-03-02-llm-quantization/image4.png" alt="block-wise 量化示意" style="width:76%; margin: 12px auto;" />
+- **Post Dynamic Quantization**：不依赖校准集，按层直接转换（原文将 QLoRA 归于该类）。
+- **Post Calibration Quantization**：需要代表性校准集，按层输入输出调整量化参数（原文将 GPTQ 归于该类）。
 
 ---
 
-## 5. 几个高频方案怎么理解
+## 3. 对称量化 vs 非对称量化
 
-## QLoRA
+按映射规则可分为：
 
-核心思路：
+- 对称量化
+- 非对称量化
 
-- 对权重做低比特量化（常见 4bit）+ LoRA 微调。
-- 使用 **NF4（NormalFloat4）** 等更贴合权重分布的量化类型。
-- 使用 **Double Quantization** 继续压缩量化参数（如 scale）带来的额外显存开销。
+核心区别在于是否保持“0点映射规则”与 zero-point 偏移策略。
 
-<img src="/images/posts/2026-03-02-llm-quantization/image5.png" alt="NF4 与 QLoRA 示意" style="width:76%; margin: 12px auto;" />
+### 图2：对称/非对称映射示意
 
-适合：资源受限条件下，做高性价比微调。
+该图用于对比两类量化的映射区间与零点策略。
 
-## GPTQ
+<img src="/images/posts/2026-03-02-llm-quantization/image2.png" alt="对称与非对称量化对比图" style="width:78%; margin: 12px auto;" />
 
-核心思路：
+原文强调：
 
-- 按 block 逐步量化参数，并在过程中补偿未量化参数误差。
-- 依赖校准数据集，追求较好的精度保持。
+- 当激活值最小值 > 0（如 ReLU 后）时，对称区间会浪费负区间动态范围。
+- 这类场景通常更适合使用非对称量化（zero-point 移到区间起点）。
 
-适合：离线量化后部署推理，重视“可用精度”的场景。
+### 图3：非对称量化的额外计算代价
 
-## AWQ（Activation-aware Weight Quantization）
+该图对应原文中“非对称量化计算代价更高”的公式说明。
 
-核心思路：
-
-- 并非所有权重同等重要。
-- 根据激活分布识别“关键通道/显著权重”，对其更保守处理。
-
-适合：希望在低比特下尽量守住效果上限。
-
-## GGUF
-
-- 更偏模型发布/部署生态格式层面的关键角色。
-- 在本地推理生态（如 CPU/GPU 混合部署）里非常常见。
+<img src="/images/posts/2026-03-02-llm-quantization/image3.png" alt="非对称量化计算代价示意" style="width:78%; margin: 12px auto;" />
 
 ---
 
-## 6. 实践落地建议（可直接复用）
+## 4. 量化粒度策略
 
-给一个团队可执行的最小路径：
+原文给出三种常见粒度：
 
-### 第一步：先定目标，不要先定算法
+## 4.1 Per-Tensor 量化
 
-先明确业务指标：
-- 最大可接受精度下降（如 ≤1%）
-- 时延目标（P95）
-- 显存预算
-- 吞吐目标
+- 整个 tensor 使用同一组 `scale/zero-point`
+- 粒度最粗，工程实现最简单
 
-### 第二步：从 PTQ 开始做 baseline
+例：`[B, C, H, W]` 整体共用一组参数。
 
-建议顺序：
-1. 先做 Per-Channel 权重量化（风险低、收益稳）
-2. 再尝试激活量化（必要时引入 calibration）
-3. 最后再评估是否要上 QAT 微调修正
+## 4.2 Per-Channel 量化
 
-### 第三步：优先处理 outlier 问题
+- 按通道独立量化（常见于权重）
+- 精度通常优于 Per-Tensor
 
-- 先做 block-wise 量化
-- 观察激活分布与层级误差热点
-- 对关键层做更保守策略（例如保留更高比特）
+例：卷积权重 `[out_c, in_c, kH, kW]`，每个 `out_c` 用独立参数。
 
-### 第四步：评估体系要分层
+## 4.3 Per-Token 量化
 
-至少要有两套评估：
+- 按 token 或时间步独立量化
+- 常见于动态激活量化
 
-- **离线能力评测**：任务准确率、困惑度、MMLU/专项集等
-- **线上业务评测**：时延、吞吐、成本、稳定性
+例：Transformer 输入 `[batch, seq_len, hidden_dim]`，对每个 `seq_len` 位置独立估计参数。
 
-只看一套指标，容易出现“实验室好看，线上翻车”。
+另外，原文强调了 **block-wise 量化**：
 
----
+- 把输入 tensor 切成 block
+- 每个 block 独立 scale/zero-point
+- 可降低 outlier 对整体精度的影响
 
-## 7. 一个常见误区
+### 图4：block-wise 量化示意
 
-误区：**“比特越低越好。”**
+该图对应“按块量化降低异常值影响”的核心逻辑。
 
-现实：低比特收益确实高，但误差也会非线性放大。真正的工程最优解通常不是“全局最低比特”，而是：
-
-- 在关键层保守一点
-- 在冗余层激进一点
-- 用分层策略换整体最优
+<img src="/images/posts/2026-03-02-llm-quantization/image4.png" alt="block-wise 量化示意图" style="width:76%; margin: 12px auto;" />
 
 ---
 
-## 8. 总结
+## 5. QLoRA
 
-如果你只记三件事：
+原文要点：
 
-1. **先用 PTQ 快速找到可用区间，再决定是否上 QAT。**
-2. **量化成败不只在算法，更多在粒度与校准策略。**
-3. **上线效果最终取决于业务指标，而不是论文指标。**
+- QLoRA 针对 weight 量化
+- 采用对称量化
+- 使用 NF（NormalFloat）类型（如 NF4）来更好拟合正态分布权重
+- NF4 格点分位分配在中间更密、两端更疏，有助于在压缩与精度间平衡
 
-量化不是“压缩技巧”，而是大模型工程化能力的一部分。把它做成体系，模型部署的成本和稳定性会有明显跃升。
+### 图5：NF4 / QLoRA 示意
 
-## 补充图示
+该图用于解释 NF4 的格点分配思想。
 
-<img src="/images/posts/2026-03-02-llm-quantization/image6.png" alt="补充图示1" style="width:72%; margin: 12px auto;" />
+<img src="/images/posts/2026-03-02-llm-quantization/image5.png" alt="QLoRA 与 NF4 示意图" style="width:76%; margin: 12px auto;" />
 
-<img src="/images/posts/2026-03-02-llm-quantization/image7.png" alt="补充图示2" style="width:72%; margin: 12px auto;" />
+原文还强调 **Double Quant**：
+
+- 对量化后的 scale 再做一次量化
+- 因 scale 常以 FP32 存储，block 多时会占用可观显存
+- 将 scale 进一步压缩（原文示例为 FP8）可继续减小显存消耗
 
 ---
+
+## 6. GPTQ
+
+原文定义：
+
+- 对 block 内参数逐个量化
+- 每量化一个参数，会对该 block 内未量化参数做补偿调整
+- 目标是减少累计误差造成的精度损失
+- 需要准备校准数据集
+
+---
+
+## 7. AWQ（Activation-aware Weight Quantization）
+
+原文要点：
+
+- 权重对模型性能贡献并不均匀
+- 大约有 0.1%~1% 的显著权重对效果影响很大
+- 跳过这部分显著权重不量化，可显著减小误差
+
+关键思想：
+
+- 显著通道识别应基于激活分布，而非仅看权重分布
+- 与更大激活幅度对应的权重通道通常更关键
+
+---
+
+## 8. GGUF
+
+原始文档仅给出了标题，未展开正文细节。此处保留该章节，等待后续补充。
+
+### 图6：GGUF相关配图（原文图示）
+
+该图来自原文素材，通常用于部署格式或生态工具链说明。
+
+<img src="/images/posts/2026-03-02-llm-quantization/image6.png" alt="GGUF 相关图示" style="width:72%; margin: 12px auto;" />
+
+---
+
+## 9. AIMET 量化方法
+
+原文展开的是“量化模拟（QuantizationSimModel）”路线：
+
+- AIMET 在模型图中插入量化模拟节点，构建适配目标硬件的模拟模型
+- 通过代表性样本（可来自训练集或校准集）搜索更优量化参数（scale/offset）
+- 原文给出的经验值：约 1000 个样本通常可用于参数搜索
+- 导出阶段可输出：
+  - 去除模拟节点的 FP32 原始模型
+  - 优化后量化编码（JSON）
+
+### 图7：AIMET 量化模拟流程
+
+该图对应 AIMET 的仿真与导出流程。
+
+<img src="/images/posts/2026-03-02-llm-quantization/image7.png" alt="AIMET 量化流程图" style="width:76%; margin: 12px auto;" />
+
+原文最后还有 “Post-Training Quantization” 小标题，但未继续展开正文。
+
+---
+
+## 10. 总结（按原文口径）
+
+这份材料的核心主线是：
+
+1. 量化对象与误差来源（尤其 activation outlier）
+2. QAT/PTQ 两大路径
+3. 对称/非对称量化与计算代价取舍
+4. 粒度策略（Per-Tensor / Per-Channel / Per-Token / block-wise）
+5. QLoRA、GPTQ、AWQ 在实践中的定位
+6. AIMET 的量化模拟与导出方法
+
+如果后续你补全 GGUF 与 AIMET-PTQ 小节，我可以直接做“增量覆盖更新”，保持这篇文章结构不变。
