@@ -1035,3 +1035,55 @@ body.theme-light .search-container #search-input:focus {
   box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.12);
 }
 
+/* micro-polish */
+body, .posts > .post, .hero-card, .search-container #search-input, .reading-toggle button {
+  transition: background-color .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.posts > .post h1 {
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.posts > .post .entry {
+  line-height: 1.9;
+}
+
+.meta .tag li a {
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+body.theme-light .meta .tag li a {
+  background: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+body.theme-light .meta .tag li a:hover {
+  background: #eceff3;
+  color: #374151;
+}
+
+body.theme-light .post .read-more {
+  background: #1f2937;
+  color: #fff;
+  border-color: #1f2937;
+}
+
+body.theme-light .post .read-more:hover {
+  background: #111827;
+  border-color: #111827;
+}
+
+@include mobile {
+  .hero-card h1 {
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .posts > .post .entry {
+    line-height: 1.75;
+  }
+}
+
