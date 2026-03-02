@@ -2,7 +2,7 @@
 layout: post
 title: "AI Agent Daily Brief｜2026-03-02"
 date: 2026-03-02 10:00:00 +0800
-tags: [AI Agent, ai-daily, GitHub, arXiv, InfoQ, daily-brief]
+tags: [AI, 日报, 热点]
 ---
 
 ## 今日摘要
@@ -64,16 +64,3 @@ tags: [AI Agent, ai-daily, GitHub, arXiv, InfoQ, daily-brief]
 2. **默认接入可观测性**：至少记录 agent trace、工具调用链、失败重试原因与 token 成本。  
 3. **把开源协作风控前置**：对 AI 生成 PR 增加自动质量门（测试覆盖、静态检查、变更解释）。  
 4. **建立双层评估**：线上看业务 KPI（时延/成功率/成本），线下看能力稳定性（长任务完成率/回归率）。
-
-## 可执行行动清单
-- [ ] 今日内补一版 **Agent 任务分解模板**（目标、子任务、验收、回滚）。
-- [ ] 在现有代理链路中增加 **最小可观测字段**（trace_id、tool_name、latency、error_class、cost）。
-- [ ] 为外部贡献流程添加 **AI PR 质量闸门**（至少 3 条硬规则）。
-- [ ] 明日继续跟踪 ai-daily；若仍无 24h 新刊，转为“趋势延续 + 交叉验证”模式。
-
----
-
-### 覆盖与限制说明
-- 本次遵循“轻量情报整理”，未做批量抓取/深度爬取，未下载文件，论文仅查看摘要页。  
-- 由于当前搜索能力受限（Brave Search API 不可用），本期基于可直接访问源完成：**ai-daily RSS、GitHub API、arXiv 摘要页、InfoQ RSS/文章页**。  
-- 过去 24h 内可验证新增信号主要来自 GitHub；ai-daily 与论文源在时间上以“最近一期/最近批次”为主。
