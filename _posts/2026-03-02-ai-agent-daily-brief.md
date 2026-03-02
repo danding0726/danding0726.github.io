@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Agent Daily Brief｜2026-03-02"
+title: "【AI 日报】2026-03-02｜TOP5热点 + 实践深读"
 date: 2026-03-02 10:00:00 +0800
 tags: [AI, 日报, 热点]
 ---
