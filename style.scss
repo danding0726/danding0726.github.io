@@ -933,4 +933,70 @@ nav a:hover {
 @import "highlights";
 @import "gitalk";
 
+/* Reading mode switch */
+.reading-mode-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 16px;
+
+  .label {
+    font-size: 13px;
+    color: #9bb0dd;
+    margin-right: 2px;
+  }
+
+  button {
+    border: 1px solid rgba(138, 177, 247, 0.4);
+    background: rgba(14, 31, 60, 0.9);
+    color: #c8dcff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  button.active {
+    border-color: rgba(170, 206, 255, 0.75);
+    box-shadow: 0 0 0 2px rgba(108, 159, 255, 0.22);
+  }
+}
+
+/* content layers */
+body.reading-blog .deep-only { display: none; }
+body.reading-deep .blog-only { display: none; }
+
+/* light mode for deep reading */
+body.theme-light {
+  background: #f7f9fc;
+}
+body.theme-light .wrapper-content {
+  background: #f7f9fc;
+}
+body.theme-light .posts > .post,
+body.theme-light article.posts {
+  background: #ffffff;
+  border: 1px solid #e4e9f3;
+  box-shadow: 0 6px 16px rgba(38, 65, 122, 0.06);
+}
+body.theme-light p,
+body.theme-light li,
+body.theme-light dd,
+body.theme-light .post .entry,
+body.theme-light .entry {
+  color: #2d3a55;
+}
+body.theme-light h1,
+body.theme-light h2,
+body.theme-light h3,
+body.theme-light h4,
+body.theme-light h5,
+body.theme-light h6 {
+  color: #17233c;
+}
+body.theme-light .reading-mode-bar .label { color: #5f7198; }
+body.theme-light .reading-mode-bar button {
+  background: #f0f5ff;
+  color: #203258;
+  border-color: #c9d8f5;
+}
 
