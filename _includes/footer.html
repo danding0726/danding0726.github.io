@@ -1,5 +1,10 @@
 {% include svg-icons.html %}
 
+<div class="reading-toggle" aria-label="阅读模式切换">
+  <button type="button" data-reading-mode="deep" title="暗色 + 研读版">研读</button>
+  <button type="button" data-reading-mode="blog" title="亮色 + 博客版">博客</button>
+</div>
+
 {% if site.footer-text %}
 <p>{{ site.footer-text }}</p>
 {% endif %}

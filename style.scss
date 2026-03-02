@@ -933,45 +933,38 @@ nav a:hover {
 @import "highlights";
 @import "gitalk";
 
-/* Reading mode switch */
-.reading-mode-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 10px 0 16px;
+/* reading mode: content layers */
+body.reading-blog .deep-only { display: none; }
+body.reading-deep .blog-only { display: none; }
 
-  .label {
-    font-size: 13px;
-    color: #9bb0dd;
-    margin-right: 2px;
-  }
+/* footer reading toggle */
+.reading-toggle {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 
   button {
-    border: 1px solid rgba(138, 177, 247, 0.4);
-    background: rgba(14, 31, 60, 0.9);
+    border: 1px solid rgba(138, 177, 247, 0.35);
+    background: rgba(14, 31, 60, 0.86);
     color: #c8dcff;
-    border-radius: 8px;
-    padding: 5px 10px;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 12px;
     cursor: pointer;
   }
 
   button.active {
     border-color: rgba(170, 206, 255, 0.75);
-    box-shadow: 0 0 0 2px rgba(108, 159, 255, 0.22);
+    box-shadow: 0 0 0 2px rgba(108, 159, 255, 0.2);
   }
 }
 
-/* content layers */
-body.reading-blog .deep-only { display: none; }
-body.reading-deep .blog-only { display: none; }
-
-/* light mode for deep reading */
+/* light theme (blog mode) */
 body.theme-light {
   background: #f7f9fc;
 }
-body.theme-light .wrapper-content {
-  background: #f7f9fc;
-}
+body.theme-light .wrapper-content { background: #f7f9fc; }
 body.theme-light .posts > .post,
 body.theme-light article.posts {
   background: #ffffff;
@@ -982,21 +975,24 @@ body.theme-light p,
 body.theme-light li,
 body.theme-light dd,
 body.theme-light .post .entry,
-body.theme-light .entry {
-  color: #2d3a55;
-}
+body.theme-light .entry { color: #2d3a55; }
 body.theme-light h1,
 body.theme-light h2,
 body.theme-light h3,
 body.theme-light h4,
 body.theme-light h5,
-body.theme-light h6 {
-  color: #17233c;
-}
-body.theme-light .reading-mode-bar .label { color: #5f7198; }
-body.theme-light .reading-mode-bar button {
+body.theme-light h6 { color: #17233c; }
+body.theme-light .reading-toggle button {
   background: #f0f5ff;
   color: #203258;
   border-color: #c9d8f5;
 }
+body.theme-light .wrapper-sidebar {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  border-right: 1px solid #dbe6fb;
+}
+body.theme-light .site-name a { color: #1c2b4a; }
+body.theme-light .site-description { color: #5f7198; }
+body.theme-light nav a { color: #3d527f; }
+body.theme-light nav a:hover { color: #22355f; border-bottom-color: rgba(99, 130, 190, 0.35); }
 

@@ -17,6 +17,42 @@
     </div>
 
     {% include analytics.html %}
+
+<script>
+(function () {
+  const body = document.body;
+
+  function applyMode(mode) {
+    body.classList.remove('reading-blog', 'reading-deep', 'theme-light', 'theme-dark');
+    if (mode === 'deep') {
+      body.classList.add('reading-deep', 'theme-dark');
+    } else {
+      body.classList.add('reading-blog', 'theme-light');
+    }
+
+    try { localStorage.setItem('readingMode', mode); } catch (e) {}
+
+    document.querySelectorAll('.reading-toggle button').forEach(btn => {
+      const active = btn.getAttribute('data-reading-mode') === mode;
+      btn.classList.toggle('active', active);
+    });
+  }
+
+  let saved = null;
+  try { saved = localStorage.getItem('readingMode'); } catch (e) {}
+
+  if (saved === 'blog' || saved === 'deep') {
+    applyMode(saved);
+  } else {
+    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    applyMode(prefersLight ? 'blog' : 'deep');
+  }
+
+  document.querySelectorAll('.reading-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => applyMode(btn.getAttribute('data-reading-mode')));
+  });
+})();
+</script>
   </body>
 
   {% if page.toc==true %}
