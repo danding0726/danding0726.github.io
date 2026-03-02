@@ -181,3 +181,37 @@ tags: [AI, 大模型, 量化]
 3. **上线效果最终取决于业务指标，而不是论文指标。**
 
 量化不是“压缩技巧”，而是大模型工程化能力的一部分。把它做成体系，模型部署的成本和稳定性会有明显跃升。
+
+---
+
+## 附：原始文档配图（自动整理）
+
+> 以下图片来自你提供的原始 docx，我已批量上传到博客静态目录。
+
+### 图 1
+
+![模型量化配图1](/images/posts/2026-03-02-llm-quantization/image1.png)
+
+### 图 2
+
+![模型量化配图2](/images/posts/2026-03-02-llm-quantization/image2.png)
+
+### 图 3
+
+![模型量化配图3](/images/posts/2026-03-02-llm-quantization/image3.png)
+
+### 图 4
+
+![模型量化配图4](/images/posts/2026-03-02-llm-quantization/image4.png)
+
+### 图 5
+
+![模型量化配图5](/images/posts/2026-03-02-llm-quantization/image5.png)
+
+### 图 6
+
+![模型量化配图6](/images/posts/2026-03-02-llm-quantization/image6.png)
+
+### 图 7
+
+![模型量化配图7](/images/posts/2026-03-02-llm-quantization/image7.png)
