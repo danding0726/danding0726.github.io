@@ -30,8 +30,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 20px;
+  max-width: 1040px;
+  padding: 0 24px;
   width: 100%;
 }
 
@@ -1040,13 +1040,52 @@ body, .posts > .post, .hero-card, .search-container #search-input, .reading-togg
   transition: background-color .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 
+.hero-card {
+  padding: 26px 28px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.hero-card h1 {
+  margin: 0 0 8px;
+  line-height: 1.28;
+}
+
+.hero-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.search-container {
+  margin: 0 0 18px;
+}
+
+.search-container #search-input {
+  height: 54px;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 0 18px;
+}
+
+.posts > .post {
+  border-radius: 14px;
+  padding: 26px 30px;
+  margin-bottom: 18px;
+}
+
 .posts > .post h1 {
-  line-height: 1.45;
-  margin-bottom: 8px;
+  line-height: 1.38;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.posts > .post .meta {
+  margin-bottom: 14px;
 }
 
 .posts > .post .entry {
   line-height: 1.9;
+  font-size: 1.06rem;
 }
 
 .meta .tag li a {
@@ -1077,13 +1116,42 @@ body.theme-light .post .read-more:hover {
 }
 
 @include mobile {
+  .container {
+    padding: 0 14px;
+  }
+
+  .hero-card {
+    padding: 18px 16px;
+    border-radius: 12px;
+  }
+
   .hero-card h1 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.35;
+  }
+
+  .hero-card p {
+    font-size: 15px;
+  }
+
+  .search-container #search-input {
+    height: 48px;
+    font-size: 16px;
+    padding: 0 14px;
+  }
+
+  .posts > .post {
+    padding: 18px 16px;
+    border-radius: 12px;
+  }
+
+  .posts > .post h1 {
+    font-size: 30px;
   }
 
   .posts > .post .entry {
     line-height: 1.75;
+    font-size: 1rem;
   }
 }
 
