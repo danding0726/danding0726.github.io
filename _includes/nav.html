@@ -1,12 +1,7 @@
 <div class="wrapper-sidebar">
-  <header class="sidebar clearfix">
-    <div class="site-info">
-      {% if site.avatar %}
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-      {% endif %} 
-      <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-      <p class="site-description">{{ site.description }}</p>
-    </div>
+  <header class="sidebar clearfix sidebar-branding">
+    <a class="brand-title" href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <p class="brand-subtitle">技术 / AI / 工程实践</p>
   </header>
 
   <div class="navlist">
