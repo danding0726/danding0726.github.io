@@ -16,6 +16,8 @@
   const thoughtList = document.getElementById('thought-list');
   const thoughtStats = document.getElementById('thought-stats');
   const clearDoneBtn = document.getElementById('clear-done-btn');
+  const nlForm = document.getElementById('nl-form');
+  const nlInput = document.getElementById('nl-input');
 
   if (!todoForm || !thoughtForm) return;
 
@@ -31,7 +33,7 @@
     }
   };
 
-  const save = (key, data) => {
+  let save = (key, data) => {
     try {
       localStorage.setItem(key, JSON.stringify(data));
     } catch (_) {}
@@ -79,6 +81,53 @@
     if (hour < 24) return `${hour}小时前`;
     if (day < 7) return `${day}天前`;
     return formatTime(ts);
+  }
+
+  function parseNaturalInput(raw) {
+    const text = (raw || '').trim();
+    if (!text) return null;
+
+    const thoughtLike = /^(想法|灵感|记录)[:：]/i.test(text);
+    const doneLike = /^(完成|done)[:：]/i.test(text);
+    const todoLike = /(提醒我|待办|todo|TODO|需要做|记得)/.test(text);
+
+    const tagMatch = text.match(/标签\s*[:：]?\s*(.+)$/i);
+    const tags = tagMatch
+      ? tagMatch[1].split(/[，,\s]+/).map(s => s.trim()).filter(Boolean).slice(0, 8)
+      : [];
+
+    let dueDate = '';
+    const now = new Date();
+    if (/明天/.test(text)) {
+      const d = new Date(now);
+      d.setDate(d.getDate() + 1);
+      dueDate = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    } else {
+      const m = text.match(/(\d{4}-\d{1,2}-\d{1,2})/);
+      if (m) dueDate = m[1];
+    }
+
+    if (thoughtLike) {
+      return { type: 'thought', content: text.replace(/^(想法|灵感|记录)[:：]/i, '').replace(/标签\s*[:：]?.+$/i, '').trim(), tags };
+    }
+
+    if (doneLike) {
+      return { type: 'todo', content: text.replace(/^(完成|done)[:：]/i, '').trim(), done: true, dueDate };
+    }
+
+    if (todoLike) {
+      return {
+        type: 'todo',
+        content: text
+          .replace(/提醒我|待办|todo|TODO|需要做|记得/g, '')
+          .replace(/[，,。；;]+/g, ' ')
+          .trim(),
+        done: false,
+        dueDate,
+      };
+    }
+
+    return { type: 'thought', content: text, tags };
   }
 
   // Export/Import
@@ -330,6 +379,35 @@
   });
 
   thoughtSearch.addEventListener('input', renderThoughts);
+
+  if (nlForm && nlInput) {
+    nlForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const parsed = parseNaturalInput(nlInput.value);
+      if (!parsed || !parsed.content) return;
+
+      if (parsed.type === 'todo') {
+        todos.push({
+          id: uid(),
+          text: parsed.content,
+          dueDate: parsed.dueDate || '',
+          done: Boolean(parsed.done),
+          createdAt: Date.now(),
+        });
+        renderTodos();
+      } else {
+        thoughts.push({
+          id: uid(),
+          text: parsed.content,
+          tags: parsed.tags || [],
+          createdAt: Date.now(),
+        });
+        renderThoughts();
+      }
+
+      nlInput.value = '';
+    });
+  }
 
   // Escape to clear search
   thoughtSearch.addEventListener('keydown', e => {

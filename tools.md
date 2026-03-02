@@ -7,6 +7,12 @@ permalink: /tools/
 <section class="hero-card tools-hero">
   <h1>个人工具台</h1>
   <p>你的 Todo 清单与灵感速记，默认仅本地存储在当前浏览器。</p>
+
+  <form id="nl-form" class="nl-form">
+    <input id="nl-input" type="text" placeholder="自然语言输入：如 明天10点提醒我写周报 / 想法：做个周复盘页 标签 博客,产品" required />
+    <button type="submit">智能记录</button>
+  </form>
+  <p class="nl-hint">支持：提醒我/待办、想法：、标签、完成： 等表达。</p>
 </section>
 
 <section class="tools-grid">

@@ -1,3 +1,36 @@
+.nl-form {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+
+  input,
+  button {
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid rgba(141, 181, 255, 0.24);
+    background: rgba(10, 21, 40, 0.72);
+    color: #dce8ff;
+    padding: 0 12px;
+  }
+
+  button {
+    background: rgba(21, 45, 82, 0.95);
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nl-hint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #95abd6;
+}
+
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -258,6 +291,21 @@ body.theme-light .tool-card {
   border-color: #e5e7eb;
   box-shadow: var(--shadow-soft);
 }
+
+body.theme-light .nl-form input,
+body.theme-light .nl-form button {
+  background: #ffffff;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+body.theme-light .nl-form button {
+  background: #2f3a4d;
+  color: #fff;
+  border-color: #2f3a4d;
+}
+
+body.theme-light .nl-hint { color: #6b7280; }
 
 body.theme-light .tool-meta,
 body.theme-light .thought-meta,
