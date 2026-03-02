@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "大模型量化入门到实践：QAT/PTQ、QLoRA、GPTQ、AWQ 一文讲清"
-date: 2026-03-02 10:40:00 +0800
+date: 2026-03-02 09:30:00 +0800
 tags: [AI, 大模型, 量化]
 ---
 
