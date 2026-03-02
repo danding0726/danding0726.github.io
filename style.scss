@@ -39,8 +39,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1040px;
-  padding: 0 24px;
+  max-width: 1120px;
+  padding: 0 28px;
   width: 100%;
 }
 
@@ -331,7 +331,7 @@ img {
 //
 
 .wrapper-sidebar {
-  width: 26%;
+  width: 260px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: $background-color;
@@ -441,7 +441,7 @@ nav {
 
 .wrapper-content {
   float: right;
-  width: 74%;
+  width: calc(100% - 260px);
 
   @include mobile {
     float: none;
@@ -989,10 +989,10 @@ body.theme-light article.posts {
   background: #ffffff;
   border: 1px solid #e7e9ee;
   box-shadow: var(--shadow-soft);
-  max-width: 900px;
+  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
-  padding: 22px 24px;
+  padding: 24px 28px;
 }
 body.theme-light p,
 body.theme-light li,
@@ -1052,6 +1052,14 @@ body.theme-light .search-container #search-input {
 body.theme-light .search-container #search-input:focus {
   border-color: #aeb8c8;
   box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.12);
+}
+
+body.theme-dark .posts > .post,
+body.theme-dark article.posts {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 28px;
 }
 
 /* micro-polish */
