@@ -87,47 +87,48 @@
     const text = (raw || '').trim();
     if (!text) return null;
 
-    const thoughtLike = /^(想法|灵感|记录)[:：]/i.test(text);
-    const doneLike = /^(完成|done)[:：]/i.test(text);
-    const todoLike = /(提醒我|待办|todo|TODO|需要做|记得)/.test(text);
-
+    // More flexible matching
+    const isThought = /^(想法|灵感|记录|idea|thought)[:：,\s]/i.test(text);
+    const isDone = /^(完成|done|已完成)[:：,\s]/i.test(text);
+    
+    // Extract tags
     const tagMatch = text.match(/标签\s*[:：]?\s*(.+)$/i);
     const tags = tagMatch
       ? tagMatch[1].split(/[，,\s]+/).map(s => s.trim()).filter(Boolean).slice(0, 8)
       : [];
 
+    // Extract date
     let dueDate = '';
     const now = new Date();
     if (/明天/.test(text)) {
       const d = new Date(now);
       d.setDate(d.getDate() + 1);
       dueDate = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    } else if (/今天/.test(text)) {
+      dueDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     } else {
       const m = text.match(/(\d{4}-\d{1,2}-\d{1,2})/);
       if (m) dueDate = m[1];
     }
 
-    if (thoughtLike) {
-      return { type: 'thought', content: text.replace(/^(想法|灵感|记录)[:：]/i, '').replace(/标签\s*[:：]?.+$/i, '').trim(), tags };
+    let content = text
+      .replace(/^(想法|灵感|记录|idea|thought)[:：,\s]*/i, '')
+      .replace(/^(完成|done|已完成)[:：,\s]*/i, '')
+      .replace(/标签\s*[:：]?.+$/i, '')
+      .replace(/提醒我|待办|todo|TODO|需要做|记得/g, '')
+      .replace(/[，,。；;]+/g, ' ')
+      .trim();
+
+    if (isDone) {
+      return { type: 'todo', content, done: true, dueDate };
     }
 
-    if (doneLike) {
-      return { type: 'todo', content: text.replace(/^(完成|done)[:：]/i, '').trim(), done: true, dueDate };
+    if (isThought) {
+      return { type: 'thought', content, tags };
     }
 
-    if (todoLike) {
-      return {
-        type: 'todo',
-        content: text
-          .replace(/提醒我|待办|todo|TODO|需要做|记得/g, '')
-          .replace(/[，,。；;]+/g, ' ')
-          .trim(),
-        done: false,
-        dueDate,
-      };
-    }
-
-    return { type: 'thought', content: text, tags };
+    // Default: create todo (not thought) for ambiguous inputs
+    return { type: 'todo', content, done: false, dueDate };
   }
 
   // Export/Import
@@ -383,8 +384,15 @@
   if (nlForm && nlInput) {
     nlForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const parsed = parseNaturalInput(nlInput.value);
-      if (!parsed || !parsed.content) return;
+      const raw = nlInput.value;
+      const parsed = parseNaturalInput(raw);
+      
+      console.log('NL Input:', raw, '-> Parsed:', parsed);
+      
+      if (!parsed || !parsed.content) {
+        alert('无法识别输入，请尝试：提醒我 xxx / 想法：xxx');
+        return;
+      }
 
       if (parsed.type === 'todo') {
         todos.push({
