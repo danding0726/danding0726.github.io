@@ -3,9 +3,9 @@
 #
 
 # Name of your site (displayed in the header)
-name: "淡定也少年's blog"
+name: "Danding's Lab"
 # Short bio or description (displayed in the header)
-description: "闲聊杂谈 | 技术分享 | 生活记录"
+description: "技术实验室｜简洁记录与理性分享"
 
 #
 # Flags below are optional
@@ -14,7 +14,7 @@ description: "闲聊杂谈 | 技术分享 | 生活记录"
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://github.com/danding0726/danding0726.github.io/blob/master/images/images.jpg?raw=true
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://github.com/danding0726/danding0726.github.io/raw/master/images/favicon.ico
+favicon: /images/favicon.svg
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
