@@ -24,8 +24,8 @@ layout: default
 
   <div class="reading-mode-bar">
     <span class="label">阅读模式</span>
-    <button id="mode-blog" type="button">暗色·博客版</button>
-    <button id="mode-deep" type="button">亮色·研读版</button>
+    <button id="mode-deep" type="button">暗色·研读版</button>
+    <button id="mode-blog" type="button">亮色·博客版</button>
   </div>
 
   <div class="entry post-entry">
@@ -63,11 +63,11 @@ layout: default
   function applyMode(mode) {
     body.classList.remove('reading-blog', 'reading-deep', 'theme-light', 'theme-dark');
     if (mode === 'deep') {
-      body.classList.add('reading-deep', 'theme-light');
+      body.classList.add('reading-deep', 'theme-dark');
       btnDeep.classList.add('active');
       btnBlog.classList.remove('active');
     } else {
-      body.classList.add('reading-blog', 'theme-dark');
+      body.classList.add('reading-blog', 'theme-light');
       btnBlog.classList.add('active');
       btnDeep.classList.remove('active');
     }
@@ -79,7 +79,7 @@ layout: default
     applyMode(saved);
   } else {
     const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-    applyMode(prefersLight ? 'deep' : 'blog');
+    applyMode(prefersLight ? 'blog' : 'deep');
   }
 
   btnBlog.addEventListener('click', () => applyMode('blog'));
