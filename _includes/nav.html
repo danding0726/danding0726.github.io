@@ -4,7 +4,8 @@
     <p class="brand-subtitle">技术 / AI / 工程实践</p>
   </header>
 
-  <div class="navlist">
+  <div class="navlist sidebar-panel">
+    <p class="panel-label">导航</p>
     <nav>
       {% for nav in site.navigation %}
       {% if nav.url contains 'http://' or nav.url contains 'https://' %}
@@ -14,6 +15,10 @@
       {% endif %}
       {% endfor %}
     </nav>
+  </div>
+
+  <div class="sidebar-note">
+    <p>持续记录可复用的方法、实践经验与工程复盘。</p>
   </div>
 
   <div class="wrapper-footer-desktop">

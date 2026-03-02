@@ -331,7 +331,7 @@ img {
 //
 
 .wrapper-sidebar {
-  width: 260px;
+  width: 280px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: $background-color;
@@ -341,11 +341,14 @@ img {
 	position: fixed;
 	z-index: 4;
   border-right: 1px solid $divider-color;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 18px 14px;
 
   @include mobile {
     width: 100%;
     height: auto;
-    padding-bottom: 24px;
+    padding: 14px;
     position: relative;
     border-bottom: 1px solid $divider-color;
     border-right: 0;
@@ -409,29 +412,60 @@ img {
 }
 
 .navlist{
-  text-align:center;
+  text-align:left;
+}
+
+.sidebar-panel {
+  margin-top: 16px;
+  border: 1px solid rgba(132, 160, 220, 0.2);
+  border-radius: var(--radius-card);
+  background: rgba(12, 21, 40, 0.55);
+  padding: 12px;
+}
+
+.panel-label {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #8ea4d4;
+}
+
+.sidebar-note {
+  margin-top: 12px;
+  border: 1px dashed rgba(132, 160, 220, 0.22);
+  border-radius: 10px;
+  padding: 10px 12px;
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #93a8d4;
+  }
 }
 
 nav {
-  display: block;
-  margin-top: 23px; // @TODO: Vertically middle align
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 0;
   font-family: $base-font;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 
   @include mobile {
-    margin-top: 9px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
-    margin: 0 10px;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    margin: 0;
+    padding: 7px 10px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
 
     @include mobile {
-      margin: 0 10px;
       color: $link-color;
     }
   }
@@ -441,7 +475,7 @@ nav {
 
 .wrapper-content {
   float: right;
-  width: calc(100% - 260px);
+  width: calc(100% - 280px);
 
   @include mobile {
     float: none;
@@ -769,14 +803,11 @@ nav {
 
 // Footer
 .wrapper-footer-desktop {
-  margin-top: 50px;
+  margin-top: auto;
   border-top: 1px solid rgba(140, 166, 255, 0.18);
-  background-color: rgba(8, 15, 30, 0.8);
-  position: absolute;
-  clear:both;
-  width:100%;
-  bottom:0;
-  
+  background-color: rgba(8, 15, 30, 0.72);
+  width: 100%;
+
   @include mobile {
     display: none;
   }
@@ -855,28 +886,29 @@ h1, h2, h3, h4, h5, h6, .site-name a { color: #e9f0ff; }
 }
 
 .sidebar-branding {
-  padding-top: 16px;
+  padding: 8px 4px 6px;
 }
 .sidebar-branding .brand-title {
   display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: 0.2px;
   color: #dbe6ff;
 }
 .sidebar-branding .brand-subtitle {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   font-size: 12px;
   color: #91a5d3;
 }
 
 nav a {
   color: #b5c6ef;
-  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
 }
 nav a:hover {
   color: #dce8ff;
-  border-bottom-color: rgba(140, 186, 255, 0.45);
+  background: rgba(118, 160, 240, 0.12);
+  border-color: rgba(140, 186, 255, 0.26);
 }
 
 .hero-card {
@@ -1032,10 +1064,21 @@ body.theme-light .wrapper-sidebar {
 }
 body.theme-light .sidebar-branding .brand-title { color: #1f2430; }
 body.theme-light .sidebar-branding .brand-subtitle { color: #6b7280; }
-body.theme-light nav a { color: #4b5563; }
+body.theme-light .sidebar-panel {
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
+body.theme-light .panel-label { color: #6b7280; }
+body.theme-light .sidebar-note {
+  border-color: #d7dce5;
+  background: #fbfcfd;
+}
+body.theme-light .sidebar-note p { color: #6b7280; }
+body.theme-light nav a { color: #4b5563; border-color: transparent; }
 body.theme-light nav a:hover {
   color: #111827;
-  border-bottom-color: rgba(55, 65, 81, 0.2);
+  background: #f3f4f6;
+  border-color: #e5e7eb;
 }
 body.theme-light .hero-card {
   background: #ffffff;
