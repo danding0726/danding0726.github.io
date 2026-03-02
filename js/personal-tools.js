@@ -163,7 +163,30 @@
     }
 
     const active = todos.filter((x) => !x.done).length;
+    const done = todos.filter((x) => x.done).length;
     todoStats.textContent = `${active} 项待办`;
+    
+    // Update filter button badges
+    todoFilterButtons.forEach(btn => {
+      const filter = btn.getAttribute('data-filter');
+      let count = 0;
+      if (filter === 'all') count = todos.length;
+      else if (filter === 'active') count = active;
+      else if (filter === 'done') count = done;
+      
+      // Remove old badge
+      const oldBadge = btn.querySelector('.badge');
+      if (oldBadge) oldBadge.remove();
+      
+      // Add new badge if count > 0
+      if (count > 0) {
+        const badge = document.createElement('span');
+        badge.className = 'badge';
+        badge.textContent = count;
+        btn.appendChild(badge);
+      }
+    });
+    
     save(TODO_KEY, todos);
   }
 
@@ -264,6 +287,14 @@
       renderTodos();
     });
   });
+
+  // Visual feedback helper
+  function flashItem(li, type = 'add') {
+    li.style.transition = 'all 0.3s ease';
+    li.style.transform = type === 'add' ? 'translateY(-10px)' : 'translateX(20px)';
+    li.style.opacity = '0';
+    setTimeout(() => li.remove(), 300);
+  }
 
   thoughtForm.addEventListener('submit', (e) => {
     e.preventDefault();

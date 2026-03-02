@@ -87,6 +87,15 @@
     border-color: rgba(170, 206, 255, 0.75);
   }
 
+  button .badge {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 0 5px;
+    font-size: 10px;
+    background: rgba(170, 206, 255, 0.3);
+    border-radius: 8px;
+  }
+
   .clear-btn {
     margin-left: auto;
     border-color: rgba(255, 170, 170, 0.4);
@@ -272,6 +281,10 @@ body.theme-light .todo-filters button.active {
 body.theme-light .todo-filters .clear-btn {
   border-color: rgba(200, 50, 50, 0.4);
   color: #c83030;
+}
+
+body.theme-light .todo-filters button .badge {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 body.theme-light .item-side .danger {
