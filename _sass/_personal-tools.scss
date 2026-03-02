@@ -216,6 +216,29 @@
   text-align: center;
 }
 
+.tool-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(138, 177, 247, 0.15);
+
+  button {
+    border: 1px solid rgba(138, 177, 247, 0.35);
+    background: rgba(14, 31, 60, 0.86);
+    color: #c8dcff;
+    border-radius: 8px;
+    height: 32px;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover {
+      background: rgba(21, 45, 82, 0.95);
+    }
+  }
+}
+
 body.theme-light .tool-card {
   background: #ffffff;
   border-color: #e5e7eb;
@@ -263,4 +286,18 @@ body.theme-light .thought-meta .tags {
 body.theme-light .item-row,
 body.theme-light .empty {
   border-color: #e5e7eb;
+}
+
+body.theme-light .tool-actions {
+  border-top-color: #e5e7eb;
+
+  button {
+    background: #f3f4f6;
+    color: #374151;
+    border-color: #d1d5db;
+
+    &:hover {
+      background: #e5e7eb;
+    }
+  }
 }

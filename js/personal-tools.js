@@ -66,6 +66,71 @@
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
   }
 
+  function formatRelativeTime(ts) {
+    const now = Date.now();
+    const diff = now - ts;
+    const sec = Math.floor(diff / 1000);
+    const min = Math.floor(sec / 60);
+    const hour = Math.floor(min / 60);
+    const day = Math.floor(hour / 24);
+
+    if (sec < 60) return '刚刚';
+    if (min < 60) return `${min}分钟前`;
+    if (hour < 24) return `${hour}小时前`;
+    if (day < 7) return `${day}天前`;
+    return formatTime(ts);
+  }
+
+  // Export/Import
+  function exportData() {
+    const data = { todos, thoughts, exportedAt: Date.now() };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `personal-tools-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function importData(file) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const data = JSON.parse(e.target.result);
+        if (data.todos) todos = data.todos;
+        if (data.thoughts) thoughts = data.thoughts;
+        save(TODO_KEY, todos);
+        save(THOUGHT_KEY, thoughts);
+        renderTodos();
+        renderThoughts();
+        alert('导入成功！');
+      } catch (_) {
+        alert('导入失败，文件格式错误');
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  // Add export/import to thoughts tool
+  const thoughtTool = document.getElementById('thought-tool');
+  if (thoughtTool) {
+    const actionDiv = document.createElement('div');
+    actionDiv.className = 'tool-actions';
+    actionDiv.innerHTML = `
+      <button id="export-btn">导出数据</button>
+      <input type="file" id="import-file" accept=".json" style="display:none" />
+      <button id="import-btn">导入数据</button>
+    `;
+    thoughtTool.appendChild(actionDiv);
+    
+    document.getElementById('export-btn').addEventListener('click', exportData);
+    document.getElementById('import-btn').addEventListener('click', () => document.getElementById('import-file').click());
+    document.getElementById('import-file').addEventListener('change', (e) => {
+      if (e.target.files[0]) importData(e.target.files[0]);
+    });
+  }
+
   function renderTodos() {
     const filtered = todos.filter((item) => {
       if (todoFilter === 'active') return !item.done;
@@ -122,7 +187,7 @@
           <div class="item-main thought-main">
             <p class="item-text">${item.text}</p>
             <div class="thought-meta">
-              <span>${formatTime(item.createdAt)}</span>
+              <span>${formatRelativeTime(item.createdAt)}</span>
               ${item.tags.length ? `<span class="tags">#${item.tags.join(' #')}</span>` : ''}
             </div>
           </div>
