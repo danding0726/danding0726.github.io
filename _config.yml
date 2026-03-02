@@ -22,8 +22,6 @@ favicon: /images/favicon.svg
 navigation:
   - name: 首页
     url: /
-  - name: 关于
-    url: /about
   - name: 归档
     url: /archive
   - name: 标签
