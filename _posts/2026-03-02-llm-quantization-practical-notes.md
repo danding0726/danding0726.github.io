@@ -5,8 +5,6 @@ date: 2026-03-02 09:30:00 +0800
 tags: [AI, 大模型, 工程实践]
 ---
 
-> 说明：本文按原始文档内容做“全覆盖重构”。除原文本身未展开的部分（如 GGUF、AIMET 下的 Post-Training Quantization 小节）外，其他信息均保留并结构化呈现。
-
 ## 1. 量化的基本定义
 
 模型量化可以理解为：把浮点数表示转换成低比特（定点/离散）表示，同时尽可能减少精度损失。
@@ -68,7 +66,7 @@ tags: [AI, 大模型, 工程实践]
 
 <img src="/images/posts/2026-03-02-llm-quantization/image2.png" alt="对称与非对称量化对比图" style="width:78%; margin: 12px auto;" />
 
-原文强调：
+实践中需要注意：
 
 - 当激活值最小值 > 0（如 ReLU 后）时，对称区间会浪费负区间动态范围。
 - 这类场景通常更适合使用非对称量化（zero-point 移到区间起点）。
@@ -122,7 +120,7 @@ tags: [AI, 大模型, 工程实践]
 
 ## 5. QLoRA
 
-原文要点：
+要点如下：
 
 - QLoRA 针对 weight 量化
 - 采用对称量化
@@ -135,7 +133,7 @@ tags: [AI, 大模型, 工程实践]
 
 <img src="/images/posts/2026-03-02-llm-quantization/image5.png" alt="QLoRA 与 NF4 示意图" style="width:76%; margin: 12px auto;" />
 
-原文还强调 **Double Quant**：
+进一步的优化是 **Double Quant**：
 
 - 对量化后的 scale 再做一次量化
 - 因 scale 常以 FP32 存储，block 多时会占用可观显存
@@ -145,7 +143,7 @@ tags: [AI, 大模型, 工程实践]
 
 ## 6. GPTQ
 
-原文定义：
+定义如下：
 
 - 对 block 内参数逐个量化
 - 每量化一个参数，会对该 block 内未量化参数做补偿调整
@@ -156,7 +154,7 @@ tags: [AI, 大模型, 工程实践]
 
 ## 7. AWQ（Activation-aware Weight Quantization）
 
-原文要点：
+要点如下：
 
 - 权重对模型性能贡献并不均匀
 - 大约有 0.1%~1% 的显著权重对效果影响很大
@@ -171,11 +169,11 @@ tags: [AI, 大模型, 工程实践]
 
 ## 8. GGUF
 
-原始文档仅给出了标题，未展开正文细节。此处保留该章节，等待后续补充。
+当前该章节为概要占位，后续可继续补充实践细节。
 
 ### 图6：GGUF相关配图（原文图示）
 
-该图来自原文素材，通常用于部署格式或生态工具链说明。
+该图用于说明部署格式与生态工具链关系。
 
 <img src="/images/posts/2026-03-02-llm-quantization/image6.png" alt="GGUF 相关图示" style="width:72%; margin: 12px auto;" />
 
@@ -198,11 +196,11 @@ tags: [AI, 大模型, 工程实践]
 
 <img src="/images/posts/2026-03-02-llm-quantization/image7.png" alt="AIMET 量化流程图" style="width:76%; margin: 12px auto;" />
 
-原文最后还有 “Post-Training Quantization” 小标题，但未继续展开正文。
+文末保留了 “Post-Training Quantization” 小节标题，具体细节可在后续版本补充。
 
 ---
 
-## 10. 总结（按原文口径）
+## 10. 总结
 
 这份材料的核心主线是：
 
