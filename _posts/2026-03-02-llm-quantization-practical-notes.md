@@ -23,6 +23,8 @@ tags: [AI, 大模型, 量化]
 - **Activation（激活）**：动态变化大，且容易有异常值（outlier）。
 - **Gradient（梯度）**：更多见于训练环节优化场景。
 
+<img src="/images/posts/2026-03-02-llm-quantization/image1.png" alt="浮点表示与量化背景" style="width:78%; margin: 12px auto;" />
+
 ---
 
 ## 2. 两条主路线：QAT 与 PTQ
@@ -73,6 +75,10 @@ tags: [AI, 大模型, 量化]
 - 若分布明显偏正、且想尽量吃满有效区间，优先考虑非对称量化。
 - 若追求实现简单/算子路径成熟，对称量化仍是高频选择。
 
+<img src="/images/posts/2026-03-02-llm-quantization/image2.png" alt="对称与非对称量化" style="width:78%; margin: 12px auto;" />
+
+<img src="/images/posts/2026-03-02-llm-quantization/image3.png" alt="非对称量化计算代价" style="width:78%; margin: 12px auto;" />
+
 ---
 
 ## 4. 量化粒度：Per-Tensor、Per-Channel、Per-Token
@@ -85,6 +91,8 @@ tags: [AI, 大模型, 量化]
 
 此外，工程中常把张量再切成 **block** 做量化（每个 block 独立 scale/zero-point），以降低 outlier 影响。
 
+<img src="/images/posts/2026-03-02-llm-quantization/image4.png" alt="block-wise 量化示意" style="width:76%; margin: 12px auto;" />
+
 ---
 
 ## 5. 几个高频方案怎么理解
@@ -96,6 +104,8 @@ tags: [AI, 大模型, 量化]
 - 对权重做低比特量化（常见 4bit）+ LoRA 微调。
 - 使用 **NF4（NormalFloat4）** 等更贴合权重分布的量化类型。
 - 使用 **Double Quantization** 继续压缩量化参数（如 scale）带来的额外显存开销。
+
+<img src="/images/posts/2026-03-02-llm-quantization/image5.png" alt="NF4 与 QLoRA 示意" style="width:76%; margin: 12px auto;" />
 
 适合：资源受限条件下，做高性价比微调。
 
@@ -182,36 +192,10 @@ tags: [AI, 大模型, 量化]
 
 量化不是“压缩技巧”，而是大模型工程化能力的一部分。把它做成体系，模型部署的成本和稳定性会有明显跃升。
 
+## 补充图示
+
+<img src="/images/posts/2026-03-02-llm-quantization/image6.png" alt="补充图示1" style="width:72%; margin: 12px auto;" />
+
+<img src="/images/posts/2026-03-02-llm-quantization/image7.png" alt="补充图示2" style="width:72%; margin: 12px auto;" />
+
 ---
-
-## 附：原始文档配图（自动整理）
-
-> 以下图片来自你提供的原始 docx，我已批量上传到博客静态目录。
-
-### 图 1
-
-![模型量化配图1](/images/posts/2026-03-02-llm-quantization/image1.png)
-
-### 图 2
-
-![模型量化配图2](/images/posts/2026-03-02-llm-quantization/image2.png)
-
-### 图 3
-
-![模型量化配图3](/images/posts/2026-03-02-llm-quantization/image3.png)
-
-### 图 4
-
-![模型量化配图4](/images/posts/2026-03-02-llm-quantization/image4.png)
-
-### 图 5
-
-![模型量化配图5](/images/posts/2026-03-02-llm-quantization/image5.png)
-
-### 图 6
-
-![模型量化配图6](/images/posts/2026-03-02-llm-quantization/image6.png)
-
-### 图 7
-
-![模型量化配图7](/images/posts/2026-03-02-llm-quantization/image7.png)
