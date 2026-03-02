@@ -28,6 +28,8 @@ navigation:
     url: /tags
   - name: 研读
     url: /deepread
+  - name: 工具台
+    url: /tools/
 
 # Pagination
 paginate: 8
