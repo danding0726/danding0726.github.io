@@ -5,7 +5,7 @@ date: 2026-03-03 10:17:00 +0800
 tags: [深度解读, Ollama, 本地部署, 开源生态, 模型入口, 工程化]
 ---
 
-![本地模型部署](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop)
+![本地模型部署](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=300&fit=crop)
 > Ollama 不再满足于"本地跑一个模型"，而是在争夺开发者入口。图为基础设施与集成的抽象表示。
 
 ## 背景：从"能跑"到"能用"

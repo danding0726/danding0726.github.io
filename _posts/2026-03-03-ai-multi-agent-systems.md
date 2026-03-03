@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "【深度解读】2026-03-03｜当 AI Agent 组成"球队"：多 agent 系统的设计实践"
+title: "【深度解读】2026-03-03｜当 AI Agent 组成「球队」：多 agent 系统的设计实践"
 date: 2026-03-03 11:40:00 +0800
 tags: [深度解读, Agent, 多 agent 系统, 并行编排, 分布式工程]
 ---
 
-![多 Agent 系统编排](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop)
+![多 Agent 系统编排](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop)
 > 当一个 Agent 变成多个 Agent 协同工作，如何设计它们之间的配合方式？图为分布式系统协调的抽象表示。
 
 ## 背景：从"单兵作战"到"团队配合"
@@ -49,7 +49,7 @@ tags: [深度解读, Agent, 多 agent 系统, 并行编排, 分布式工程]
 
 ## 实践方案一：Terminal Stampede——用 tmux + 文件系统做"轻量级"并行
 
-![Terminal Stampede](https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=1200&h=600&fit=crop)
+![Terminal Stampede](https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&h=300&fit=crop)
 > Terminal Stampede 用简单的 tmux + 文件系统实现了 8 个 Agent 并行工作。图为终端多路复用的抽象表示。
 
 如果你觉得那些复杂的 Agent 框架（LangGraph、CrewAI、AutoGen）太重，Terminal Stampede 是一个值得关注的"轻量级"方案。

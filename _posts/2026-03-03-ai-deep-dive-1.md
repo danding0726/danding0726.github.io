@@ -5,7 +5,7 @@ date: 2026-03-03 10:17:00 +0800
 tags: [深度解读, Agent, 安全, 权限治理, OAuth, 协议]
 ---
 
-![授权协议](https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&h=600&fit=crop)
+![授权协议](https://images.unsplash.com/photo-1633265486064-086b219458ec?w=600&h=300&fit=crop)
 > 当 Agent 可以代你发邮件、付款、改日程时，传统的 API Key 授权方式已经不够用了。图为数字授权与身份验证的抽象表示。
 
 ## 背景：Agent 正在从"建议者"变成"执行者"
