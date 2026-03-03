@@ -1,0 +1,11 @@
+[2026-03-03 10:22:40 +08:00] git push origin master failed
+Reason: non-fast-forward rejection; remote has new commits not present locally.
+
+[2026-03-03 10:23:12 +08:00] attempted recovery: git pull --rebase origin master && git push origin master
+Result: rebase conflict
+Conflicted files: IDENTITY.md, SOUL.md
+
+Pending fixes:
+1) Resolve rebase conflicts for IDENTITY.md and SOUL.md (or selectively drop conflicting local commits not intended for site repo updates).
+2) Re-run: git pull --rebase origin master
+3) Re-run: git push origin master
