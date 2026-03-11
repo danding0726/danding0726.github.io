@@ -32,6 +32,8 @@ navigation:
 # Pagination
 paginate: 8
 
+timezone: Asia/Shanghai
+
 excerpt_separator: <!-- more -->
 
 # Includes an icon in the footer for each username you enter
