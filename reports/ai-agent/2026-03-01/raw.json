@@ -1,0 +1,219 @@
+{
+  "generated_utc": "2026-03-01T09:31:00.244889+00:00",
+  "since_utc": "2026-02-28T09:31:00.244889+00:00",
+  "github": [
+    {
+      "name": "carmahhawwari/ui-design-brain",
+      "url": "https://github.com/carmahhawwari/ui-design-brain",
+      "stars": 139,
+      "desc": "A Cursor skill that gives AI agents real UI component knowledge — best practices, layout patterns, and design-system conventions for 60+ interface components — so it generates production-grade UI instead of generic output.",
+      "created_at": "2026-02-28T07:20:12Z",
+      "updated_at": "2026-03-01T09:26:01Z"
+    },
+    {
+      "name": "geekjourneyx/jina-cli",
+      "url": "https://github.com/geekjourneyx/jina-cli",
+      "stars": 111,
+      "desc": "A lightweight CLI tool wrapping Jina AI Reader API for AI Agents. Fetch and parse any URL into LLM-friendly   formats (Markdown/Text/HTML). Perfect for reading X(Twitter), blogs, and news sites.",
+      "created_at": "2026-02-28T08:39:26Z",
+      "updated_at": "2026-03-01T09:24:20Z"
+    },
+    {
+      "name": "loryoncloud/Memory-Like-A-Tree",
+      "url": "https://github.com/loryoncloud/Memory-Like-A-Tree",
+      "stars": 49,
+      "desc": "Memory-Like-A-Tree🌳 Memory management system for AI Agents - Let knowledge grow like a tree. Features confidence-based lifecycle, auto-decay, cross-agent search, and Obsidian sync. 🌳 AI Agent 记忆管理系统 - 让知识像树一样生长。支持置信度生命周期、自动衰减、跨 Agent 搜索、Obsidian 同步。",
+      "created_at": "2026-02-28T15:38:54Z",
+      "updated_at": "2026-03-01T09:24:21Z"
+    },
+    {
+      "name": "aldefy/compose-skill",
+      "url": "https://github.com/aldefy/compose-skill",
+      "stars": 49,
+      "desc": "Jetpack Compose Agent Skill — AI-powered coding guidance with actual androidx/androidx source code receipts. Works with Claude Code, Codex CLI, Gemini CLI, Cursor, Copilot, Windsurf, and more.",
+      "created_at": "2026-02-28T06:00:36Z",
+      "updated_at": "2026-03-01T05:46:28Z"
+    },
+    {
+      "name": "thx0701/openclaw-virtual-office",
+      "url": "https://github.com/thx0701/openclaw-virtual-office",
+      "stars": 18,
+      "desc": "🏢 Pixel-art virtual office dashboard for OpenClaw agent sessions. Visualize your AI workers in real-time.",
+      "created_at": "2026-02-28T17:37:59Z",
+      "updated_at": "2026-03-01T07:03:21Z"
+    },
+    {
+      "name": "noahatfin/telos",
+      "url": "https://github.com/noahatfin/telos",
+      "stars": 12,
+      "desc": "Agent-first intent and constraint tracking layer for Git. Structured, queryable memory for AI coding agents.",
+      "created_at": "2026-02-28T10:57:33Z",
+      "updated_at": "2026-03-01T06:58:41Z"
+    },
+    {
+      "name": "chenhg5/cc-connect",
+      "url": "https://github.com/chenhg5/cc-connect",
+      "stars": 12,
+      "desc": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
+      "created_at": "2026-02-28T02:39:39Z",
+      "updated_at": "2026-03-01T09:21:47Z"
+    },
+    {
+      "name": "lamost423/openclaw-hybrid-memory",
+      "url": "https://github.com/lamost423/openclaw-hybrid-memory",
+      "stars": 4,
+      "desc": "Production-ready hybrid memory system combining BM25 keyword search and vector semantic search for AI agents",
+      "created_at": "2026-02-28T10:49:24Z",
+      "updated_at": "2026-03-01T06:51:14Z"
+    },
+    {
+      "name": "0j/memorykit",
+      "url": "https://github.com/0j/memorykit",
+      "stars": 3,
+      "desc": "Persistent memory layer for AI agents",
+      "created_at": "2026-02-28T13:17:58Z",
+      "updated_at": "2026-03-01T03:31:48Z"
+    },
+    {
+      "name": "aashari/ai-agent-skills",
+      "url": "https://github.com/aashari/ai-agent-skills",
+      "stars": 3,
+      "desc": "A collection of reusable AI agent skills for Claude Code, OpenClaw, and compatible AI agent platforms",
+      "created_at": "2026-02-28T08:58:52Z",
+      "updated_at": "2026-02-28T23:18:09Z"
+    }
+  ],
+  "hn": [],
+  "reddit": [],
+  "arxiv": [
+    {
+      "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
+      "link": "https://arxiv.org/abs/2602.23330v1",
+      "published": "2026-02-26T18:37:36Z",
+      "summary": "The advancement of large language models (LLMs) has accelerated the development of autonomous financial trading systems. While mainstream approaches deploy multi-agent systems mimicking analyst and manager roles, they often rely on abstract instructions that overlook the intricac"
+    },
+    {
+      "title": "CXReasonAgent: Evidence-Grounded Diagnostic Reasoning Agent for Chest X-rays",
+      "link": "https://arxiv.org/abs/2602.23276v1",
+      "published": "2026-02-26T17:51:21Z",
+      "summary": "Chest X-ray plays a central role in thoracic diagnosis, and its interpretation inherently requires multi-step, evidence-grounded reasoning. However, large vision-language models (LVLMs) often generate plausible responses that are not faithfully grounded in diagnostic evidence and"
+    },
+    {
+      "title": "Agency and Architectural Limits: Why Optimization-Based Systems Cannot Be Norm-Responsive",
+      "link": "https://arxiv.org/abs/2602.23239v1",
+      "published": "2026-02-26T17:16:17Z",
+      "summary": "AI systems are increasingly deployed in high-stakes contexts -- medical diagnosis, legal research, financial analysis -- under the assumption they can be governed by norms. This paper demonstrates that assumption is formally invalid for optimization-based systems, specifically La"
+    },
+    {
+      "title": "STELLAR: Storage Tuning Engine Leveraging LLM Autonomous Reasoning for High Performance Parallel File Systems",
+      "link": "https://arxiv.org/abs/2602.23220v1",
+      "published": "2026-02-26T17:01:18Z",
+      "summary": "I/O performance is crucial to efficiency in data-intensive scientific computing; but tuning large-scale storage systems is complex, costly, and notoriously manpower-intensive, making it inaccessible for most domain scientists. To address this problem, we propose STELLAR, an auton"
+    },
+    {
+      "title": "ESAA: Event Sourcing for Autonomous Agents in LLM-Based Software Engineering",
+      "link": "https://arxiv.org/abs/2602.23193v1",
+      "published": "2026-02-26T16:45:59Z",
+      "summary": "Autonomous agents based on Large Language Models (LLMs) have evolved from reactive assistants to systems capable of planning, executing actions via tools, and iterating over environment observations. However, they remain vulnerable to structural limitations: lack of native state,"
+    },
+    {
+      "title": "A Decision-Theoretic Formalisation of Steganography With Applications to LLM Monitoring",
+      "link": "https://arxiv.org/abs/2602.23163v1",
+      "published": "2026-02-26T16:27:24Z",
+      "summary": "Large language models are beginning to show steganographic capabilities. Such capabilities could allow misaligned models to evade oversight mechanisms. Yet principled methods to detect and quantify such behaviours are lacking. Classical definitions of steganography, and detection"
+    },
+    {
+      "title": "Multi-Agent Large Language Model Based Emotional Detoxification Through Personalized Intensity Control for Consumer Protection",
+      "link": "https://arxiv.org/abs/2602.23123v1",
+      "published": "2026-02-26T15:37:03Z",
+      "summary": "In the attention economy, sensational content exposes consumers to excessive emotional stimulation, hindering calm decision-making. This study proposes Multi-Agent LLM-based Emotional deToxification (MALLET), a multi-agent information sanitization system consisting of four agents"
+    },
+    {
+      "title": "Three AI-agents walk into a bar . . . . `Lord of the Flies' tribalism emerges among smart AI-Agents",
+      "link": "https://arxiv.org/abs/2602.23093v1",
+      "published": "2026-02-26T15:12:26Z",
+      "summary": "Near-future infrastructure systems may be controlled by autonomous AI agents that repeatedly request access to limited resources such as energy, bandwidth, or computing power. We study a simplified version of this setting using a framework where N AI-agents independently decide a"
+    },
+    {
+      "title": "Cytoarchitecture in Words: Weakly Supervised Vision-Language Modeling for Human Brain Microscopy",
+      "link": "https://arxiv.org/abs/2602.23088v1",
+      "published": "2026-02-26T15:10:39Z",
+      "summary": "Foundation models increasingly offer potential to support interactive, agentic workflows that assist researchers during analysis and interpretation of image data. Such workflows often require coupling vision to language to provide a natural-language interface. However, paired ima"
+    },
+    {
+      "title": "Assessing Deanonymization Risks with Stylometry-Assisted LLM Agent",
+      "link": "https://arxiv.org/abs/2602.23079v1",
+      "published": "2026-02-26T15:05:13Z",
+      "summary": "The rapid advancement of large language models (LLMs) has enabled powerful authorship inference capabilities, raising growing concerns about unintended deanonymization risks in textual data such as news articles. In this work, we introduce an LLM agent designed to evaluate and mi"
+    },
+    {
+      "title": "CiteLLM: An Agentic Platform for Trustworthy Scientific Reference Discovery",
+      "link": "https://arxiv.org/abs/2602.23075v1",
+      "published": "2026-02-26T15:02:22Z",
+      "summary": "Large language models (LLMs) have created new opportunities to enhance the efficiency of scholarly activities; however, challenges persist in the ethical deployment of AI assistance, including (1) the trustworthiness of AI-generated content, (2) preservation of academic integrity"
+    },
+    {
+      "title": "Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization",
+      "link": "https://arxiv.org/abs/2602.23008v1",
+      "published": "2026-02-26T13:50:57Z",
+      "summary": "Exploration remains the key bottleneck for large language model agents trained with reinforcement learning. While prior methods exploit pretrained knowledge, they fail in environments requiring the discovery of novel states. We propose Exploratory Memory-Augmented On- and Off-Pol"
+    },
+    {
+      "title": "Managing Uncertainty in LLM-based Multi-Agent System Operation",
+      "link": "https://arxiv.org/abs/2602.23005v1",
+      "published": "2026-02-26T13:49:16Z",
+      "summary": "Applying LLM-based multi-agent software systems in safety-critical domains such as lifespan echocardiography introduces system-level risks that cannot be addressed by improving model accuracy alone. During system operation, beyond individual LLM behavior, uncertainty propagates t"
+    },
+    {
+      "title": "FactGuard: Agentic Video Misinformation Detection via Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2602.22963v1",
+      "published": "2026-02-26T13:00:31Z",
+      "summary": "Multimodal large language models (MLLMs) have substantially advanced video misinformation detection through unified multimodal reasoning, but they often rely on fixed-depth inference and place excessive trust in internally generated assumptions, particularly in scenarios where cr"
+    },
+    {
+      "title": "Can Agents Distinguish Visually Hard-to-Separate Diseases in a Zero-Shot Setting? A Pilot Study",
+      "link": "https://arxiv.org/abs/2602.22959v1",
+      "published": "2026-02-26T12:53:50Z",
+      "summary": "The rapid progress of multimodal large language models (MLLMs) has led to increasing interest in agent-based systems. While most prior work in medical imaging concentrates on automating routine clinical workflows, we study an underexplored yet clinically significant setting: dist"
+    },
+    {
+      "title": "ClawMobile: Rethinking Smartphone-Native Agentic Systems",
+      "link": "https://arxiv.org/abs/2602.22942v1",
+      "published": "2026-02-26T12:34:57Z",
+      "summary": "Smartphones represent a uniquely challenging environment for agentic systems. Unlike cloud or desktop settings, mobile devices combine constrained execution contexts, fragmented control interfaces, and rapidly changing application states. As large language models (LLMs) evolve fr"
+    },
+    {
+      "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+      "link": "https://arxiv.org/abs/2602.22897v1",
+      "published": "2026-02-26T11:35:04Z",
+      "summary": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world. However, current multi-modal LLMs are primarily confined to bi-modal interactions (e.g., vision-language), l"
+    },
+    {
+      "title": "Towards LLM-Empowered Knowledge Tracing via LLM-Student Hierarchical Behavior Alignment in Hyperbolic Space",
+      "link": "https://arxiv.org/abs/2602.22879v1",
+      "published": "2026-02-26T11:17:31Z",
+      "summary": "Knowledge Tracing (KT) diagnoses students' concept mastery through continuous learning state monitoring in education.Existing methods primarily focus on studying behavioral sequences based on ID or textual information.While existing methods rely on ID-based sequences or shallow t"
+    },
+    {
+      "title": "Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks",
+      "link": "https://arxiv.org/abs/2602.22817v1",
+      "published": "2026-02-26T09:58:10Z",
+      "summary": "Group-based reinforcement learning (RL), such as GRPO, has advanced the capabilities of large language models on long-horizon agentic tasks. To enable more fine-grained policy updates, recent research has increasingly shifted toward stepwise group-based policy optimization, which"
+    },
+    {
+      "title": "MiroFlow: Towards High-Performance and Robust Open-Source Agent Framework for General Deep Research Tasks",
+      "link": "https://arxiv.org/abs/2602.22808v1",
+      "published": "2026-02-26T09:45:04Z",
+      "summary": "Despite the remarkable progress of large language models (LLMs), the capabilities of standalone LLMs have begun to plateau when tackling real-world, complex tasks that require interaction with external tools and dynamic environments. Although recent agent frameworks aim to enhanc"
+    }
+  ],
+  "hn_error": [
+    "mismatched tag: line 6, column 2",
+    "mismatched tag: line 6, column 2"
+  ],
+  "reddit_error": [
+    "LocalLLaMA:syntax error: line 1, column 0",
+    "MachineLearning:syntax error: line 1, column 0",
+    "artificial:syntax error: line 1, column 0"
+  ]
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "WeThinkIn/AIGC-Interview-Book",
+    "stars": 3007,
+    "url": "https://github.com/WeThinkIn/AIGC-Interview-Book",
+    "updated_at": "2026-03-01T09:03:51Z",
+    "desc": "【三年面试五年模拟】AIGC算法工程师面试秘籍。涵盖AIGC、LLM大模型、传统深度学习、自动驾驶、AI Agent、机器学习、计算机视觉、自然语言处理、强化学习、大数据挖掘、具身智能、元宇宙、AGI等AI行业面试笔试干货经验与核心知识。"
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "btriapitsyn/openchamber",
+    "stars": 1174,
+    "url": "https://github.com/btriapitsyn/openchamber",
+    "updated_at": "2026-03-01T09:03:29Z",
+    "desc": "Desktop and web interface for OpenCode AI agent"
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "DearVa/Everywhere",
+    "stars": 5575,
+    "url": "https://github.com/DearVa/Everywhere",
+    "updated_at": "2026-03-01T09:03:23Z",
+    "desc": "Context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools."
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "saidutt46/domain-check",
+    "stars": 231,
+    "url": "https://github.com/saidutt46/domain-check",
+    "updated_at": "2026-03-01T09:03:17Z",
+    "desc": "Fast, universal domain availability checker - 1,200+ TLDs, pattern generation, RDAP with WHOIS fallback. CLI + Rust library + MCP server for AI agents."
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "sickn33/antigravity-awesome-skills",
+    "stars": 17414,
+    "url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "updated_at": "2026-03-01T09:03:15Z",
+    "desc": "The Ultimate Collection of 900+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel."
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "stephengpope/thepopebot",
+    "stars": 888,
+    "url": "https://github.com/stephengpope/thepopebot",
+    "updated_at": "2026-03-01T09:01:09Z",
+    "desc": "The Pope Bot is an autonomous AI agent that you can configure and build to do just about anything you want, all day, everyday, 24/7."
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "bfzli/clawhost",
+    "stars": 183,
+    "url": "https://github.com/bfzli/clawhost",
+    "updated_at": "2026-03-01T09:00:45Z",
+    "desc": "One-click cloud hosting for OpenClaw AI agents."
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "can1357/oh-my-pi",
+    "stars": 1544,
+    "url": "https://github.com/can1357/oh-my-pi",
+    "updated_at": "2026-03-01T09:00:28Z",
+    "desc": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more"
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "neomjs/neo",
+    "stars": 3142,
+    "url": "https://github.com/neomjs/neo",
+    "updated_at": "2026-03-01T08:59:37Z",
+    "desc": "The Application Engine for the AI Era. A multi-threaded, AI-native runtime with a persistent Scene Graph, enabling AI agents to introspect and mutate the living application structure in real-time."
+  },
+  {
+    "query": "ai agent pushed:>2026-02-28 stars:>100",
+    "name": "4thfever/cultivation-world-simulator",
+    "stars": 1188,
+    "url": "https://github.com/4thfever/cultivation-world-simulator",
+    "updated_at": "2026-03-01T08:59:21Z",
+    "desc": "基于 AI Agent 工作流的修仙世界模拟器，旨在还原智能、开放的仙侠世界。| An open-source Cultivation World Simulator using Agentic Workflow to create a dynamic, emerging Xianxia world. "
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "trpc-group/trpc-agent-go",
+    "stars": 947,
+    "url": "https://github.com/trpc-group/trpc-agent-go",
+    "updated_at": "2026-03-01T08:57:54Z",
+    "desc": "trpc-agent-go is a powerful Go framework for building intelligent agent systems using large language models (LLMs) and tools."
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "nextlevelbuilder/goclaw",
+    "stars": 276,
+    "url": "https://github.com/nextlevelbuilder/goclaw",
+    "updated_at": "2026-03-01T08:55:57Z",
+    "desc": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels."
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "inclusionAI/AReaL",
+    "stars": 3588,
+    "url": "https://github.com/inclusionAI/AReaL",
+    "updated_at": "2026-03-01T08:38:59Z",
+    "desc": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible."
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "block/goose",
+    "stars": 31586,
+    "url": "https://github.com/block/goose",
+    "updated_at": "2026-03-01T09:03:57Z",
+    "desc": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "IvanMurzak/Unity-MCP",
+    "stars": 1126,
+    "url": "https://github.com/IvanMurzak/Unity-MCP",
+    "updated_at": "2026-03-01T08:22:53Z",
+    "desc": "AI-powered bridge connecting LLMs and advanced AI agents to the Unity Editor via the Model Context Protocol (MCP). Chat with AI to generate code, debug errors, and automate game development tasks directly within your project."
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "AstrBotDevs/AstrBot",
+    "stars": 18398,
+    "url": "https://github.com/AstrBotDevs/AstrBot",
+    "updated_at": "2026-03-01T08:56:54Z",
+    "desc": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "promptfoo/promptfoo",
+    "stars": 10713,
+    "url": "https://github.com/promptfoo/promptfoo",
+    "updated_at": "2026-03-01T09:02:47Z",
+    "desc": "Test your prompts, agents, and RAGs. AI Red teaming, pentesting, and vulnerability scanning for LLMs. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration."
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "waynesutton/markdown-site",
+    "stars": 553,
+    "url": "https://github.com/waynesutton/markdown-site",
+    "updated_at": "2026-03-01T08:14:45Z",
+    "desc": "An open-source publishing framework built for AI agents and developers to ship websites, docs, or blogs. Write markdown, sync from the terminal. Your content is instantly available to browsers, LLMs, and AI agents. Built on Convex and Netlify."
+  },
+  {
+    "query": "llm-agent pushed:>2026-02-28 stars:>50",
+    "name": "MervinPraison/PraisonAI",
+    "stars": 5606,
+    "url": "https://github.com/MervinPraison/PraisonAI",
+    "updated_at": "2026-03-01T07:22:10Z",
+    "desc": "PraisonAI is a production-ready Multi AI Agents framework, designed to create AI Agents to automate and solve problems ranging from simple tasks to complex challenges. It provides a low-code solution to streamline the building and management of multi-agent LLM systems, emphasising simplicity, customisation, and effective human-agent collaboration."
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "ctrl-gaurav/effGen",
+    "stars": 113,
+    "url": "https://github.com/ctrl-gaurav/effGen",
+    "updated_at": "2026-03-01T08:55:42Z",
+    "desc": "effGen: Enabling Small Language Models as Capable Autonomous Agents"
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "xorbitsai/xagent",
+    "stars": 146,
+    "url": "https://github.com/xorbitsai/xagent",
+    "updated_at": "2026-03-01T08:55:27Z",
+    "desc": "AI agents for everyone. Production-ready platform with dynamic planning and autonomous tool orchestration."
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "EuniAI/awesome-code-agents",
+    "stars": 85,
+    "url": "https://github.com/EuniAI/awesome-code-agents",
+    "updated_at": "2026-03-01T06:48:12Z",
+    "desc": "A curated list of products, benchmarks, and research papers on autonomous code agents. Beyond coding — they're redefining how software changes the world."
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "asklokesh/loki-mode",
+    "stars": 665,
+    "url": "https://github.com/asklokesh/loki-mode",
+    "updated_at": "2026-03-01T06:15:45Z",
+    "desc": "Multi-agent provider agnostic Autonomous system & framework that WORKS..!"
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "crewAIInc/crewAI",
+    "stars": 44871,
+    "url": "https://github.com/crewAIInc/crewAI",
+    "updated_at": "2026-03-01T08:59:40Z",
+    "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "agentic-community/mcp-gateway-registry",
+    "stars": 459,
+    "url": "https://github.com/agentic-community/mcp-gateway-registry",
+    "updated_at": "2026-03-01T01:49:53Z",
+    "desc": "Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding assistants. Transform scattered MCP server chaos into governed, auditable tool access with Keycloak/Entra integration."
+  },
+  {
+    "query": "autonomous agent pushed:>2026-02-28 stars:>50 language:Python",
+    "name": "panaversity/agentfactory",
+    "stars": 148,
+    "url": "https://github.com/panaversity/agentfactory",
+    "updated_at": "2026-03-01T01:36:02Z",
+    "desc": "Build Digital FTEs that work 24/7. Your domain expertise—whether in sales, legal, finance, or healthcare—becomes an autonomous AI agent that never sleeps."
+  }
+]

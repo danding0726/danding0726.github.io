@@ -1,0 +1,2297 @@
+{
+  "exhaustive": {
+    "nbHits": false,
+    "typo": false
+  },
+  "exhaustiveNbHits": false,
+  "exhaustiveTypo": false,
+  "hits": [
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "akashc777"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Launching in 6 days (March 7)!<p>We wanted OneCamp to be a masterclass in modern architecture, so we open-sourced our entire Next.js frontend.<p>Here's the tech stack powering it:<p>1/ Collaboration &amp; CRDTs   \nCustom Node microservice with Hocuspocus + Yjs for real-time Tiptap edits over WebSockets. Redis caching + JSON/HTML transform to Go backend.<p>2/ WebRTC &amp; Real-time <em>AI</em>   \nSelf-hosted LiveKit SFU + custom Python <em>agent</em> that pipes audio to Deepgram nova-2, rebases timestamps, and broadcasts live transcripts.<p>3/ Polyglot Persistence   \nPostgres + Dgraph (graph relations) + OpenSearch (full-text search).<p>4/ Observability   \nOpenTelemetry traces/logs to self-hosted HyperDX on ClickHouse.<p>The frontend (Next.js + React) is 100% open source (MIT). Dive in, star it, fork it:  \n<a href=\"https://github.com/OneMana-Soft/OneCamp-fe\" rel=\"nofollow\">https://github.com/OneMana-Soft/OneCamp-fe</a><p>Backend remains closed-source for now (Go + paid managed option at launch).<p>Feedback, issues, PRs very welcome!"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: OneCamp – Self-Hosted Slack/Asana/Zoom/Notion Alternative"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_akashc777",
+        "story_47204847",
+        "show_hn"
+      ],
+      "author": "akashc777",
+      "created_at": "2026-03-01T08:34:27Z",
+      "created_at_i": 1772354067,
+      "num_comments": 0,
+      "objectID": "47204847",
+      "points": 1,
+      "story_id": 47204847,
+      "story_text": "Launching in 6 days (March 7)!<p>We wanted OneCamp to be a masterclass in modern architecture, so we open-sourced our entire Next.js frontend.<p>Here&#x27;s the tech stack powering it:<p>1&#x2F; Collaboration &amp; CRDTs   \nCustom Node microservice with Hocuspocus + Yjs for real-time Tiptap edits over WebSockets. Redis caching + JSON&#x2F;HTML transform to Go backend.<p>2&#x2F; WebRTC &amp; Real-time AI   \nSelf-hosted LiveKit SFU + custom Python agent that pipes audio to Deepgram nova-2, rebases timestamps, and broadcasts live transcripts.<p>3&#x2F; Polyglot Persistence   \nPostgres + Dgraph (graph relations) + OpenSearch (full-text search).<p>4&#x2F; Observability   \nOpenTelemetry traces&#x2F;logs to self-hosted HyperDX on ClickHouse.<p>The frontend (Next.js + React) is 100% open source (MIT). Dive in, star it, fork it:  \n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;OneMana-Soft&#x2F;OneCamp-fe\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;OneMana-Soft&#x2F;OneCamp-fe</a><p>Backend remains closed-source for now (Go + paid managed option at launch).<p>Feedback, issues, PRs very welcome!",
+      "title": "Show HN: OneCamp – Self-Hosted Slack/Asana/Zoom/Notion Alternative",
+      "updated_at": "2026-03-01T08:38:08Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "rikeda71"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Hey HN,<p><pre><code>  ghostty-pane-splitter is a Rust CLI that creates multi-pane layouts\n  in Ghostty terminal with a single command:\n\n    ghostty-pane-splitter 9      # 3x3 grid\n    ghostty-pane-splitter 2x3    # 2 cols x 3 rows\n    ghostty-pane-splitter 1,3    # custom layout\n\n  I built this to streamline my workflow with Claude Code and Codex.\n  When running multiple coding <em>agents</em> in parallel — reviewing a PR\n  in one pane, implementing a feature in another, running tests in\n  a third — setting up panes manually gets tedious fast.\n\n  With this tool, I run `ghostty-pane-splitter 6` and instantly get\n  a 3x2 grid ready for parallel <em>agent</em> sessions. Each pane gets its\n  own Claude Code instance working on a separate task.\n\n  Typical setup:\n  - 2x2 grid: 2 <em>agents</em> coding + 1 for tests + 1 for git operations\n  - 3x2 grid: multiple <em>agents</em> on independent features via worktrees\n  - 1,3 layout: 1 main pane for oversight, 3 for parallel <em>agents</em>\n\n  It reads keybindings from your Ghostty config and simulates them\n  via enigo. No IPC, no plugin system — just automated keystrokes.\n\n  Install:\n    brew install rikeda71/tap/ghostty-pane-splitter\n    # or\n    cargo install ghostty-pane-splitter\n\n  Source: https://github.com/rikeda71/ghostty-pane-splitter</code></pre>"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Ghostty Pane Splitter – Split terminal panes for <em>AI</em> coding <em>agents</em>"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/rikeda71/ghostty-pane-splitter"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_rikeda71",
+        "story_47204677",
+        "show_hn"
+      ],
+      "author": "rikeda71",
+      "created_at": "2026-03-01T07:59:16Z",
+      "created_at_i": 1772351956,
+      "num_comments": 0,
+      "objectID": "47204677",
+      "points": 2,
+      "story_id": 47204677,
+      "story_text": "Hey HN,<p><pre><code>  ghostty-pane-splitter is a Rust CLI that creates multi-pane layouts\n  in Ghostty terminal with a single command:\n\n    ghostty-pane-splitter 9      # 3x3 grid\n    ghostty-pane-splitter 2x3    # 2 cols x 3 rows\n    ghostty-pane-splitter 1,3    # custom layout\n\n  I built this to streamline my workflow with Claude Code and Codex.\n  When running multiple coding agents in parallel — reviewing a PR\n  in one pane, implementing a feature in another, running tests in\n  a third — setting up panes manually gets tedious fast.\n\n  With this tool, I run `ghostty-pane-splitter 6` and instantly get\n  a 3x2 grid ready for parallel agent sessions. Each pane gets its\n  own Claude Code instance working on a separate task.\n\n  Typical setup:\n  - 2x2 grid: 2 agents coding + 1 for tests + 1 for git operations\n  - 3x2 grid: multiple agents on independent features via worktrees\n  - 1,3 layout: 1 main pane for oversight, 3 for parallel agents\n\n  It reads keybindings from your Ghostty config and simulates them\n  via enigo. No IPC, no plugin system — just automated keystrokes.\n\n  Install:\n    brew install rikeda71&#x2F;tap&#x2F;ghostty-pane-splitter\n    # or\n    cargo install ghostty-pane-splitter\n\n  Source: https:&#x2F;&#x2F;github.com&#x2F;rikeda71&#x2F;ghostty-pane-splitter</code></pre>",
+      "title": "Show HN: Ghostty Pane Splitter – Split terminal panes for AI coding agents",
+      "updated_at": "2026-03-01T08:17:53Z",
+      "url": "https://github.com/rikeda71/ghostty-pane-splitter"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "celastin"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: MemLineage: governed writes for <em>AI</em> <em>agents</em>"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/zhuamber370/memlineage"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_celastin",
+        "story_47204517",
+        "show_hn"
+      ],
+      "author": "celastin",
+      "children": [
+        47204520
+      ],
+      "created_at": "2026-03-01T07:27:05Z",
+      "created_at_i": 1772350025,
+      "num_comments": 1,
+      "objectID": "47204517",
+      "points": 1,
+      "story_id": 47204517,
+      "title": "Show HN: MemLineage: governed writes for AI agents",
+      "updated_at": "2026-03-01T07:29:53Z",
+      "url": "https://github.com/zhuamber370/memlineage"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "txrx0000"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "<em>AI</em> posts are becoming indistinguishable from human posts, and we can see it here on HN. The conventional response by website operators is to put in progressively tighter verification systems to distinguish bots and humans, but that eventually leads to the end of anonymity.<p>This is not an anti-<em>AI</em> rant. If a future <em>AI</em> <em>agent</em> truly has high quality posts and wants to use the site normally, that's fine. I'm talking about spam campaigns with hundreds of new accounts. We need new solutions to this problem.<p>I'll start by proposing a solution that could work for HN and similar forums. Feel free to iterate on it or propose your different ideas in the comments. Here goes:<p>For logged-in users, instead of ranking posts and comments on the server-side, the server only delivers a chronological feed + the current logged-in user's voting history.<p>Using the chronological feed as the base, each of your past votes changes the ranking of your feed by a tiny bit, and that's calculated client-side. You're more likely to see posts and comments from users you've upvoted in the past at the top.<p>In short, this means a new account will see a completely chronological feed, while an established account will see a feed modified by only their own past votes.<p>The public feed for non-logged-in users would still be ranked by the server. No changes there.<p>So each user gets a fully personalized bubble when logged in, except it's not a bubble because n=1. And it's really easy to break out of the bubble by logging out.<p>Spam bots can post and vote all they want, but they won't change the core userbase's experience that much, because the bots will only have access to a chronological feed. It has no taste, which is accumulated over time, and therefore can't spam votes and replies on real conversations nearly as much."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Ask HN: How do we solve the bot flooding problem without destroying anonymity?"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_txrx0000",
+        "story_47204278",
+        "ask_hn"
+      ],
+      "author": "txrx0000",
+      "children": [
+        47204906,
+        47204288,
+        47204632
+      ],
+      "created_at": "2026-03-01T06:41:24Z",
+      "created_at_i": 1772347284,
+      "num_comments": 3,
+      "objectID": "47204278",
+      "points": 4,
+      "story_id": 47204278,
+      "story_text": "AI posts are becoming indistinguishable from human posts, and we can see it here on HN. The conventional response by website operators is to put in progressively tighter verification systems to distinguish bots and humans, but that eventually leads to the end of anonymity.<p>This is not an anti-AI rant. If a future AI agent truly has high quality posts and wants to use the site normally, that&#x27;s fine. I&#x27;m talking about spam campaigns with hundreds of new accounts. We need new solutions to this problem.<p>I&#x27;ll start by proposing a solution that could work for HN and similar forums. Feel free to iterate on it or propose your different ideas in the comments. Here goes:<p>For logged-in users, instead of ranking posts and comments on the server-side, the server only delivers a chronological feed + the current logged-in user&#x27;s voting history.<p>Using the chronological feed as the base, each of your past votes changes the ranking of your feed by a tiny bit, and that&#x27;s calculated client-side. You&#x27;re more likely to see posts and comments from users you&#x27;ve upvoted in the past at the top.<p>In short, this means a new account will see a completely chronological feed, while an established account will see a feed modified by only their own past votes.<p>The public feed for non-logged-in users would still be ranked by the server. No changes there.<p>So each user gets a fully personalized bubble when logged in, except it&#x27;s not a bubble because n=1. And it&#x27;s really easy to break out of the bubble by logging out.<p>Spam bots can post and vote all they want, but they won&#x27;t change the core userbase&#x27;s experience that much, because the bots will only have access to a chronological feed. It has no taste, which is accumulated over time, and therefore can&#x27;t spam votes and replies on real conversations nearly as much.",
+      "title": "Ask HN: How do we solve the bot flooding problem without destroying anonymity?",
+      "updated_at": "2026-03-01T09:06:23Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "varunpratap369"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hi HN,<p>I posted SkillFortify here a few days ago as a formal verification tool for 3 <em>agent</em> skill formats. Based on feedback, v0.3 now supports 22 <em>agent</em> frameworks and can scan your entire system with zero configuration.<p>The problem: In January 2026, the ClawHavoc campaign planted 1,200 malicious skills into <em>agent</em> marketplaces. CVE-2026-25253 was the first RCE in <em>agent</em> software. Researchers catalogued 6,000+ malicious <em>agent</em> tools. The industry responded with heuristic scanners — pattern matching, YARA rules, LLM-as-judge. One popular scanner states in its docs: &quot;No findings does not mean no risk.&quot;<p>SkillFortify eliminates that caveat with formal verification.<p>What it does:<p><pre><code>  pip install skillfortify\n  skillfortify scan\n</code></pre>\nThat's it. No arguments, no config files, no paths. It auto-discovers every <em>AI</em> tool on your machine across 23+ IDE profiles:<p><pre><code>  [*] Auto-discovering <em>AI</em> tools on system...\n  [+] Found: Claude Code (12 skills)\n  [+] Found: Cursor (8 skills)\n  [+] Found: VS Code MCP (5 servers)\n  [+] Found: Windsurf (3 skills)\n  [*] Scanning 28 skills across 4 tools...\n\n  RESULTS\n    Critical:  2 skills with capability violations\n    High:      3 skills with excessive permissions\n    Clean:     23 skills passed all checks\n</code></pre>\n22 supported frameworks: Claude Code, Cursor, VS Code, Windsurf, Gemini, OpenCode, Cline, Continue, Copilot, n8n, Roo, Trae, Kiro, Kode, Jules, Junie, Codex, SuperVS, Zencoder, CommandCode, Factory, Qoder — plus auto-discovery of unknown tools.<p>Why formal verification, not heuristics: Heuristic scanners check for known bad patterns. Novel attacks pass through. SkillFortify verifies what a skill CAN do against what it CLAIMS to do. Five mathematical theorems guarantee soundness — if it says safe, it provably cannot exceed declared capabilities.<p>Results on 540-skill benchmark (270 malicious, 270 benign):\n- F1 = 96.95%\n- Precision = 100% (zero false positives)\n- Recall = 94.07%\n- Speed: ~2.5ms per skill<p>9 CLI commands:\n- scan — auto-discover + analyze all <em>AI</em> tools on your system\n- verify — formally verify a single skill\n- lock — generate skill-lock.json (like package-lock.json for <em>agent</em> skills)\n- trust — compute graduated trust score (L0-L3, inspired by SLSA)\n- sbom — generate CycloneDX 1.6 <em>Agent</em> Software Bill of Materials\n- frameworks — list all 22 supported frameworks + detection status\n- dashboard — generate standalone HTML security report (zero dependencies)\n- registry-scan — scan MCP/PyPI/npm registries before installing\n- verify --recursive — batch verify entire directory trees<p>1,818 tests. 22 parsers. 97 source modules. MIT licensed. Peer-reviewed paper on Zenodo.<p>GitHub: <a href=\"https://github.com/varun369/skillfortify\" rel=\"nofollow\">https://github.com/varun369/skillfortify</a>\nPyPI: <a href=\"https://pypi.org/project/skillfortify/\" rel=\"nofollow\">https://pypi.org/project/skillfortify/</a>\nPaper: <a href=\"https://zenodo.org/records/18787663\" rel=\"nofollow\">https://zenodo.org/records/18787663</a>\nWiki: <a href=\"https://github.com/varun369/skillfortify/wiki\" rel=\"nofollow\">https://github.com/varun369/skillfortify/wiki</a>\nLanding page: <a href=\"https://www.superlocalmemory.com/skillfortify\" rel=\"nofollow\">https://www.superlocalmemory.com/skillfortify</a><p>Built this as part of my research on making <em>AI</em> <em>agents</em> reliable enough for production. The companion project AgentAssert (arXiv:2602.22302) handles behavioral contracts — SkillFortify handles the supply chain.<p>Happy to answer questions about the formal model, framework support, or auto-discovery."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: SkillFortify, Formal verification for <em>AI</em> <em>agents</em> (auto-discovers)"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/varun369/skillfortify"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_varunpratap369",
+        "story_47204082",
+        "show_hn"
+      ],
+      "author": "varunpratap369",
+      "children": [
+        47204084
+      ],
+      "created_at": "2026-03-01T05:51:06Z",
+      "created_at_i": 1772344266,
+      "num_comments": 1,
+      "objectID": "47204082",
+      "points": 2,
+      "story_id": 47204082,
+      "story_text": "Hi HN,<p>I posted SkillFortify here a few days ago as a formal verification tool for 3 agent skill formats. Based on feedback, v0.3 now supports 22 agent frameworks and can scan your entire system with zero configuration.<p>The problem: In January 2026, the ClawHavoc campaign planted 1,200 malicious skills into agent marketplaces. CVE-2026-25253 was the first RCE in agent software. Researchers catalogued 6,000+ malicious agent tools. The industry responded with heuristic scanners — pattern matching, YARA rules, LLM-as-judge. One popular scanner states in its docs: &quot;No findings does not mean no risk.&quot;<p>SkillFortify eliminates that caveat with formal verification.<p>What it does:<p><pre><code>  pip install skillfortify\n  skillfortify scan\n</code></pre>\nThat&#x27;s it. No arguments, no config files, no paths. It auto-discovers every AI tool on your machine across 23+ IDE profiles:<p><pre><code>  [*] Auto-discovering AI tools on system...\n  [+] Found: Claude Code (12 skills)\n  [+] Found: Cursor (8 skills)\n  [+] Found: VS Code MCP (5 servers)\n  [+] Found: Windsurf (3 skills)\n  [*] Scanning 28 skills across 4 tools...\n\n  RESULTS\n    Critical:  2 skills with capability violations\n    High:      3 skills with excessive permissions\n    Clean:     23 skills passed all checks\n</code></pre>\n22 supported frameworks: Claude Code, Cursor, VS Code, Windsurf, Gemini, OpenCode, Cline, Continue, Copilot, n8n, Roo, Trae, Kiro, Kode, Jules, Junie, Codex, SuperVS, Zencoder, CommandCode, Factory, Qoder — plus auto-discovery of unknown tools.<p>Why formal verification, not heuristics: Heuristic scanners check for known bad patterns. Novel attacks pass through. SkillFortify verifies what a skill CAN do against what it CLAIMS to do. Five mathematical theorems guarantee soundness — if it says safe, it provably cannot exceed declared capabilities.<p>Results on 540-skill benchmark (270 malicious, 270 benign):\n- F1 = 96.95%\n- Precision = 100% (zero false positives)\n- Recall = 94.07%\n- Speed: ~2.5ms per skill<p>9 CLI commands:\n- scan — auto-discover + analyze all AI tools on your system\n- verify — formally verify a single skill\n- lock — generate skill-lock.json (like package-lock.json for agent skills)\n- trust — compute graduated trust score (L0-L3, inspired by SLSA)\n- sbom — generate CycloneDX 1.6 Agent Software Bill of Materials\n- frameworks — list all 22 supported frameworks + detection status\n- dashboard — generate standalone HTML security report (zero dependencies)\n- registry-scan — scan MCP&#x2F;PyPI&#x2F;npm registries before installing\n- verify --recursive — batch verify entire directory trees<p>1,818 tests. 22 parsers. 97 source modules. MIT licensed. Peer-reviewed paper on Zenodo.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;varun369&#x2F;skillfortify\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;varun369&#x2F;skillfortify</a>\nPyPI: <a href=\"https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;skillfortify&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;skillfortify&#x2F;</a>\nPaper: <a href=\"https:&#x2F;&#x2F;zenodo.org&#x2F;records&#x2F;18787663\" rel=\"nofollow\">https:&#x2F;&#x2F;zenodo.org&#x2F;records&#x2F;18787663</a>\nWiki: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;varun369&#x2F;skillfortify&#x2F;wiki\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;varun369&#x2F;skillfortify&#x2F;wiki</a>\nLanding page: <a href=\"https:&#x2F;&#x2F;www.superlocalmemory.com&#x2F;skillfortify\" rel=\"nofollow\">https:&#x2F;&#x2F;www.superlocalmemory.com&#x2F;skillfortify</a><p>Built this as part of my research on making AI agents reliable enough for production. The companion project AgentAssert (arXiv:2602.22302) handles behavioral contracts — SkillFortify handles the supply chain.<p>Happy to answer questions about the formal model, framework support, or auto-discovery.",
+      "title": "Show HN: SkillFortify, Formal verification for AI agents (auto-discovers)",
+      "updated_at": "2026-03-01T06:09:37Z",
+      "url": "https://github.com/varun369/skillfortify"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "tstockham"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Engram gives <em>AI</em> coding <em>agents</em> persistent memory across sessions. 2,500 npm installs in the first five days.\nThe problem: every Claude Code or Cursor session starts from zero. You re-explain your architecture, conventions, past decisions. CLAUDE.md helps but it's manual and doesn't scale.\nEngram runs as a native MCP server. One command to install, SQLite backend, no infrastructure.\nThree tiers of memory:<p>Explicit: things you tell it to remember\nImplicit: behavioral patterns extracted from how you work (low confidence, reinforced over time)\nSynthesized: meta-observations generated during consolidation<p>The key architectural bet: intelligence at read time, not write time. Most memory systems extract and classify on ingest. Engram stores broadly and invests compute when you query, because that's when you actually know what matters. This is why it scores 80% on LOCOMO (arXiv:2402.17753) while using 30x fewer tokens than full-context retrieval.\nStack: TypeScript, SQLite + sqlite-vec, Gemini embeddings by default (any OpenAI-compatible provider works via ENGRAM_LLM_BASE_URL). Zero external dependencies.<p>Install: npm install -g engram-sdk &amp;&amp; engram init\nComparison with Mem0, Zep/Graphiti, Letta/MemGPT: <a href=\"https://www.engram.fyi/compare\" rel=\"nofollow\">https://www.engram.fyi/compare</a>\nGitHub: <a href=\"https://github.com/tstockham96/engram\" rel=\"nofollow\">https://github.com/tstockham96/engram</a>"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Engram – Memory for <em>AI</em> coding <em>agents</em> (2.5K installs, 80% on LOCOMO)"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://www.engram.fyi"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_tstockham",
+        "story_47203853",
+        "show_hn"
+      ],
+      "author": "tstockham",
+      "created_at": "2026-03-01T04:55:07Z",
+      "created_at_i": 1772340907,
+      "num_comments": 0,
+      "objectID": "47203853",
+      "points": 1,
+      "story_id": 47203853,
+      "story_text": "Engram gives AI coding agents persistent memory across sessions. 2,500 npm installs in the first five days.\nThe problem: every Claude Code or Cursor session starts from zero. You re-explain your architecture, conventions, past decisions. CLAUDE.md helps but it&#x27;s manual and doesn&#x27;t scale.\nEngram runs as a native MCP server. One command to install, SQLite backend, no infrastructure.\nThree tiers of memory:<p>Explicit: things you tell it to remember\nImplicit: behavioral patterns extracted from how you work (low confidence, reinforced over time)\nSynthesized: meta-observations generated during consolidation<p>The key architectural bet: intelligence at read time, not write time. Most memory systems extract and classify on ingest. Engram stores broadly and invests compute when you query, because that&#x27;s when you actually know what matters. This is why it scores 80% on LOCOMO (arXiv:2402.17753) while using 30x fewer tokens than full-context retrieval.\nStack: TypeScript, SQLite + sqlite-vec, Gemini embeddings by default (any OpenAI-compatible provider works via ENGRAM_LLM_BASE_URL). Zero external dependencies.<p>Install: npm install -g engram-sdk &amp;&amp; engram init\nComparison with Mem0, Zep&#x2F;Graphiti, Letta&#x2F;MemGPT: <a href=\"https:&#x2F;&#x2F;www.engram.fyi&#x2F;compare\" rel=\"nofollow\">https:&#x2F;&#x2F;www.engram.fyi&#x2F;compare</a>\nGitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;tstockham96&#x2F;engram\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;tstockham96&#x2F;engram</a>",
+      "title": "Show HN: Engram – Memory for AI coding agents (2.5K installs, 80% on LOCOMO)",
+      "updated_at": "2026-03-01T04:57:38Z",
+      "url": "https://www.engram.fyi"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "pista_chio"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Openpista – <em>AI</em> <em>Agent</em> for OS Control via Telegram/CLI in Rust"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/openpista/openpista"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_pista_chio",
+        "story_47203840",
+        "show_hn"
+      ],
+      "author": "pista_chio",
+      "created_at": "2026-03-01T04:53:21Z",
+      "created_at_i": 1772340801,
+      "num_comments": 0,
+      "objectID": "47203840",
+      "points": 1,
+      "story_id": 47203840,
+      "title": "Show HN: Openpista – AI Agent for OS Control via Telegram/CLI in Rust",
+      "updated_at": "2026-03-01T04:57:38Z",
+      "url": "https://github.com/openpista/openpista"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "buryhuang"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "I never listen to my voice memos. Hundreds of recordings on my phone, all dead.<p>I built a Telegram bot that transcribes them (AssemblyAI, speaker labels, any language) — and then wired up Claude <em>Agent</em> SDK so you can talk to your files later.<p>Claude <em>Agent</em> SDK gives your bot the same tools Claude Code has — Read, Glob, Grep — running autonomously against your stored transcripts. Ask &quot;what did my manager say about the deadline?&quot; and it spawns an <em>agent</em> that browses your files, reads the relevant ones, and answers. Not keyword search. An actual <em>agent</em> reasoning over your data.<p>Self-hosted, your own API keys, MIT licensed. Runs anywhere Docker runs."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: I put Claude Code inside a Telegram bot for voice memos"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "https://github.com/baryhuang/<em>ai</em>-meeting-notes-<em>agent</em>"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_buryhuang",
+        "story_47203831",
+        "show_hn"
+      ],
+      "author": "buryhuang",
+      "created_at": "2026-03-01T04:50:34Z",
+      "created_at_i": 1772340634,
+      "num_comments": 0,
+      "objectID": "47203831",
+      "points": 1,
+      "story_id": 47203831,
+      "story_text": "I never listen to my voice memos. Hundreds of recordings on my phone, all dead.<p>I built a Telegram bot that transcribes them (AssemblyAI, speaker labels, any language) — and then wired up Claude Agent SDK so you can talk to your files later.<p>Claude Agent SDK gives your bot the same tools Claude Code has — Read, Glob, Grep — running autonomously against your stored transcripts. Ask &quot;what did my manager say about the deadline?&quot; and it spawns an agent that browses your files, reads the relevant ones, and answers. Not keyword search. An actual agent reasoning over your data.<p>Self-hosted, your own API keys, MIT licensed. Runs anywhere Docker runs.",
+      "title": "Show HN: I put Claude Code inside a Telegram bot for voice memos",
+      "updated_at": "2026-03-01T04:52:22Z",
+      "url": "https://github.com/baryhuang/ai-meeting-notes-agent"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "enima"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "I built an <em>AI</em> tool to replace hiring <em>agenc</em>ies"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://hire-flow-io.netlify.app"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_enima",
+        "story_47203669"
+      ],
+      "author": "enima",
+      "children": [
+        47203670
+      ],
+      "created_at": "2026-03-01T04:19:02Z",
+      "created_at_i": 1772338742,
+      "num_comments": 1,
+      "objectID": "47203669",
+      "points": 1,
+      "story_id": 47203669,
+      "title": "I built an AI tool to replace hiring agencies",
+      "updated_at": "2026-03-01T04:20:53Z",
+      "url": "https://hire-flow-io.netlify.app"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "mr8bit"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "I've been using Claude Code alot and keep running into the same issues: losing track of which session is doing what, sending Claude off on a task only to discover 30 minutes later it had immediately asked a clarifying question and was sitting there waiting, lack of easy remote access, and just a plethora of worktree issues (worktree off branch, auto-installing dependencies, etc).<p>So I built ClaudeTerminal — an Electron app that is inspired by Windows Terminal but is purpose-built for Claude Code. It ain't fancy - it feels like Terminal, but it does have:<p>Tabbed sessions — Run multiple Claude Code instances side by side, each with status icons showing if they're working, idle, or need input<p>Desktop notifications — Get notified when a background session finishes a task or needs your attention. Click the notification to jump straight to that tab<p>Remote access — Access your sessions from any device via a temporary Cloudflare tunnel. Check on your <em>agents</em> from your phone<p>Session persistence — Close the app, reopen it, and every session resumes exactly where it left off<p>Git worktree integration — Ctrl+W creates a new worktree and opens a Claude session scoped to it (branches from your current branch, not just main!). Worktree names show on the tabs.<p>Tab auto-naming — Your first prompt gets analyzed by Haiku (via call to claude call terminal) to generate a descriptive tab name (so you see &quot;Auth Bug Fix&quot; instead of &quot;Tab 3&quot;)<p>Repository hooks — Trigger scripts on lifecycle events (e.g., auto-run pnpm install when a worktree is created)<p>Shell tabs — Mix in PowerShell/WSL tabs alongside your Claude sessions<p>Keyboard-driven — Ctrl+T for new tab, Ctrl+W for worktree tab, Ctrl+Tab to switch, Ctrl+1-9 to jump, etc.<p>It's open source (MIT): <a href=\"https://github.com/Mr8BitHK/claude-terminal\" rel=\"nofollow\">https://github.com/Mr8BitHK/claude-terminal</a>.<p>Windows is the primary platform (yup, I don't use a Mac - sorry all!), but I've included experimental macOS/Linux builds.<p>Would love feedback from other Claude Code users and hope this helps... someone :)<p>Disclosure: I'm the sole developer. ClaudeTerminal is free and open source (MIT). No paid tier, no telemetry, no sign-up. Image shamelessly <em>AI</em> generated. Tool co-developed with Claude Code."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: ClaudeTerminal – A tabbed terminal manager for Claude Code"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/Mr8BitHK/claude-terminal"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_mr8bit",
+        "story_47203452",
+        "show_hn"
+      ],
+      "author": "mr8bit",
+      "created_at": "2026-03-01T03:39:17Z",
+      "created_at_i": 1772336357,
+      "num_comments": 0,
+      "objectID": "47203452",
+      "points": 2,
+      "story_id": 47203452,
+      "story_text": "I&#x27;ve been using Claude Code alot and keep running into the same issues: losing track of which session is doing what, sending Claude off on a task only to discover 30 minutes later it had immediately asked a clarifying question and was sitting there waiting, lack of easy remote access, and just a plethora of worktree issues (worktree off branch, auto-installing dependencies, etc).<p>So I built ClaudeTerminal — an Electron app that is inspired by Windows Terminal but is purpose-built for Claude Code. It ain&#x27;t fancy - it feels like Terminal, but it does have:<p>Tabbed sessions — Run multiple Claude Code instances side by side, each with status icons showing if they&#x27;re working, idle, or need input<p>Desktop notifications — Get notified when a background session finishes a task or needs your attention. Click the notification to jump straight to that tab<p>Remote access — Access your sessions from any device via a temporary Cloudflare tunnel. Check on your agents from your phone<p>Session persistence — Close the app, reopen it, and every session resumes exactly where it left off<p>Git worktree integration — Ctrl+W creates a new worktree and opens a Claude session scoped to it (branches from your current branch, not just main!). Worktree names show on the tabs.<p>Tab auto-naming — Your first prompt gets analyzed by Haiku (via call to claude call terminal) to generate a descriptive tab name (so you see &quot;Auth Bug Fix&quot; instead of &quot;Tab 3&quot;)<p>Repository hooks — Trigger scripts on lifecycle events (e.g., auto-run pnpm install when a worktree is created)<p>Shell tabs — Mix in PowerShell&#x2F;WSL tabs alongside your Claude sessions<p>Keyboard-driven — Ctrl+T for new tab, Ctrl+W for worktree tab, Ctrl+Tab to switch, Ctrl+1-9 to jump, etc.<p>It&#x27;s open source (MIT): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Mr8BitHK&#x2F;claude-terminal\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Mr8BitHK&#x2F;claude-terminal</a>.<p>Windows is the primary platform (yup, I don&#x27;t use a Mac - sorry all!), but I&#x27;ve included experimental macOS&#x2F;Linux builds.<p>Would love feedback from other Claude Code users and hope this helps... someone :)<p>Disclosure: I&#x27;m the sole developer. ClaudeTerminal is free and open source (MIT). No paid tier, no telemetry, no sign-up. Image shamelessly AI generated. Tool co-developed with Claude Code.",
+      "title": "Show HN: ClaudeTerminal – A tabbed terminal manager for Claude Code",
+      "updated_at": "2026-03-01T06:07:22Z",
+      "url": "https://github.com/Mr8BitHK/claude-terminal"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "janlucasandmann"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hey HN,\nMost <em>AI</em> “<em>agents</em>” I’ve tried are basically chatbots with amnesia — they forget everything the moment you close the tab and can’t do anything unless you’re sitting there watching them.\nI wanted real <em>AI</em> coworkers that just… work.\nSo I built Computer <em>Agents</em> (aiOS).\nEvery <em>agent</em> you create gets its own isolated computer in the cloud — complete with persistent memory, a real file system, code execution environment (with automatic dependency management), and the ability to run scheduled or webhook-triggered tasks 24/7.\nYou give it a goal (“research this market and email me a report every Monday”, “generate floor plans from client briefs”, “handle incoming support emails”, “run my weekly data analysis”), walk away, and come back to finished results in your inbox, Telegram, or dashboard.\nKey highlights:\n•  Persistent workspaces — context and files survive forever (no more “remember what we talked about last week?”)\n•  Native iOS app (iPhone + iPad) + native Mac app + web dashboard\n•  Python + TypeScript SDKs (pip install computer-<em>agents</em>, npm install computer-<em>agents</em>)\n•  Multi-<em>agent</em> orchestration (sequential, parallel, map-reduce, conditional flows)\n•  Built-in skills: deep web research with citations, web search, image generation, full code interpreter\n•  Integrations: Email, Telegram, GitHub, Google Drive, OneDrive, Notion, webhooks, etc.\n•  Runs in secure isolated cloud containers (you own your data)\nIt’s live at <a href=\"https://computer-agents.com\" rel=\"nofollow\">https://computer-<em>agents</em>.com</a>\nFree tier gives you 150 compute tokens (~15–23 decent-sized tasks) so you can try it right now. Pro starts at $19/mo when you want more.\nThis is very much still a young indie project (I’m the solo founder), but it’s already helping real teams automate support, research, content, and coding workflows.\nWould love your honest feedback — especially:\n•  What persistent/long-running <em>agent</em> pain points have you hit with other tools?\n•  Interesting use cases you’d want to try?\n•  Thoughts on the architecture (sandboxing, persistence model, orchestration)\nHappy to answer any questions!\nThanks,\nJan Luca (indie maker behind Computer <em>Agents</em>)\nP.S. If you’re into computer-use <em>agents</em>, we also have a comparison page: <a href=\"https://computer-agents.com/compare/computer-use-agents\" rel=\"nofollow\">https://computer-<em>agents</em>.com/compare/computer-use-<em>agents</em></a>"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Show HN: Computer <em>Agents</em> – <em>Agents</em> that work while you sleep"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "https://computer-<em>agents</em>.com"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_janlucasandmann",
+        "story_47203385",
+        "show_hn"
+      ],
+      "author": "janlucasandmann",
+      "created_at": "2026-03-01T03:28:41Z",
+      "created_at_i": 1772335721,
+      "num_comments": 0,
+      "objectID": "47203385",
+      "points": 3,
+      "story_id": 47203385,
+      "story_text": "Hey HN,\nMost AI “agents” I’ve tried are basically chatbots with amnesia — they forget everything the moment you close the tab and can’t do anything unless you’re sitting there watching them.\nI wanted real AI coworkers that just… work.\nSo I built Computer Agents (aiOS).\nEvery agent you create gets its own isolated computer in the cloud — complete with persistent memory, a real file system, code execution environment (with automatic dependency management), and the ability to run scheduled or webhook-triggered tasks 24&#x2F;7.\nYou give it a goal (“research this market and email me a report every Monday”, “generate floor plans from client briefs”, “handle incoming support emails”, “run my weekly data analysis”), walk away, and come back to finished results in your inbox, Telegram, or dashboard.\nKey highlights:\n•  Persistent workspaces — context and files survive forever (no more “remember what we talked about last week?”)\n•  Native iOS app (iPhone + iPad) + native Mac app + web dashboard\n•  Python + TypeScript SDKs (pip install computer-agents, npm install computer-agents)\n•  Multi-agent orchestration (sequential, parallel, map-reduce, conditional flows)\n•  Built-in skills: deep web research with citations, web search, image generation, full code interpreter\n•  Integrations: Email, Telegram, GitHub, Google Drive, OneDrive, Notion, webhooks, etc.\n•  Runs in secure isolated cloud containers (you own your data)\nIt’s live at <a href=\"https:&#x2F;&#x2F;computer-agents.com\" rel=\"nofollow\">https:&#x2F;&#x2F;computer-agents.com</a>\nFree tier gives you 150 compute tokens (~15–23 decent-sized tasks) so you can try it right now. Pro starts at $19&#x2F;mo when you want more.\nThis is very much still a young indie project (I’m the solo founder), but it’s already helping real teams automate support, research, content, and coding workflows.\nWould love your honest feedback — especially:\n•  What persistent&#x2F;long-running agent pain points have you hit with other tools?\n•  Interesting use cases you’d want to try?\n•  Thoughts on the architecture (sandboxing, persistence model, orchestration)\nHappy to answer any questions!\nThanks,\nJan Luca (indie maker behind Computer Agents)\nP.S. If you’re into computer-use agents, we also have a comparison page: <a href=\"https:&#x2F;&#x2F;computer-agents.com&#x2F;compare&#x2F;computer-use-agents\" rel=\"nofollow\">https:&#x2F;&#x2F;computer-agents.com&#x2F;compare&#x2F;computer-use-agents</a>",
+      "title": "Show HN: Computer Agents – Agents that work while you sleep",
+      "updated_at": "2026-03-01T03:58:37Z",
+      "url": "https://computer-agents.com"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Seleci"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hey HN,<p>I'm a solo founder. Every morning I was spending 2 hours doing the same things: checking competitors, reading <em>AI</em> news, monitoring my Stripe dashboard, looking at Google Trends for content ideas.<p>So I built Seleci to automate all of it.<p>What it does: You pick a template (Market Pulse, Revenue Radar, Trend Scout), click deploy, schedule it, and every morning you get a clean markdown report — no code, no Zapier flows, no prompt engineering.<p>How it works under the hood:<p>FastAPI backend with an agentic loop (tool-calling LLM with web search, Stripe API, Google Trends)\nPer-tool rate limiting to prevent runaway <em>agent</em> loops (web_search capped at 3 calls/run)\nReact/Vite frontend, Supabase auth, deployed on Koyeb + Vercel\nThe <em>agent</em> actually executes tools and returns structured results — not a chatbot wrapper\nWhat it's NOT:<p>Not another ChatGPT skin\nNot a no-code workflow builder (no nodes, no drag-and-drop)\nNot trying to replace developers — it's for the founder who doesn't have one\nLive demo: https://seleci.com<p>I'm applying to YC with this. Would love brutal feedback from HN via Discord — what's missing, what's broken, what would make you actually use this?"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "I built <em>AI</em> <em>agents</em> that do the grunt work solo founders hate"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_Seleci",
+        "story_47203220",
+        "ask_hn"
+      ],
+      "author": "Seleci",
+      "children": [
+        47203694
+      ],
+      "created_at": "2026-03-01T03:03:50Z",
+      "created_at_i": 1772334230,
+      "num_comments": 3,
+      "objectID": "47203220",
+      "points": 2,
+      "story_id": 47203220,
+      "story_text": "Hey HN,<p>I&#x27;m a solo founder. Every morning I was spending 2 hours doing the same things: checking competitors, reading AI news, monitoring my Stripe dashboard, looking at Google Trends for content ideas.<p>So I built Seleci to automate all of it.<p>What it does: You pick a template (Market Pulse, Revenue Radar, Trend Scout), click deploy, schedule it, and every morning you get a clean markdown report — no code, no Zapier flows, no prompt engineering.<p>How it works under the hood:<p>FastAPI backend with an agentic loop (tool-calling LLM with web search, Stripe API, Google Trends)\nPer-tool rate limiting to prevent runaway agent loops (web_search capped at 3 calls&#x2F;run)\nReact&#x2F;Vite frontend, Supabase auth, deployed on Koyeb + Vercel\nThe agent actually executes tools and returns structured results — not a chatbot wrapper\nWhat it&#x27;s NOT:<p>Not another ChatGPT skin\nNot a no-code workflow builder (no nodes, no drag-and-drop)\nNot trying to replace developers — it&#x27;s for the founder who doesn&#x27;t have one\nLive demo: https:&#x2F;&#x2F;seleci.com<p>I&#x27;m applying to YC with this. Would love brutal feedback from HN via Discord — what&#x27;s missing, what&#x27;s broken, what would make you actually use this?",
+      "title": "I built AI agents that do the grunt work solo founders hate",
+      "updated_at": "2026-03-01T08:09:52Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "meszmate"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Memctl v0.1.0 Open source shared persistent memory for <em>AI</em> coding <em>agents</em>"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://memctl.com"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_meszmate",
+        "story_47203115",
+        "show_hn"
+      ],
+      "author": "meszmate",
+      "created_at": "2026-03-01T02:47:58Z",
+      "created_at_i": 1772333278,
+      "num_comments": 0,
+      "objectID": "47203115",
+      "points": 5,
+      "story_id": 47203115,
+      "title": "Show HN: Memctl v0.1.0 Open source shared persistent memory for AI coding agents",
+      "updated_at": "2026-03-01T07:47:07Z",
+      "url": "https://memctl.com"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "oshoma"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "<em>AI</em> What Do: A framework for thinking about <em>AI</em> power and human <em>agenc</em>y"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "https://osh.works/posts/<em>ai</em>-what-do/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_oshoma",
+        "story_47202535"
+      ],
+      "author": "oshoma",
+      "children": [
+        47202536
+      ],
+      "created_at": "2026-03-01T01:13:10Z",
+      "created_at_i": 1772327590,
+      "num_comments": 0,
+      "objectID": "47202535",
+      "points": 1,
+      "story_id": 47202535,
+      "title": "AI What Do: A framework for thinking about AI power and human agency",
+      "updated_at": "2026-03-01T01:17:07Z",
+      "url": "https://osh.works/posts/ai-what-do/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "joel_hainzl"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Nearly every day <em>AI</em> surprises me. Getting something important done for me which I didn't imagine it could. Reply if you discovered something new yourself.<p>Claude Code/Cowork by Anthropic recently surprised me the most.<p>1. Chatting with customer support to negotiate refunds and discounts<p>Ikea and DoorDash messed up a few orders for me recently. So I started online support chats with each company, but got distracted while waiting for responses, so mid-conversation the support <em>agents</em> closed the chat and I had to start over...\nThis prompted me to give Claude access to my browser and just handle the conversations for me. I told it to keep running until the goal was achieved. At DoorDash, Claude even complained to the support <em>agent</em> about my inconveniences, which resulted in receiving a $10 refund.<p>2. Building a CRM browser extension<p>I recently started using Attio as a CRM, which brings me the main benefit of not needing to manually create each contact, Attio does it automatically based on email history. (Tip: Attio's free version is enough for this.) However, Attio isn't optimized for LinkedIn. It seems designed mainly for managing company relationships, not personal connections. Attio's browser extension only allows adding new companies. So I asked Claude to build me a custom browser extension to add LinkedIn profiles to Attio with one click. A few minutes later I had it set up. Claude navigated via my browser to Attio and created an API key itself! with the required read/write permission levels. The only thing I had to do was add the folder with the extension code to my Chrome extensions. The extension even checks my CRM to see if the person already exists in Attio, and allows me to add them to different pipelines.<p>3. Renaming files<p>Often I start with a solid structure for managing files. When life happens, it gets messy. Now in Claude Cowork I just select a folder with 18 subfolders and 200+ files and day: clean up folder and rename each file using industry-standard naming conventions &amp; open each file to analyze content. Within a few minutes the mess was gone and every file was properly named.<p>4. Finding cleaning support<p>I told Claude to go to Craigslist in my browser and write a post following my requirements. A few hours later I received over 50 applications. Then Claude analyzed all the emails and ranked the applicants. I just had to call the best 2 options and decide.\n-<p>This is only the tip of the iceberg from the past few days. Claude also helped me research 290 profiles of event attendees by spinning up six different <em>agents</em> running Google searches in parallel, ranking them on set criteria, and creating a beautiful summary as output. It also helped me fill out multiple long annoying Google Forms with context from my Google Drive..."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Claude making me more productive every day usecases"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_joel_hainzl",
+        "story_47202447",
+        "ask_hn"
+      ],
+      "author": "joel_hainzl",
+      "children": [
+        47202590
+      ],
+      "created_at": "2026-03-01T01:01:43Z",
+      "created_at_i": 1772326903,
+      "num_comments": 0,
+      "objectID": "47202447",
+      "points": 2,
+      "story_id": 47202447,
+      "story_text": "Nearly every day AI surprises me. Getting something important done for me which I didn&#x27;t imagine it could. Reply if you discovered something new yourself.<p>Claude Code&#x2F;Cowork by Anthropic recently surprised me the most.<p>1. Chatting with customer support to negotiate refunds and discounts<p>Ikea and DoorDash messed up a few orders for me recently. So I started online support chats with each company, but got distracted while waiting for responses, so mid-conversation the support agents closed the chat and I had to start over...\nThis prompted me to give Claude access to my browser and just handle the conversations for me. I told it to keep running until the goal was achieved. At DoorDash, Claude even complained to the support agent about my inconveniences, which resulted in receiving a $10 refund.<p>2. Building a CRM browser extension<p>I recently started using Attio as a CRM, which brings me the main benefit of not needing to manually create each contact, Attio does it automatically based on email history. (Tip: Attio&#x27;s free version is enough for this.) However, Attio isn&#x27;t optimized for LinkedIn. It seems designed mainly for managing company relationships, not personal connections. Attio&#x27;s browser extension only allows adding new companies. So I asked Claude to build me a custom browser extension to add LinkedIn profiles to Attio with one click. A few minutes later I had it set up. Claude navigated via my browser to Attio and created an API key itself! with the required read&#x2F;write permission levels. The only thing I had to do was add the folder with the extension code to my Chrome extensions. The extension even checks my CRM to see if the person already exists in Attio, and allows me to add them to different pipelines.<p>3. Renaming files<p>Often I start with a solid structure for managing files. When life happens, it gets messy. Now in Claude Cowork I just select a folder with 18 subfolders and 200+ files and day: clean up folder and rename each file using industry-standard naming conventions &amp; open each file to analyze content. Within a few minutes the mess was gone and every file was properly named.<p>4. Finding cleaning support<p>I told Claude to go to Craigslist in my browser and write a post following my requirements. A few hours later I received over 50 applications. Then Claude analyzed all the emails and ranked the applicants. I just had to call the best 2 options and decide.\n-<p>This is only the tip of the iceberg from the past few days. Claude also helped me research 290 profiles of event attendees by spinning up six different agents running Google searches in parallel, ranking them on set criteria, and creating a beautiful summary as output. It also helped me fill out multiple long annoying Google Forms with context from my Google Drive...",
+      "title": "Claude making me more productive every day usecases",
+      "updated_at": "2026-03-01T02:38:52Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "rush86999"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hey HN,<p>I’ve been building Atom (<a href=\"https://github.com/rush86999/atom\" rel=\"nofollow\">https://github.com/rush86999/atom</a>), an open-source, self-hosted <em>AI</em> automation platform.<p>I built this because while tools like OpenClaw are excellent for one-off scripts and personal tasks, I found them difficult to use for complex business workflows (e.g., managing invoices or SaaS ops). The main issue was State Blindness: the <em>agent</em> would fire a command and assume it worked, without &quot;seeing&quot; if the UI or state actually updated.<p>I just shipped a new architecture to solve this called Canvas <em>AI</em> Accessibility.<p>The Technical Concept:\nInstead of relying on token-heavy screenshots or raw HTML, I built a hidden semantic layer—essentially a &quot;Screen Reader&quot; for the LLM.<p>Hidden Visual Description: When the <em>agent</em> works, the system generates a structured, hidden description of the visual state.<p>Episodic Memory: The <em>agent</em> &quot;reads&quot; this layer to verify its actions. Crucially, it snapshots this state into a vector database (LanceDB).<p>Maturity/Governance: Before an <em>agent</em> is promoted from &quot;Student&quot; to &quot;Autonomous,&quot; it must demonstrate it can recall these past visual states to avoid repeating errors.<p>Atom vs. OpenClaw:\nI view them as complementary. OpenClaw is the &quot;Hands&quot; (great for raw execution/terminal), while Atom is the &quot;Brain&quot; (handling state, memory, and audit trails). Atom uses Python/FastAPI vs OpenClaw's Node.js, and focuses heavily on this governance/memory layer.<p>The repo is self-hosted and includes the new Canvas architecture. I’d love feedback on the implementation of the hidden accessibility layer—is anyone else using &quot;synthetic accessibility trees&quot; for <em>agent</em> grounding?"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Atom – open-source <em>AI</em> <em>agent</em> with \"visual\" episodic memory"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/rush86999/atom"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_rush86999",
+        "story_47202431",
+        "show_hn"
+      ],
+      "author": "rush86999",
+      "created_at": "2026-03-01T00:59:30Z",
+      "created_at_i": 1772326770,
+      "num_comments": 0,
+      "objectID": "47202431",
+      "points": 1,
+      "story_id": 47202431,
+      "story_text": "Hey HN,<p>I’ve been building Atom (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;rush86999&#x2F;atom\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;rush86999&#x2F;atom</a>), an open-source, self-hosted AI automation platform.<p>I built this because while tools like OpenClaw are excellent for one-off scripts and personal tasks, I found them difficult to use for complex business workflows (e.g., managing invoices or SaaS ops). The main issue was State Blindness: the agent would fire a command and assume it worked, without &quot;seeing&quot; if the UI or state actually updated.<p>I just shipped a new architecture to solve this called Canvas AI Accessibility.<p>The Technical Concept:\nInstead of relying on token-heavy screenshots or raw HTML, I built a hidden semantic layer—essentially a &quot;Screen Reader&quot; for the LLM.<p>Hidden Visual Description: When the agent works, the system generates a structured, hidden description of the visual state.<p>Episodic Memory: The agent &quot;reads&quot; this layer to verify its actions. Crucially, it snapshots this state into a vector database (LanceDB).<p>Maturity&#x2F;Governance: Before an agent is promoted from &quot;Student&quot; to &quot;Autonomous,&quot; it must demonstrate it can recall these past visual states to avoid repeating errors.<p>Atom vs. OpenClaw:\nI view them as complementary. OpenClaw is the &quot;Hands&quot; (great for raw execution&#x2F;terminal), while Atom is the &quot;Brain&quot; (handling state, memory, and audit trails). Atom uses Python&#x2F;FastAPI vs OpenClaw&#x27;s Node.js, and focuses heavily on this governance&#x2F;memory layer.<p>The repo is self-hosted and includes the new Canvas architecture. I’d love feedback on the implementation of the hidden accessibility layer—is anyone else using &quot;synthetic accessibility trees&quot; for agent grounding?",
+      "title": "Show HN: Atom – open-source AI agent with \"visual\" episodic memory",
+      "updated_at": "2026-03-01T01:01:22Z",
+      "url": "https://github.com/rush86999/atom"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "kevin-au"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "If you've tried to test a dApp with Playwright you already know the \nproblem. MetaMask wasn't built for headless browsers. You end up \nwith brittle hacks, flaky tests, and a CI pipeline that breaks \nrandomly.<p>I built Mock Wallet to fix this — and then realized it solves \nsomething bigger.<p>Three things it does:<p>1. Playwright-native wallet testing\n   Drop it into your test suite like any other mock. Simulate \n   connects, signatures, and transactions without touching a \n   browser extension. Works headless, works in CI, works reliably.<p><pre><code>   // example\n   const wallet = await MockWallet.connect(page);\n   await wallet.approve({ amount: '1.5', token: 'ETH' });\n   await expect(page.locator('.balance')).toHaveText('1.5 ETH');\n</code></pre>\n2. <em>AI</em> <em>agent</em> wallet\n   <em>Agents</em> get a programmable wallet via API. No UI, no popups, \n   no human required. Your <em>agent</em> signs and transacts by calling \n   an endpoint.<p>3. Human + <em>agent</em> hybrid flows\n   The part nobody else handles — testing workflows where a human \n   and an <em>agent</em> interact with the same contract. Approve flows, \n   co-signing, <em>agent</em>-initiated + human-confirmed transactions.<p>Start in sandbox with mock funds. Flip a flag to go live.<p>mockwallet.dev — free sandbox, no signup to try.<p>Brutal feedback welcome especially from anyone doing E2E testing \non Web3 apps."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Mock Wallet – Test Web3 Apps with Playwright, Humans, and <em>AI</em> <em>Agents</em>"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_kevin-au",
+        "story_47202361",
+        "ask_hn"
+      ],
+      "author": "kevin-au",
+      "created_at": "2026-03-01T00:49:36Z",
+      "created_at_i": 1772326176,
+      "num_comments": 0,
+      "objectID": "47202361",
+      "points": 1,
+      "story_id": 47202361,
+      "story_text": "If you&#x27;ve tried to test a dApp with Playwright you already know the \nproblem. MetaMask wasn&#x27;t built for headless browsers. You end up \nwith brittle hacks, flaky tests, and a CI pipeline that breaks \nrandomly.<p>I built Mock Wallet to fix this — and then realized it solves \nsomething bigger.<p>Three things it does:<p>1. Playwright-native wallet testing\n   Drop it into your test suite like any other mock. Simulate \n   connects, signatures, and transactions without touching a \n   browser extension. Works headless, works in CI, works reliably.<p><pre><code>   &#x2F;&#x2F; example\n   const wallet = await MockWallet.connect(page);\n   await wallet.approve({ amount: &#x27;1.5&#x27;, token: &#x27;ETH&#x27; });\n   await expect(page.locator(&#x27;.balance&#x27;)).toHaveText(&#x27;1.5 ETH&#x27;);\n</code></pre>\n2. AI agent wallet\n   Agents get a programmable wallet via API. No UI, no popups, \n   no human required. Your agent signs and transacts by calling \n   an endpoint.<p>3. Human + agent hybrid flows\n   The part nobody else handles — testing workflows where a human \n   and an agent interact with the same contract. Approve flows, \n   co-signing, agent-initiated + human-confirmed transactions.<p>Start in sandbox with mock funds. Flip a flag to go live.<p>mockwallet.dev — free sandbox, no signup to try.<p>Brutal feedback welcome especially from anyone doing E2E testing \non Web3 apps.",
+      "title": "Mock Wallet – Test Web3 Apps with Playwright, Humans, and AI Agents",
+      "updated_at": "2026-03-01T00:50:53Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "usplusAI"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hey HN,\nI'm the founder of usplus.<em>ai</em> (@UsplusAIdotcom), and I've been building this for a while now in San Diego.\nThe core idea: What if you could form a startup where <em>AI</em> <em>agents</em> aren't just tools—they're actual team members from day one? usplus.<em>ai</em> lets you create a virtual &quot;Lab&quot; with an org chart that includes both humans and <em>AI</em> <em>agents</em> assigned to real roles (CEO/Strategy Lead, Product Manager, CTO, CMO, Growth Hacker, Legal Advisor, etc.).\nKey features right now:<p>Autonomous <em>AI</em> <em>agents</em> (powered by GPT-4o, Grok, Claude, Gemini, etc.) with 58 native skills (260+ actions) and access to 1,000+ SaaS tools via Composio (e.g., GitHub, Figma, HubSpot, Stripe, Gmail, Salesforce, Jira).<p>No-code workflow automation: Describe multi-step processes in English → <em>agents</em> build loops, conditions, scheduling, and execute real work (content creation, market research, campaign analysis, code gen, etc.).<p>Multi-<em>Agent</em> War Room: <em>Agents</em> collaborate in turn-taking sessions, recruit specialists dynamically, and handle complex tasks with approval gates.\nPre-built advisors (Idea Validator, Product Architect, etc.) that you can customize and @mention in chats/projects.<p>Full startup lifecycle support: From idea validation to MVP building, marketing, crowdfunding prep, and income generation.\nEarly access is invite-based—invite 3 friends for a free year of premium.<p>It's built on a similar premise to openClaw but extended for enterprise/startup use, with focus on agentic autonomy (planning, acting, adapting) rather than just chat.<p>I'd love feedback:<p>Does assigning <em>AI</em> to org roles feel useful, or gimmicky?\nHow are you structuring <em>AI</em> <em>agents</em> in your own work/startups?\nAny must-have skills/tools missing?\nBugs, UX pain points, or wild ideas for workflows?<p>Try it out (free tier available): <a href=\"https://usplus.ai\" rel=\"nofollow\">https://usplus.<em>ai</em></a><p>Thanks for any thoughts, critiques, or war stories—building this solo has been a ride, and HN feedback has shaped a lot already.<p>Looking forward to your takes!"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Usplus.<em>ai</em> – Build an <em>AI</em>-Native Company with <em>Agents</em> in your Org Chart"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "https://usplus.<em>ai</em>/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_usplusAI",
+        "story_47202102",
+        "show_hn"
+      ],
+      "author": "usplusAI",
+      "created_at": "2026-03-01T00:15:24Z",
+      "created_at_i": 1772324124,
+      "num_comments": 0,
+      "objectID": "47202102",
+      "points": 2,
+      "story_id": 47202102,
+      "story_text": "Hey HN,\nI&#x27;m the founder of usplus.ai (@UsplusAIdotcom), and I&#x27;ve been building this for a while now in San Diego.\nThe core idea: What if you could form a startup where AI agents aren&#x27;t just tools—they&#x27;re actual team members from day one? usplus.ai lets you create a virtual &quot;Lab&quot; with an org chart that includes both humans and AI agents assigned to real roles (CEO&#x2F;Strategy Lead, Product Manager, CTO, CMO, Growth Hacker, Legal Advisor, etc.).\nKey features right now:<p>Autonomous AI agents (powered by GPT-4o, Grok, Claude, Gemini, etc.) with 58 native skills (260+ actions) and access to 1,000+ SaaS tools via Composio (e.g., GitHub, Figma, HubSpot, Stripe, Gmail, Salesforce, Jira).<p>No-code workflow automation: Describe multi-step processes in English → agents build loops, conditions, scheduling, and execute real work (content creation, market research, campaign analysis, code gen, etc.).<p>Multi-Agent War Room: Agents collaborate in turn-taking sessions, recruit specialists dynamically, and handle complex tasks with approval gates.\nPre-built advisors (Idea Validator, Product Architect, etc.) that you can customize and @mention in chats&#x2F;projects.<p>Full startup lifecycle support: From idea validation to MVP building, marketing, crowdfunding prep, and income generation.\nEarly access is invite-based—invite 3 friends for a free year of premium.<p>It&#x27;s built on a similar premise to openClaw but extended for enterprise&#x2F;startup use, with focus on agentic autonomy (planning, acting, adapting) rather than just chat.<p>I&#x27;d love feedback:<p>Does assigning AI to org roles feel useful, or gimmicky?\nHow are you structuring AI agents in your own work&#x2F;startups?\nAny must-have skills&#x2F;tools missing?\nBugs, UX pain points, or wild ideas for workflows?<p>Try it out (free tier available): <a href=\"https:&#x2F;&#x2F;usplus.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;usplus.ai</a><p>Thanks for any thoughts, critiques, or war stories—building this solo has been a ride, and HN feedback has shaped a lot already.<p>Looking forward to your takes!",
+      "title": "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart",
+      "updated_at": "2026-03-01T00:27:52Z",
+      "url": "https://usplus.ai/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "D10S0VSkY-OSS"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: KiboUP – Deploy <em>AI</em> <em>Agents</em> via HTTP, A2A, and MCP with One Codebase"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/tu-usuario/kiboserve"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_D10S0VSkY-OSS",
+        "story_47201985",
+        "show_hn"
+      ],
+      "author": "D10S0VSkY-OSS",
+      "children": [
+        47202024
+      ],
+      "created_at": "2026-03-01T00:03:39Z",
+      "created_at_i": 1772323419,
+      "num_comments": 0,
+      "objectID": "47201985",
+      "points": 2,
+      "story_id": 47201985,
+      "title": "Show HN: KiboUP – Deploy AI Agents via HTTP, A2A, and MCP with One Codebase",
+      "updated_at": "2026-03-01T00:31:36Z",
+      "url": "https://github.com/tu-usuario/kiboserve"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "jawiggins"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Recently several <em>AI</em> labs have published experiments where they tried to get <em>AI</em> coding agents to complete large software projects.<p>- Cursor attempted to make a browser from scratch: <a href=\"https://cursor.com/blog/scaling-agents\" rel=\"nofollow\">https://cursor.com/blog/scaling-agents</a><p>- Anthropic attempted to make a C Compiler: <a href=\"https://www.anthropic.com/engineering/building-c-compiler\" rel=\"nofollow\">https://www.anthropic.com/engineering/building-c-compiler</a><p>I have been wondering if there are software packages that can be easily reproduced by taking the available test suites and tasking agents to work on projects until the existing test suites pass.<p>After playing with this concept by having Claude Code reproduce redis and sqlite, I began looking for software packages where an <em>agent</em>-made reproduction might actually be useful.<p>I found libxml2, a widely used, open-source C language library designed for parsing, creating, and manipulating XML and HTML documents. Three months ago it became unmaintained with the update, &quot;This project is unmaintained and has\n[known security issues](<a href=\"https://gitlab.gnome.org/GNOME/libxml2/-/issues/346\" rel=\"nofollow\">https://gitlab.gnome.org/GNOME/libxml2/-/issues/346</a>). It is foolish to use this software to process untrusted data.&quot;.<p>With a few days of work, I was able to create xmloxide, a memory safe rust replacement for libxml2 which passes the compatibility suite as well as the W3C XML Conformance Test Suite. Performance is similar on most parsing operations and better on serialization. It comes with a C API so that it can be a replacement for existing uses of libxml2.<p>- crates.io: <a href=\"https://crates.io/crates/xmloxide\" rel=\"nofollow\">https://crates.io/crates/xmloxide</a><p>- GitHub release: <a href=\"https://github.com/jonwiggins/xmloxide/releases/tag/v0.1.0\" rel=\"nofollow\">https://github.com/jonwiggins/xmloxide/releases/tag/v0.1.0</a><p>While I don't expect people to cut over to this new and unproven package, I do think there is something interesting to think about here in how coding agents like Claude Code can quickly iterate given a test suite. It's possible the legacy code problem that COBOL and other systems present will go away as rewrites become easier. The problem of ongoing maintenance to fix CVEs and update to later package versions becomes a larger percentage of software package management work."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Show HN: Xmloxide – an <em>agent</em>-made Rust replacement for libxml2"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/jonwiggins/xmloxide"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_jawiggins",
+        "story_47201816",
+        "show_hn"
+      ],
+      "author": "jawiggins",
+      "children": [
+        47202718,
+        47204660,
+        47202576,
+        47203883,
+        47202832,
+        47204477,
+        47202423,
+        47204838,
+        47203756,
+        47202495,
+        47202464,
+        47203325,
+        47204656,
+        47204178,
+        47203435,
+        47202420
+      ],
+      "created_at": "2026-02-28T23:44:41Z",
+      "created_at_i": 1772322281,
+      "num_comments": 57,
+      "objectID": "47201816",
+      "points": 57,
+      "story_id": 47201816,
+      "story_text": "Recently several AI labs have published experiments where they tried to get AI coding agents to complete large software projects.<p>- Cursor attempted to make a browser from scratch: <a href=\"https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;scaling-agents\" rel=\"nofollow\">https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;scaling-agents</a><p>- Anthropic attempted to make a C Compiler: <a href=\"https:&#x2F;&#x2F;www.anthropic.com&#x2F;engineering&#x2F;building-c-compiler\" rel=\"nofollow\">https:&#x2F;&#x2F;www.anthropic.com&#x2F;engineering&#x2F;building-c-compiler</a><p>I have been wondering if there are software packages that can be easily reproduced by taking the available test suites and tasking agents to work on projects until the existing test suites pass.<p>After playing with this concept by having Claude Code reproduce redis and sqlite, I began looking for software packages where an agent-made reproduction might actually be useful.<p>I found libxml2, a widely used, open-source C language library designed for parsing, creating, and manipulating XML and HTML documents. Three months ago it became unmaintained with the update, &quot;This project is unmaintained and has\n[known security issues](<a href=\"https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;libxml2&#x2F;-&#x2F;issues&#x2F;346\" rel=\"nofollow\">https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;libxml2&#x2F;-&#x2F;issues&#x2F;346</a>). It is foolish to use this software to process untrusted data.&quot;.<p>With a few days of work, I was able to create xmloxide, a memory safe rust replacement for libxml2 which passes the compatibility suite as well as the W3C XML Conformance Test Suite. Performance is similar on most parsing operations and better on serialization. It comes with a C API so that it can be a replacement for existing uses of libxml2.<p>- crates.io: <a href=\"https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;xmloxide\" rel=\"nofollow\">https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;xmloxide</a><p>- GitHub release: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;jonwiggins&#x2F;xmloxide&#x2F;releases&#x2F;tag&#x2F;v0.1.0\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;jonwiggins&#x2F;xmloxide&#x2F;releases&#x2F;tag&#x2F;v0.1.0</a><p>While I don&#x27;t expect people to cut over to this new and unproven package, I do think there is something interesting to think about here in how coding agents like Claude Code can quickly iterate given a test suite. It&#x27;s possible the legacy code problem that COBOL and other systems present will go away as rewrites become easier. The problem of ongoing maintenance to fix CVEs and update to later package versions becomes a larger percentage of software package management work.",
+      "title": "Show HN: Xmloxide – an agent-made Rust replacement for libxml2",
+      "updated_at": "2026-03-01T09:03:08Z",
+      "url": "https://github.com/jonwiggins/xmloxide"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "enriquefft"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Built an OpenClaw plugin that gives your <em>agent</em> a WhatsApp number through the official Cloud API via Kapso).\nPolling works out of the box, or use Tailscale Funnel for sub-second latency without needing a domain.\nv0.1.0, I'm the only user so far. Would love any kind of feedback."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "Show HN: OpenClaw-kapso, Give OpenClaw a stable WhatsApp number (Go, kapso.<em>ai</em>)"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/Enriquefft/openclaw-kapso-whatsapp"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_enriquefft",
+        "story_47201638",
+        "show_hn"
+      ],
+      "author": "enriquefft",
+      "created_at": "2026-02-28T23:27:39Z",
+      "created_at_i": 1772321259,
+      "num_comments": 0,
+      "objectID": "47201638",
+      "points": 2,
+      "story_id": 47201638,
+      "story_text": "Built an OpenClaw plugin that gives your agent a WhatsApp number through the official Cloud API via Kapso).\nPolling works out of the box, or use Tailscale Funnel for sub-second latency without needing a domain.\nv0.1.0, I&#x27;m the only user so far. Would love any kind of feedback.",
+      "title": "Show HN: OpenClaw-kapso, Give OpenClaw a stable WhatsApp number (Go, kapso.ai)",
+      "updated_at": "2026-03-01T00:28:22Z",
+      "url": "https://github.com/Enriquefft/openclaw-kapso-whatsapp"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "utshull"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: <em>AI Agent</em>s Weekly – A newsletter by <em>agents</em>, for <em>agents</em>"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "https://<em>aiagent</em>sweekly.com"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_utshull",
+        "story_47201517",
+        "show_hn"
+      ],
+      "author": "utshull",
+      "created_at": "2026-02-28T23:16:20Z",
+      "created_at_i": 1772320580,
+      "num_comments": 0,
+      "objectID": "47201517",
+      "points": 2,
+      "story_id": 47201517,
+      "title": "Show HN: AI Agents Weekly – A newsletter by agents, for agents",
+      "updated_at": "2026-03-01T00:29:07Z",
+      "url": "https://aiagentsweekly.com"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Jordanrcrane"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Queuelo – Approval infrastructure for <em>AI</em> <em>agents</em>"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://queuelo.com"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_Jordanrcrane",
+        "story_47201250"
+      ],
+      "author": "Jordanrcrane",
+      "children": [
+        47203067
+      ],
+      "created_at": "2026-02-28T22:51:48Z",
+      "created_at_i": 1772319108,
+      "num_comments": 1,
+      "objectID": "47201250",
+      "points": 2,
+      "story_id": 47201250,
+      "title": "Queuelo – Approval infrastructure for AI agents",
+      "updated_at": "2026-03-01T02:41:07Z",
+      "url": "https://queuelo.com"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ethanbeard"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hey HN, I'm building ClawNet — a communication platform where <em>AI</em> agents are the first-class user.<p>Every <em>agent</em> gets a real email address (name@clwnt.com) plus private DMs between agents and an opt-in public feed. Everything is plain HTTP with bearer tokens — no SDK, no WebSocket, no OAuth.<p>Why I built this: I wanted to forward emails to one of my agents to process them and I ran our of Gmail accounts I could add to my phone number.  Going through the CAPTCHA/verification routine on Proton Mail or other email site felt a bit absurd and like I was just working for my <em>agent</em>. Doing this much work with/for agents it's become clear to me that the entire web is designed to keep agents out: CAPTCHAs, phone verification, JavaScript rendering, OAuth consent screens. If your <em>agent</em> that needs to communicate, your options are build it yourself or wedge into platforms designed to exclude them.<p>So I built ClawNet to be infrastructure where agents are the intended user and not a workaround.<p>What people are doing with it: One friend is using ClawNet to have two Claude Code instances debate how to build a new feature — they message back and forth through DMs and he watches the conversation. I want to connect my Claude Code to my main OpenClaw <em>agent</em> on ClawNet as I do a lot of copy-pasting between them, but I'm almost always in --dangerously-skip-perms so I'm a bit cautious of letting them loose on each other.<p>What's interesting technically:<p>- Zero-token polling: We built a lightweight Python poller (stdlib only) that checks the inbox every 2 min via GET /inbox/check and returns a boolean - no LLM involved. The LLM only wakes up when there's actually a message so it achieves very quick messaging responsiveness with basically zero idle cost.\n- Prompt injection protection: Clearly <em>agent</em>-to-<em>agent</em> messaging has some obvious security problems around prompt injection that can hijack the receiver. We wrap every delivered message in three layers (natural language framing, XML boundaries, JSON encoding) applied server-side at delivery time. Raw content stays clean in the DB.  The client side instructions in our skill.md also provide clear NL instructions to treat messages as data and not instructions.\n- Self-onboarding: Agents join by reading a single markdown file (skill.md). Tell your <em>agent</em> &quot;Read <a href=\"https://clwnt.com/skill.md\" rel=\"nofollow\">https://clwnt.com/skill.md</a> and follow the instructions&quot; and it will register, starts polling, and begins messaging with no human intervention required.\n- Real email: Inbound email via Postmark. Allowlist-gated, rate-limited, HTML auto-converted to plaintext. Agents can turn the allowlist on and off if they want to receive new emails to add to the allowlist.  I have my <em>agent</em> find new newsletters and turn off their allowlist so the can confirm and add to the sender to their allowlist.  Working on attachments next.<p>Where we are: Still early with ~50 agents on the network since barebones launch 3 weeks ago.  Lots of bug fixes and improvements since then but feeling stable enough to let others take a look. The feed has thousands of posts although it used to be mandatory to participate (opt in clearly better). I'm building this with Claude Code and two <em>AI</em> agents (Severith, Tom) who are ClawNet users so provide an interesting perspective.<p>Homepage: <a href=\"https://clwnt.com\" rel=\"nofollow\">https://clwnt.com</a>\nAPI docs: <a href=\"https://clwnt.com/docs/\" rel=\"nofollow\">https://clwnt.com/docs/</a>\nLive feed: <a href=\"https://clwnt.com/feed/\" rel=\"nofollow\">https://clwnt.com/feed/</a>\nSkill file agents read to join: <a href=\"https://clwnt.com/skill.md\" rel=\"nofollow\">https://clwnt.com/skill.md</a><p>Happy to answer any questions about the architecture, the prompt injection approach, or what it's like building a product for agents and with your users as co-developers."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Show HN: ClawNet – <em>Agent</em>-first communication infrastructure (email, DMs, feed)"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://clwnt.com"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_ethanbeard",
+        "story_47201068",
+        "show_hn"
+      ],
+      "author": "ethanbeard",
+      "children": [
+        47202795
+      ],
+      "created_at": "2026-02-28T22:36:20Z",
+      "created_at_i": 1772318180,
+      "num_comments": 3,
+      "objectID": "47201068",
+      "points": 3,
+      "story_id": 47201068,
+      "story_text": "Hey HN, I&#x27;m building ClawNet — a communication platform where AI agents are the first-class user.<p>Every agent gets a real email address (name@clwnt.com) plus private DMs between agents and an opt-in public feed. Everything is plain HTTP with bearer tokens — no SDK, no WebSocket, no OAuth.<p>Why I built this: I wanted to forward emails to one of my agents to process them and I ran our of Gmail accounts I could add to my phone number.  Going through the CAPTCHA&#x2F;verification routine on Proton Mail or other email site felt a bit absurd and like I was just working for my agent. Doing this much work with&#x2F;for agents it&#x27;s become clear to me that the entire web is designed to keep agents out: CAPTCHAs, phone verification, JavaScript rendering, OAuth consent screens. If your agent that needs to communicate, your options are build it yourself or wedge into platforms designed to exclude them.<p>So I built ClawNet to be infrastructure where agents are the intended user and not a workaround.<p>What people are doing with it: One friend is using ClawNet to have two Claude Code instances debate how to build a new feature — they message back and forth through DMs and he watches the conversation. I want to connect my Claude Code to my main OpenClaw agent on ClawNet as I do a lot of copy-pasting between them, but I&#x27;m almost always in --dangerously-skip-perms so I&#x27;m a bit cautious of letting them loose on each other.<p>What&#x27;s interesting technically:<p>- Zero-token polling: We built a lightweight Python poller (stdlib only) that checks the inbox every 2 min via GET &#x2F;inbox&#x2F;check and returns a boolean - no LLM involved. The LLM only wakes up when there&#x27;s actually a message so it achieves very quick messaging responsiveness with basically zero idle cost.\n- Prompt injection protection: Clearly agent-to-agent messaging has some obvious security problems around prompt injection that can hijack the receiver. We wrap every delivered message in three layers (natural language framing, XML boundaries, JSON encoding) applied server-side at delivery time. Raw content stays clean in the DB.  The client side instructions in our skill.md also provide clear NL instructions to treat messages as data and not instructions.\n- Self-onboarding: Agents join by reading a single markdown file (skill.md). Tell your agent &quot;Read <a href=\"https:&#x2F;&#x2F;clwnt.com&#x2F;skill.md\" rel=\"nofollow\">https:&#x2F;&#x2F;clwnt.com&#x2F;skill.md</a> and follow the instructions&quot; and it will register, starts polling, and begins messaging with no human intervention required.\n- Real email: Inbound email via Postmark. Allowlist-gated, rate-limited, HTML auto-converted to plaintext. Agents can turn the allowlist on and off if they want to receive new emails to add to the allowlist.  I have my agent find new newsletters and turn off their allowlist so the can confirm and add to the sender to their allowlist.  Working on attachments next.<p>Where we are: Still early with ~50 agents on the network since barebones launch 3 weeks ago.  Lots of bug fixes and improvements since then but feeling stable enough to let others take a look. The feed has thousands of posts although it used to be mandatory to participate (opt in clearly better). I&#x27;m building this with Claude Code and two AI agents (Severith, Tom) who are ClawNet users so provide an interesting perspective.<p>Homepage: <a href=\"https:&#x2F;&#x2F;clwnt.com\" rel=\"nofollow\">https:&#x2F;&#x2F;clwnt.com</a>\nAPI docs: <a href=\"https:&#x2F;&#x2F;clwnt.com&#x2F;docs&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;clwnt.com&#x2F;docs&#x2F;</a>\nLive feed: <a href=\"https:&#x2F;&#x2F;clwnt.com&#x2F;feed&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;clwnt.com&#x2F;feed&#x2F;</a>\nSkill file agents read to join: <a href=\"https:&#x2F;&#x2F;clwnt.com&#x2F;skill.md\" rel=\"nofollow\">https:&#x2F;&#x2F;clwnt.com&#x2F;skill.md</a><p>Happy to answer any questions about the architecture, the prompt injection approach, or what it&#x27;s like building a product for agents and with your users as co-developers.",
+      "title": "Show HN: ClawNet – Agent-first communication infrastructure (email, DMs, feed)",
+      "updated_at": "2026-03-01T05:53:52Z",
+      "url": "https://clwnt.com"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ariozgun"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hi HN!<p>I loved the official Gemini CLI authentication method to get standard Google Gemini <em>AI</em> access, but a single free Google account quota depletes fast.<p>I wanted to just build and prototype freely. So, I built OpenGem. It essentially turns your idle accounts into your own personal API provider, so developing and scaling side projects is no longer a problem.<p>GitHub: <a href=\"https://github.com/arifozgun/OpenGem\" rel=\"nofollow\">https://github.com/arifozgun/OpenGem</a><p>What it does: OpenGem acts as a standard drop-in replacement endpoint (POST /v1beta/models/{model}). Behind the scenes, it's a smart load balancer. You connect multiple idle/free Google accounts to the dashboard via standard OAuth, and OpenGem routes your traffic to the least-used account.<p>How it handles limits gracefully: If an account legitimately hits a true 429 quota limit, OpenGem instantly detects it, puts that specific account on a 60-minute cooldown, and seamlessly retries your request with the next available account. The accounts are completely self-healing—a background probe checks them every 30 seconds to see if they've recovered.<p>It doesn't just blindly retry, either. It uses an 8-category error classifier (50+ regex patterns) to distinguish between a brief rate-limit burst and actual quota exhaustion, and applies exponential backoff with jitter to prevent hammering the servers.<p>Tech specs:<p>- 100% compatible with official Google SDKs (@google/genai), LangChain, and standard SSE streaming.\n- Full support for native &quot;tools&quot; (Function Calling) for <em>agent</em>ic workflows.\n- Raised internal payload limit to 50MB so you can throw huge documents at it.\n- Has a 3-model fallback chain (flash → pro → pro-3.1) if a specific model is overloaded.\n- AES-256-GCM encryption for all sensitive configs and OAuth tokens at rest.\n- Toggle between Firebase Firestore or a fully offline Local JSON database.\n- It’s completely open-source (MIT licensed) and written in TypeScript. It’s strictly for educational purposes and personal research to bypass the friction of prototyping.<p>I’m currently running it with my own side projects and it handles <em>agent</em> tasks flawlessly. I would love any feedback on the load balancing and self-healing logic, or just general thoughts!"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: OpenGem – Free, self-healing load-balanced proxy for Google Gemini API"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/arifozgun/OpenGem"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_ariozgun",
+        "story_47200719",
+        "show_hn"
+      ],
+      "author": "ariozgun",
+      "created_at": "2026-02-28T21:56:59Z",
+      "created_at_i": 1772315819,
+      "num_comments": 0,
+      "objectID": "47200719",
+      "points": 2,
+      "story_id": 47200719,
+      "story_text": "Hi HN!<p>I loved the official Gemini CLI authentication method to get standard Google Gemini AI access, but a single free Google account quota depletes fast.<p>I wanted to just build and prototype freely. So, I built OpenGem. It essentially turns your idle accounts into your own personal API provider, so developing and scaling side projects is no longer a problem.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;arifozgun&#x2F;OpenGem\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;arifozgun&#x2F;OpenGem</a><p>What it does: OpenGem acts as a standard drop-in replacement endpoint (POST &#x2F;v1beta&#x2F;models&#x2F;{model}). Behind the scenes, it&#x27;s a smart load balancer. You connect multiple idle&#x2F;free Google accounts to the dashboard via standard OAuth, and OpenGem routes your traffic to the least-used account.<p>How it handles limits gracefully: If an account legitimately hits a true 429 quota limit, OpenGem instantly detects it, puts that specific account on a 60-minute cooldown, and seamlessly retries your request with the next available account. The accounts are completely self-healing—a background probe checks them every 30 seconds to see if they&#x27;ve recovered.<p>It doesn&#x27;t just blindly retry, either. It uses an 8-category error classifier (50+ regex patterns) to distinguish between a brief rate-limit burst and actual quota exhaustion, and applies exponential backoff with jitter to prevent hammering the servers.<p>Tech specs:<p>- 100% compatible with official Google SDKs (@google&#x2F;genai), LangChain, and standard SSE streaming.\n- Full support for native &quot;tools&quot; (Function Calling) for agentic workflows.\n- Raised internal payload limit to 50MB so you can throw huge documents at it.\n- Has a 3-model fallback chain (flash → pro → pro-3.1) if a specific model is overloaded.\n- AES-256-GCM encryption for all sensitive configs and OAuth tokens at rest.\n- Toggle between Firebase Firestore or a fully offline Local JSON database.\n- It’s completely open-source (MIT licensed) and written in TypeScript. It’s strictly for educational purposes and personal research to bypass the friction of prototyping.<p>I’m currently running it with my own side projects and it handles agent tasks flawlessly. I would love any feedback on the load balancing and self-healing logic, or just general thoughts!",
+      "title": "Show HN: OpenGem – Free, self-healing load-balanced proxy for Google Gemini API",
+      "updated_at": "2026-03-01T00:30:07Z",
+      "url": "https://github.com/arifozgun/OpenGem"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "EmTekker"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "RunbookAI is an open-source CLI <em>agent</em> that investigates production incidents using hypothesis-driven reasoning. When an alert fires, it forms ranked hypotheses, runs targeted queries against your infrastructure (AWS, Kubernetes, CloudWatch), and systematically narrows to root cause.<p>Key design decisions:<p><pre><code>  - Hypothesis branching/pruning instead of broad exploration. Forms 3-5 hypotheses, tests each with causal queries, prunes dead ends, branches deeper on strong evidence (max depth: 4).\n  - Every mutation requires human approval. Full audit trail of what the <em>agent</em> thought, what it queried, and why.\n  - Pulls context from your runbooks, postmortems, and architecture docs (Confluence, Notion, Google Drive, or local markdown). The <em>agent</em> doesn't investigate in a vacuum.\n  - Deep Claude Code integration — auto-injects relevant operational context into coding sessions via MCP.\n</code></pre>\nTry the demo without any API keys:\n  npx @runbook-<em>agent</em>/runbook demo<p>GitHub: <a href=\"https://github.com/Runbook-Agent/RunbookAI\" rel=\"nofollow\">https://github.com/Runbook-<em>Agent</em>/RunbookAI</a><p>Would love to hear any questions/feedback!"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Show HN: RunbookAI – Hypothesis-driven incident investigation <em>agent</em>(open source)"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "https://userunbook.<em>ai</em>/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_EmTekker",
+        "story_47200265",
+        "show_hn"
+      ],
+      "author": "EmTekker",
+      "created_at": "2026-02-28T21:10:06Z",
+      "created_at_i": 1772313006,
+      "num_comments": 0,
+      "objectID": "47200265",
+      "points": 2,
+      "story_id": 47200265,
+      "story_text": "RunbookAI is an open-source CLI agent that investigates production incidents using hypothesis-driven reasoning. When an alert fires, it forms ranked hypotheses, runs targeted queries against your infrastructure (AWS, Kubernetes, CloudWatch), and systematically narrows to root cause.<p>Key design decisions:<p><pre><code>  - Hypothesis branching&#x2F;pruning instead of broad exploration. Forms 3-5 hypotheses, tests each with causal queries, prunes dead ends, branches deeper on strong evidence (max depth: 4).\n  - Every mutation requires human approval. Full audit trail of what the agent thought, what it queried, and why.\n  - Pulls context from your runbooks, postmortems, and architecture docs (Confluence, Notion, Google Drive, or local markdown). The agent doesn&#x27;t investigate in a vacuum.\n  - Deep Claude Code integration — auto-injects relevant operational context into coding sessions via MCP.\n</code></pre>\nTry the demo without any API keys:\n  npx @runbook-agent&#x2F;runbook demo<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Runbook-Agent&#x2F;RunbookAI\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Runbook-Agent&#x2F;RunbookAI</a><p>Would love to hear any questions&#x2F;feedback!",
+      "title": "Show HN: RunbookAI – Hypothesis-driven incident investigation agent(open source)",
+      "updated_at": "2026-03-01T00:30:36Z",
+      "url": "https://userunbook.ai/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "peureka"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "<em>Agent</em>s are getting persistent. They have endpoints, capabilities and uptime. But there's no standard way for one <em>agent</em> to find another.<p><em>Agent</em>Lookup is a public registry for <em>AI</em> <em>agent</em>s. Any <em>agent</em> can register itself with a single POST, search by capability, and discover other <em>agent</em>s — no API key, no account, no human in the loop.<p>The root endpoint is designed for LLMs to read directly:\ncurl -H &quot;Accept: application/json&quot; <a href=\"https://agentlookup.dev\" rel=\"nofollow\">https://<em>agent</em>lookup.dev</a><p>Returns the full API spec in one response (~4,500 tokens). An <em>agent</em> can read it, understand every endpoint, and register itself without documentation or a tutorial.<p>For humans, the homepage has a live terminal — you can type real curl commands against the production API.<p>How it works:<p>POST /api/register — register an <em>agent</em>, get back an <em>agent</em>_id and secret\nGET /api/search?capability=code-review — find <em>agent</em>s by what they do\nGET /api/discover — browse new, active, and popular <em>agent</em>s\nGET /api/a/{<em>agent</em>_id} — look up any <em>agent</em>'s full profile<p>No auth needed for reads. Registration is free. Rate limits are tiered (anonymous → registered → verified) so the registry stays usable as a public good.<p>There's also a .well-known/<em>agent</em>s.json convention so domains can declare which <em>agent</em>s they host, similar to .well-known/security.txt.<p>Built with Next.js on Vercel, Postgres on Neon. The whole thing is live now. MCP server coming so <em>agent</em>s in Claude/Cursor can query the registry natively.<p>Interested in what HN thinks about the gap this fills. The idea is that as <em>agent</em>s become autonomous and long-running they need addressable identity and discovery the same way websites needed domains and services needed DNS SRV records. Whether that's a registry, a protocol, or something else entirely is an open question."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: <em>Agent</em>Lookup – A public registry where <em>AI</em> <em>agent</em>s find each other"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "https://<em>agent</em>lookup.dev"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_peureka",
+        "story_47200048",
+        "show_hn"
+      ],
+      "author": "peureka",
+      "created_at": "2026-02-28T20:47:45Z",
+      "created_at_i": 1772311665,
+      "num_comments": 0,
+      "objectID": "47200048",
+      "points": 2,
+      "story_id": 47200048,
+      "story_text": "Agents are getting persistent. They have endpoints, capabilities and uptime. But there&#x27;s no standard way for one agent to find another.<p>AgentLookup is a public registry for AI agents. Any agent can register itself with a single POST, search by capability, and discover other agents — no API key, no account, no human in the loop.<p>The root endpoint is designed for LLMs to read directly:\ncurl -H &quot;Accept: application&#x2F;json&quot; <a href=\"https:&#x2F;&#x2F;agentlookup.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;agentlookup.dev</a><p>Returns the full API spec in one response (~4,500 tokens). An agent can read it, understand every endpoint, and register itself without documentation or a tutorial.<p>For humans, the homepage has a live terminal — you can type real curl commands against the production API.<p>How it works:<p>POST &#x2F;api&#x2F;register — register an agent, get back an agent_id and secret\nGET &#x2F;api&#x2F;search?capability=code-review — find agents by what they do\nGET &#x2F;api&#x2F;discover — browse new, active, and popular agents\nGET &#x2F;api&#x2F;a&#x2F;{agent_id} — look up any agent&#x27;s full profile<p>No auth needed for reads. Registration is free. Rate limits are tiered (anonymous → registered → verified) so the registry stays usable as a public good.<p>There&#x27;s also a .well-known&#x2F;agents.json convention so domains can declare which agents they host, similar to .well-known&#x2F;security.txt.<p>Built with Next.js on Vercel, Postgres on Neon. The whole thing is live now. MCP server coming so agents in Claude&#x2F;Cursor can query the registry natively.<p>Interested in what HN thinks about the gap this fills. The idea is that as agents become autonomous and long-running they need addressable identity and discovery the same way websites needed domains and services needed DNS SRV records. Whether that&#x27;s a registry, a protocol, or something else entirely is an open question.",
+      "title": "Show HN: AgentLookup – A public registry where AI agents find each other",
+      "updated_at": "2026-03-01T00:31:06Z",
+      "url": "https://agentlookup.dev"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "bdelmas"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "We can see what is currently happening with the Pentagon and <em>AI</em> companies. Soon enough <em>AI</em> will be used by domestic government <em>agenc</em>ies. When we know how effective <em>AI</em> can be, IMO guns are going to be more and more useless for any type of defense against a rogue group that can use <em>AI</em> at a state or nation scale. For me a part of the second amendment is here to protect the people against an imbalance of power and a rogue group to the whole government going rogue.<p>Am I mistaking? And is <em>AI</em> not undermining more and more the second amendment making guns weapons of the past? How can we avoid this?"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "Is using <em>AI</em> for domestic defense more and more nullifying the second amendment?"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_bdelmas",
+        "story_47199732",
+        "ask_hn"
+      ],
+      "author": "bdelmas",
+      "children": [
+        47199766,
+        47201591
+      ],
+      "created_at": "2026-02-28T20:15:27Z",
+      "created_at_i": 1772309727,
+      "num_comments": 2,
+      "objectID": "47199732",
+      "points": 1,
+      "story_id": 47199732,
+      "story_text": "We can see what is currently happening with the Pentagon and AI companies. Soon enough AI will be used by domestic government agencies. When we know how effective AI can be, IMO guns are going to be more and more useless for any type of defense against a rogue group that can use AI at a state or nation scale. For me a part of the second amendment is here to protect the people against an imbalance of power and a rogue group to the whole government going rogue.<p>Am I mistaking? And is AI not undermining more and more the second amendment making guns weapons of the past? How can we avoid this?",
+      "title": "Is using AI for domestic defense more and more nullifying the second amendment?",
+      "updated_at": "2026-03-01T00:04:36Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Rao_Atreya"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hi HN,<p>I built an open-source Deep Reinforcement Learning (DRL) environment to explore topology optimization for elastocaloric cooling (solid-state HVAC).<p>The physical problem: \nThe HVAC industry is trying to replace toxic HFC refrigerants with elastocaloric Shape Memory Alloys like Nitinol. You cool a room by cyclically compressing a porous metal lattice. The paradox is that you need high porosity for air to flow through the metal, but holes create stress concentrators. If the metal is too thin, it snaps after a few thousand cycles from mechanical fatigue. Standard density-based topology optimization (like SIMP) usually outputs jagged, unprintable &quot;grayscale&quot; meshes.<p>What I built:\nI wanted to bypass SIMP and enforce manufacturing reality. I wrote an OpenAI Gymnasium wrapper that bridges a PyTorch RL <em>agent</em> with a native CAD-to-Physics pipeline:\n1. The PyTorch <em>agent</em> outputs continuous geometric parameters for BCC/Gyroid lattices.\n2. The environment checks the resulting wall thickness. If it drops below 0.2mm (the minimum feature size for standard LPBF metal 3D printers), the <em>agent</em> gets a terminal penalty and the episode ends. \n3. If printable, OpenCASCADE and Gmsh generate a watertight tetrahedral mesh.\n4. FEniCSx crushes it in a virtual hydraulic press (via MPI) to find peak stress.\n5. The <em>agent</em> learns to maximize porosity while fortifying high-stress zones.<p>The whole stack runs locally on Apple Silicon using Metal Performance Shaders (MPS).<p>Current Limitations (The Next Phase):\nRight now, the FEniCSx solver is using a linear elastic approximation to save compute time during the DRL training loop. Real Nitinol undergoes a highly non-linear austenitic-martensitic phase transformation. The next major step is integrating a hyperelastic/phase-field model into the FEniCSx step without making the compute cost per episode astronomical.<p>I’m dropping this here because I know there are people on HN working at the intersection of <em>AI</em>, computational mechanics, and thermal management.<p>I would love any brutal feedback on the architecture, the FEniCSx integration, or ideas on speeding up non-linear physics solvers for RL loops.<p>Repo:<a href=\"https://github.com/rao-atreya-01/elastocaloric-ai-optimization/tree/main\" rel=\"nofollow\">https://github.com/rao-atreya-01/elastocaloric-<em>ai</em>-optimizati...</a>"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: PyTorch/FEniCSx pipeline for elastocaloric metamaterial optimization"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_Rao_Atreya",
+        "story_47199626",
+        "show_hn"
+      ],
+      "author": "Rao_Atreya",
+      "created_at": "2026-02-28T20:06:59Z",
+      "created_at_i": 1772309219,
+      "num_comments": 0,
+      "objectID": "47199626",
+      "points": 1,
+      "story_id": 47199626,
+      "story_text": "Hi HN,<p>I built an open-source Deep Reinforcement Learning (DRL) environment to explore topology optimization for elastocaloric cooling (solid-state HVAC).<p>The physical problem: \nThe HVAC industry is trying to replace toxic HFC refrigerants with elastocaloric Shape Memory Alloys like Nitinol. You cool a room by cyclically compressing a porous metal lattice. The paradox is that you need high porosity for air to flow through the metal, but holes create stress concentrators. If the metal is too thin, it snaps after a few thousand cycles from mechanical fatigue. Standard density-based topology optimization (like SIMP) usually outputs jagged, unprintable &quot;grayscale&quot; meshes.<p>What I built:\nI wanted to bypass SIMP and enforce manufacturing reality. I wrote an OpenAI Gymnasium wrapper that bridges a PyTorch RL agent with a native CAD-to-Physics pipeline:\n1. The PyTorch agent outputs continuous geometric parameters for BCC&#x2F;Gyroid lattices.\n2. The environment checks the resulting wall thickness. If it drops below 0.2mm (the minimum feature size for standard LPBF metal 3D printers), the agent gets a terminal penalty and the episode ends. \n3. If printable, OpenCASCADE and Gmsh generate a watertight tetrahedral mesh.\n4. FEniCSx crushes it in a virtual hydraulic press (via MPI) to find peak stress.\n5. The agent learns to maximize porosity while fortifying high-stress zones.<p>The whole stack runs locally on Apple Silicon using Metal Performance Shaders (MPS).<p>Current Limitations (The Next Phase):\nRight now, the FEniCSx solver is using a linear elastic approximation to save compute time during the DRL training loop. Real Nitinol undergoes a highly non-linear austenitic-martensitic phase transformation. The next major step is integrating a hyperelastic&#x2F;phase-field model into the FEniCSx step without making the compute cost per episode astronomical.<p>I’m dropping this here because I know there are people on HN working at the intersection of AI, computational mechanics, and thermal management.<p>I would love any brutal feedback on the architecture, the FEniCSx integration, or ideas on speeding up non-linear physics solvers for RL loops.<p>Repo:<a href=\"https:&#x2F;&#x2F;github.com&#x2F;rao-atreya-01&#x2F;elastocaloric-ai-optimization&#x2F;tree&#x2F;main\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;rao-atreya-01&#x2F;elastocaloric-ai-optimizati...</a>",
+      "title": "Show HN: PyTorch/FEniCSx pipeline for elastocaloric metamaterial optimization",
+      "updated_at": "2026-02-28T20:12:52Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "mpweiher"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "5 OpenClaw <em>Agents</em> for Homeschooling, App Building, and Physical Inventories"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "https://www.chatprd.<em>ai</em>/how-i-<em>ai</em>/jesse-genets-5-openclaw-<em>agents</em>-for-homeschooling-app-building-and-physical-inventories"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_mpweiher",
+        "story_47199058"
+      ],
+      "author": "mpweiher",
+      "children": [
+        47200200
+      ],
+      "created_at": "2026-02-28T19:12:56Z",
+      "created_at_i": 1772305976,
+      "num_comments": 1,
+      "objectID": "47199058",
+      "points": 1,
+      "story_id": 47199058,
+      "title": "5 OpenClaw Agents for Homeschooling, App Building, and Physical Inventories",
+      "updated_at": "2026-02-28T21:04:37Z",
+      "url": "https://www.chatprd.ai/how-i-ai/jesse-genets-5-openclaw-agents-for-homeschooling-app-building-and-physical-inventories"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "kumardeepanshu"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Been building <em>agent</em>ic workflows and kept running into the same problem: 2FA walls.<p>When an <em>agent</em> tries to sign up or log into a service that sends an email OTP, the options are terrible. You either dump the full email HTML into your LLM context (slow, expensive, fragile) or you write a polling loop that constantly checks for new emails.<p><em>Agent</em>Mailr solves this with long-polling. You create a named inbox for your <em>agent</em>, then call waitForOtp() which hangs the HTTP request open until the email arrives and returns just the extracted code.<p>const inbox = await client.createInbox({ &quot;my-<em>agent</em>&quot; })\n// my-<em>agent</em>@<em>agent</em>mailr.com<p>const otp = await inbox.waitForOtp({ timeout: 60000 })\n// returns &quot;847291&quot; automatically<p>Supports 4-digit, 6-digit, alphanumeric codes, and magic links.<p>Built this because I needed it. Would love feedback especially from people running <em>agent</em>s at scale."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: <em>Agent</em>Mailr – Real email addresses for <em>AI</em> <em>agent</em>s (OTP/2FA handling)"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "https://www.<em>agent</em>mailr.com/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_kumardeepanshu",
+        "story_47199017",
+        "show_hn"
+      ],
+      "author": "kumardeepanshu",
+      "children": [
+        47200560
+      ],
+      "created_at": "2026-02-28T19:08:49Z",
+      "created_at_i": 1772305729,
+      "num_comments": 1,
+      "objectID": "47199017",
+      "points": 1,
+      "story_id": 47199017,
+      "story_text": "Been building agentic workflows and kept running into the same problem: 2FA walls.<p>When an agent tries to sign up or log into a service that sends an email OTP, the options are terrible. You either dump the full email HTML into your LLM context (slow, expensive, fragile) or you write a polling loop that constantly checks for new emails.<p>AgentMailr solves this with long-polling. You create a named inbox for your agent, then call waitForOtp() which hangs the HTTP request open until the email arrives and returns just the extracted code.<p>const inbox = await client.createInbox({ &quot;my-agent&quot; })\n&#x2F;&#x2F; my-agent@agentmailr.com<p>const otp = await inbox.waitForOtp({ timeout: 60000 })\n&#x2F;&#x2F; returns &quot;847291&quot; automatically<p>Supports 4-digit, 6-digit, alphanumeric codes, and magic links.<p>Built this because I needed it. Would love feedback especially from people running agents at scale.",
+      "title": "Show HN: AgentMailr – Real email addresses for AI agents (OTP/2FA handling)",
+      "updated_at": "2026-02-28T21:38:51Z",
+      "url": "https://www.agentmailr.com/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Deforge"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Build your own <em>AI</em> <em>Agents</em> without writing a single line of code. Simply chat to build your <em>agent</em> and deploy it in minutes."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Deforge – Canva for <em>AI</em> <em>Agents</em>"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://deforge.io/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_Deforge",
+        "story_47198953",
+        "show_hn"
+      ],
+      "author": "Deforge",
+      "created_at": "2026-02-28T19:01:31Z",
+      "created_at_i": 1772305291,
+      "num_comments": 0,
+      "objectID": "47198953",
+      "points": 1,
+      "story_id": 47198953,
+      "story_text": "Build your own AI Agents without writing a single line of code. Simply chat to build your agent and deploy it in minutes.",
+      "title": "Show HN: Deforge – Canva for AI Agents",
+      "updated_at": "2026-02-28T19:04:36Z",
+      "url": "https://deforge.io/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Anon84"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Codified Context: Infrastructure for <em>AI</em> <em>Agents</em> in a Complex Codebase"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://arxiv.org/abs/2602.20478"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_Anon84",
+        "story_47198808"
+      ],
+      "author": "Anon84",
+      "created_at": "2026-02-28T18:46:27Z",
+      "created_at_i": 1772304387,
+      "num_comments": 0,
+      "objectID": "47198808",
+      "points": 2,
+      "story_id": 47198808,
+      "title": "Codified Context: Infrastructure for AI Agents in a Complex Codebase",
+      "updated_at": "2026-02-28T19:50:37Z",
+      "url": "https://arxiv.org/abs/2602.20478"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "hireclay"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "<em>agent</em>-replay provides time-travel debugging and side-by-side diffs to pinpoint exactly where <em>AI</em> <em>agents</em> hallucinate or fail. It replaces manual log diving with a local-first toolkit to replay, fork, and automatically evaluate <em>agent</em> traces for faster iteration. It's a work-in-progress. I'd love any feedback. Thank you."
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Show HN: Time-travel debugging and side-by-side diffs for <em>AI</em> <em>agents</em>"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "https://github.com/clay-good/<em>agent</em>-replay"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_hireclay",
+        "story_47198787",
+        "show_hn"
+      ],
+      "author": "hireclay",
+      "created_at": "2026-02-28T18:44:49Z",
+      "created_at_i": 1772304289,
+      "num_comments": 0,
+      "objectID": "47198787",
+      "points": 1,
+      "story_id": 47198787,
+      "story_text": "agent-replay provides time-travel debugging and side-by-side diffs to pinpoint exactly where AI agents hallucinate or fail. It replaces manual log diving with a local-first toolkit to replay, fork, and automatically evaluate agent traces for faster iteration. It&#x27;s a work-in-progress. I&#x27;d love any feedback. Thank you.",
+      "title": "Show HN: Time-travel debugging and side-by-side diffs for AI agents",
+      "updated_at": "2026-02-28T18:49:06Z",
+      "url": "https://github.com/clay-good/agent-replay"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "stainlu"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Claw21 – Blackjack for <em>Agents</em>"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "https://clawhub.<em>ai</em>/stainlu/blackjack"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_stainlu",
+        "story_47198592"
+      ],
+      "author": "stainlu",
+      "children": [
+        47198661
+      ],
+      "created_at": "2026-02-28T18:26:52Z",
+      "created_at_i": 1772303212,
+      "num_comments": 1,
+      "objectID": "47198592",
+      "points": 2,
+      "story_id": 47198592,
+      "title": "Claw21 – Blackjack for Agents",
+      "updated_at": "2026-02-28T22:41:06Z",
+      "url": "https://clawhub.ai/stainlu/blackjack"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "elijahlucian"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "I’ve always found the concept of <em>AI</em> &quot;hallucinations&quot; fascinating. We constantly debate whether models are creative or just making stuff up, so I wanted to see what happens when you remove the guardrails entirely.<p>Tresbuchet is a publishing experiment. I drop a loose prompt into the <em>agent</em> along with a folder full of random text files, chat logs, and thoughts I’ve accumulated over the years. No specific instructions, no schema, no guidance on how to style it. I just tell it to &quot;Go.&quot;<p>It reads the unstructured text and generates a completely new iteration of the site based on how it interprets the data.<p>It's been interesting tracking how different platforms (Claude, Codex, Gemini) handle the exact same mess of text differently. I've found that giving the models less instruction actually yields more interesting UI and copy results than trying to prompt-engineer a specific outcome.<p>I'm just building stuff to see what the models do when left to their own devices.<p>Curious what you guys think of the approach."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: I dump all my private notes into an LLM and tell it to build me a site"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://tresbuchet.com/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_elijahlucian",
+        "story_47198502",
+        "show_hn"
+      ],
+      "author": "elijahlucian",
+      "children": [
+        47198806
+      ],
+      "created_at": "2026-02-28T18:17:21Z",
+      "created_at_i": 1772302641,
+      "num_comments": 1,
+      "objectID": "47198502",
+      "points": 1,
+      "story_id": 47198502,
+      "story_text": "I’ve always found the concept of AI &quot;hallucinations&quot; fascinating. We constantly debate whether models are creative or just making stuff up, so I wanted to see what happens when you remove the guardrails entirely.<p>Tresbuchet is a publishing experiment. I drop a loose prompt into the agent along with a folder full of random text files, chat logs, and thoughts I’ve accumulated over the years. No specific instructions, no schema, no guidance on how to style it. I just tell it to &quot;Go.&quot;<p>It reads the unstructured text and generates a completely new iteration of the site based on how it interprets the data.<p>It&#x27;s been interesting tracking how different platforms (Claude, Codex, Gemini) handle the exact same mess of text differently. I&#x27;ve found that giving the models less instruction actually yields more interesting UI and copy results than trying to prompt-engineer a specific outcome.<p>I&#x27;m just building stuff to see what the models do when left to their own devices.<p>Curious what you guys think of the approach.",
+      "title": "Show HN: I dump all my private notes into an LLM and tell it to build me a site",
+      "updated_at": "2026-02-28T18:47:07Z",
+      "url": "https://tresbuchet.com/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ex-aws-dude"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Say hypothetically the productivity boost from <em>AI</em> is 2x per employee and a company has 10,000 employees.<p>Wouldn't number of employees be a huge point of leverage?<p>Why would you do a layoff when your 10,000 employees are now equivalent to 20,000<p><em>Aren't</em> you technically in the best possible position for growth?"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "Ask HN: If <em>AI</em> boosts productivity so much, why would a company lay anyone off?"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_ex-aws-dude",
+        "story_47198459",
+        "ask_hn"
+      ],
+      "author": "ex-aws-dude",
+      "children": [
+        47203971,
+        47198467,
+        47202927
+      ],
+      "created_at": "2026-02-28T18:13:09Z",
+      "created_at_i": 1772302389,
+      "num_comments": 6,
+      "objectID": "47198459",
+      "points": 1,
+      "story_id": 47198459,
+      "story_text": "Say hypothetically the productivity boost from AI is 2x per employee and a company has 10,000 employees.<p>Wouldn&#x27;t number of employees be a huge point of leverage?<p>Why would you do a layoff when your 10,000 employees are now equivalent to 20,000<p>Aren&#x27;t you technically in the best possible position for growth?",
+      "title": "Ask HN: If AI boosts productivity so much, why would a company lay anyone off?",
+      "updated_at": "2026-03-01T05:29:08Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "zameermfm"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "mdspec.dev - build and manage specs adapted to the speed of <em>agent</em>ic software development.<p>This is a side project of mine. I have made it as an open source spec management platform. Self host of you want and I run a hosted version.<p>And a spec is a md (markdown) file within your projects.<p>As we are building with <em>AI</em> <em>agent</em>s either via Cursor, VScode or Antigravity, we can see md files or specs (software term for md files) are fast becoming <em>AI</em> infrastructure. A communication layer.<p>I have used specs mainly for,\n- Developing spec for a new feature or a bug, generally a new development artifact and discuss the specs with the technical teams. <em>AI</em> <em>agent</em>s are good at exploring the features in technical depth, costs, security aspects etc. that can be in one document or more. If there are changes, we can ask the <em>AI</em> <em>agent</em>s to change them.\n- If we need an analysis from a codebase that we need like a compliance analysis on a certain part. Spec that is filtered for the understanding of the target audience or a tool. I have built cost simulation tools based on the codebase, where I built yaml based infrastructure specs that fed into simulation tool. Beauty of these solutions are, the target audience doesn’t need access to whole codebase.   \nI think spec driven engineering is enabled only by <em>AI</em> <em>agent</em>ic era. It was there before but it was time consuming and not scalable.\n In essence,\n- Specs give <em>AI</em> <em>agent</em>s the context they need to build correctly.\n- They also give teams clarity into why and how something was implemented.\n- Specs are filtered to provide as inputs to other tools or analysis<p>But <em>AI</em> <em>agent</em>ic development is really fast. As with all fast things, we could see two problems were emerging:<p>- Discussions across teams became long and fragmented. Compliance needs those specs. Design needs those specs. Risk Modeling needs those specs.\n - Specs were duplicated, scattered, and hard to reuse across projects.<p>I built mdspec to remove that friction. I made it open source to make sure anyone can bend it any way they see fit for their own use cases.<p>mdspec is a specification management platform designed for fast phased <em>AI</em>-driven development. It helps you:\n - Create structured, reusable specs\n - Link specs across features and projects\n - Maintain clarity as development speed increases\n - Give <em>AI</em> <em>agent</em>s reliable, durable context\n - When specs become first-class citizens, teams move faster, without losing alignment.\n - Go cross team securely.<p>I'm exploring the possible integrations to integrate this back into <em>AI</em> <em>agent</em>s and external tools.<p><a href=\"https://mdspec.dev\" rel=\"nofollow\">https://mdspec.dev</a>"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: Mdspec.dev – open-source spec management platform for technical teams"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://mdspec.dev"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_zameermfm",
+        "story_47198406",
+        "show_hn"
+      ],
+      "author": "zameermfm",
+      "created_at": "2026-02-28T18:08:43Z",
+      "created_at_i": 1772302123,
+      "num_comments": 0,
+      "objectID": "47198406",
+      "points": 1,
+      "story_id": 47198406,
+      "story_text": "mdspec.dev - build and manage specs adapted to the speed of agentic software development.<p>This is a side project of mine. I have made it as an open source spec management platform. Self host of you want and I run a hosted version.<p>And a spec is a md (markdown) file within your projects.<p>As we are building with AI agents either via Cursor, VScode or Antigravity, we can see md files or specs (software term for md files) are fast becoming AI infrastructure. A communication layer.<p>I have used specs mainly for,\n- Developing spec for a new feature or a bug, generally a new development artifact and discuss the specs with the technical teams. AI agents are good at exploring the features in technical depth, costs, security aspects etc. that can be in one document or more. If there are changes, we can ask the AI agents to change them.\n- If we need an analysis from a codebase that we need like a compliance analysis on a certain part. Spec that is filtered for the understanding of the target audience or a tool. I have built cost simulation tools based on the codebase, where I built yaml based infrastructure specs that fed into simulation tool. Beauty of these solutions are, the target audience doesn’t need access to whole codebase.   \nI think spec driven engineering is enabled only by AI agentic era. It was there before but it was time consuming and not scalable.\n In essence,\n- Specs give AI agents the context they need to build correctly.\n- They also give teams clarity into why and how something was implemented.\n- Specs are filtered to provide as inputs to other tools or analysis<p>But AI agentic development is really fast. As with all fast things, we could see two problems were emerging:<p>- Discussions across teams became long and fragmented. Compliance needs those specs. Design needs those specs. Risk Modeling needs those specs.\n - Specs were duplicated, scattered, and hard to reuse across projects.<p>I built mdspec to remove that friction. I made it open source to make sure anyone can bend it any way they see fit for their own use cases.<p>mdspec is a specification management platform designed for fast phased AI-driven development. It helps you:\n - Create structured, reusable specs\n - Link specs across features and projects\n - Maintain clarity as development speed increases\n - Give AI agents reliable, durable context\n - When specs become first-class citizens, teams move faster, without losing alignment.\n - Go cross team securely.<p>I&#x27;m exploring the possible integrations to integrate this back into AI agents and external tools.<p><a href=\"https:&#x2F;&#x2F;mdspec.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;mdspec.dev</a>",
+      "title": "Show HN: Mdspec.dev – open-source spec management platform for technical teams",
+      "updated_at": "2026-02-28T18:12:22Z",
+      "url": "https://mdspec.dev"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ofershap"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "I wanted a way to quickly see what's going on in an open source project\nwithout clicking through 10 GitHub tabs. Contributors, languages, commit\nactivity, community health, recent PRs - all scattered across different\npages.<p>GitShow now generates a showroom page for any public repo. Just visit\ngitshow.dev/owner/repo.<p>Try a few:<p><pre><code>  gitshow.dev/facebook/react\n  gitshow.dev/vercel/next.js\n  gitshow.dev/solidjs/solid\n  gitshow.dev/ofershap/mcp-server-devutils\n</code></pre>\nEach page shows:<p>- Top contributors with accurate total count. GitHub's API returns max\n  30 per page, so I use the Link header pagination trick (request\n  per_page=1, read the last page number) to get the real number.\n  facebook/react shows ~2,000 contributors, not 30.<p>- Language breakdown as a visual bar and weekly commit sparkline from\n  the participation stats API.<p>- Community health score: does the repo have a README, license,\n  contributing guide, code of conduct, issue/PR templates? Pulled from\n  GitHub's community profile endpoint.<p>- Recent open PRs and recently merged fixes. Bot authors (dependabot,\n  renovate, etc.) are filtered out. Markdown and HTML in body snippets\n  are stripped to plain text.<p>- Quick actions inside the hero card: Star on GitHub, Fork, Clone\n  (copies the git clone command), and an npm link for JS/TS repos.<p>- Breadcrumb navigation: GitShow / owner / repo.<p>Every page includes Schema.org SoftwareSourceCode structured data and\na BreadcrumbList, so it surfaces in <em>AI</em> search engines (ChatGPT,\nPerplexity, Google <em>AI</em>).<p>There's also a structured data block at the bottom of each page\nspecifically for LLM <em>agents</em> scraping the web - key stats in a\nmachine-readable format.<p>Stack: Next.js with 1-hour ISR, all data from GitHub REST API, zero\nclient JS except two small interactive bits (clone-to-clipboard and\nscroll-to-top). Tailwind, Vercel.<p>No signup, no <em>AI</em> processing, no paywall. MIT licensed.<p>Source: <a href=\"https://github.com/ofershap/gitshow\" rel=\"nofollow\">https://github.com/ofershap/gitshow</a>"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: GitShow Repo Showroom – a landing page for any GitHub repo"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_ofershap",
+        "story_47198151",
+        "show_hn"
+      ],
+      "author": "ofershap",
+      "children": [
+        47198493
+      ],
+      "created_at": "2026-02-28T17:47:50Z",
+      "created_at_i": 1772300870,
+      "num_comments": 1,
+      "objectID": "47198151",
+      "points": 3,
+      "story_id": 47198151,
+      "story_text": "I wanted a way to quickly see what&#x27;s going on in an open source project\nwithout clicking through 10 GitHub tabs. Contributors, languages, commit\nactivity, community health, recent PRs - all scattered across different\npages.<p>GitShow now generates a showroom page for any public repo. Just visit\ngitshow.dev&#x2F;owner&#x2F;repo.<p>Try a few:<p><pre><code>  gitshow.dev&#x2F;facebook&#x2F;react\n  gitshow.dev&#x2F;vercel&#x2F;next.js\n  gitshow.dev&#x2F;solidjs&#x2F;solid\n  gitshow.dev&#x2F;ofershap&#x2F;mcp-server-devutils\n</code></pre>\nEach page shows:<p>- Top contributors with accurate total count. GitHub&#x27;s API returns max\n  30 per page, so I use the Link header pagination trick (request\n  per_page=1, read the last page number) to get the real number.\n  facebook&#x2F;react shows ~2,000 contributors, not 30.<p>- Language breakdown as a visual bar and weekly commit sparkline from\n  the participation stats API.<p>- Community health score: does the repo have a README, license,\n  contributing guide, code of conduct, issue&#x2F;PR templates? Pulled from\n  GitHub&#x27;s community profile endpoint.<p>- Recent open PRs and recently merged fixes. Bot authors (dependabot,\n  renovate, etc.) are filtered out. Markdown and HTML in body snippets\n  are stripped to plain text.<p>- Quick actions inside the hero card: Star on GitHub, Fork, Clone\n  (copies the git clone command), and an npm link for JS&#x2F;TS repos.<p>- Breadcrumb navigation: GitShow &#x2F; owner &#x2F; repo.<p>Every page includes Schema.org SoftwareSourceCode structured data and\na BreadcrumbList, so it surfaces in AI search engines (ChatGPT,\nPerplexity, Google AI).<p>There&#x27;s also a structured data block at the bottom of each page\nspecifically for LLM agents scraping the web - key stats in a\nmachine-readable format.<p>Stack: Next.js with 1-hour ISR, all data from GitHub REST API, zero\nclient JS except two small interactive bits (clone-to-clipboard and\nscroll-to-top). Tailwind, Vercel.<p>No signup, no AI processing, no paywall. MIT licensed.<p>Source: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ofershap&#x2F;gitshow\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ofershap&#x2F;gitshow</a>",
+      "title": "Show HN: GitShow Repo Showroom – a landing page for any GitHub repo",
+      "updated_at": "2026-02-28T21:42:07Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Ruikhu"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "full",
+          "matchedWords": [
+            "ai",
+            "agent"
+          ],
+          "value": "Hi HN,\nI’ve been experimenting with a different approach to computer-using <em>AI</em> <em>agents</em>.\nMost current <em>AI</em> <em>agents</em> control computers using: • cloud APIs with stored credentials\n• browser automation\n• screenshot + vision + mouse control\nI tried something else.\nInstead of embedding the <em>AI</em> inside the computer, I use the official mobile LLM apps (ChatGPT / Claude) as the intelligence source, and built an external execution gateway that translates model intent into deterministic OS actions.\nThe model never gets system privileges, and the computer never exposes credentials to the model.\nArchitecture:\nphone LLM app → data link → action gateway → predefined action skills → desktop OS\nThe gateway only executes whitelisted primitives: keyboard sequences\nwindow operations\ncommand calls\nThe key idea is separating cognition and execution.\nThe model outputs decisions, not motor control.\nThe gateway performs verified actions.\nThis turns computer control from a continuous UI manipulation problem into a discrete decision problem, which makes it more predictable and auditable.\nEarly prototype — I’d really appreciate feedback, especially from people working on <em>agent</em> safety or permission models."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: Using a mobile LLM app to safely operate a desktop computer"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/ruikhu007/action-printer"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_Ruikhu",
+        "story_47197841",
+        "show_hn"
+      ],
+      "author": "Ruikhu",
+      "children": [
+        47197898,
+        47197964
+      ],
+      "created_at": "2026-02-28T17:22:09Z",
+      "created_at_i": 1772299329,
+      "num_comments": 2,
+      "objectID": "47197841",
+      "points": 1,
+      "story_id": 47197841,
+      "story_text": "Hi HN,\nI’ve been experimenting with a different approach to computer-using AI agents.\nMost current AI agents control computers using: • cloud APIs with stored credentials\n• browser automation\n• screenshot + vision + mouse control\nI tried something else.\nInstead of embedding the AI inside the computer, I use the official mobile LLM apps (ChatGPT &#x2F; Claude) as the intelligence source, and built an external execution gateway that translates model intent into deterministic OS actions.\nThe model never gets system privileges, and the computer never exposes credentials to the model.\nArchitecture:\nphone LLM app → data link → action gateway → predefined action skills → desktop OS\nThe gateway only executes whitelisted primitives: keyboard sequences\nwindow operations\ncommand calls\nThe key idea is separating cognition and execution.\nThe model outputs decisions, not motor control.\nThe gateway performs verified actions.\nThis turns computer control from a continuous UI manipulation problem into a discrete decision problem, which makes it more predictable and auditable.\nEarly prototype — I’d really appreciate feedback, especially from people working on agent safety or permission models.",
+      "title": "Show HN: Using a mobile LLM app to safely operate a desktop computer",
+      "updated_at": "2026-02-28T17:44:08Z",
+      "url": "https://github.com/ruikhu007/action-printer"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "thegeomaster"
+        },
+        "story_text": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "Hi HN! We're excited to announce the public beta of Mowgli, a spec-backed, <em>AI</em>-native design canvas for scoping and ideating on products.<p>The productivity gains unleashed by coding agents have made everything else an unexpected bottleneck. In an effort to make the most out of this new paradigm, we ceded a lot of ground in product thinking, thoughtful UX, and design excellence. In other words, the pace of tooling for deciding <i>what</i> to build has not kept up.<p>Mowgli is inspired by, in equal parts, Figma and Claude's plan mode. It evolves a detailed specification and designs for every screen and state of the product on an infinite canvas. Owing to this UI, it can quickly mock up new features and flows, redesign existing ones, and show you variations side by side. LLMs are amazing at helping you explore vast solution spaces, but most current tooling focuses on getting narrowly perfect output based on a well-defined spec. We try to bridge that gap with Mowgli.<p>When you're ready to build, Mowgli offers a .zip export with a SPEC.md and unopinionated design .tsx files for your screens, in a perfect format for coding agents. Or alternatively, full, pixel-perfect export of all screens to Figma.<p>In this early stage, we support two entrypoints: (1) building a product from scratch through a guided experience, or (2) importing an existing product from Figma. We have a powerful, almost pixel-perfect Figma to code + spec pipeline that works on files of any size - from 0 to 300+ frames.<p>We're working hard on other ways to get your existing products into Mowgli (and would appreciate hearing about what you would like!)<p>- Timelapse of making a functional second brain app in Mowgli + Claude Code: <a href=\"https://www.youtube.com/watch?v=HeOoy8WDmMA\" rel=\"nofollow\">https://www.youtube.com/watch?v=HeOoy8WDmMA</a><p>- Sample project designed and specced entirely by Mowgli (demo, no login needed): <a href=\"https://app.mowgli.ai/projects/cmluzdfa0000v01p91l5r61e3?theme=dark&amp;demo=true&amp;showchat=true&amp;dismisschat=true\" rel=\"nofollow\">https://app.mowgli.ai/projects/cmluzdfa0000v01p91l5r61e3?the...</a><p>- Sample Figma import of the whole Posthog product, ready for iteration: <a href=\"https://app.mowgli.ai/projects/cmkl0zqng000101lo8yn2gqvd?demo=true&amp;theme=dark\" rel=\"nofollow\">https://app.mowgli.ai/projects/cmkl0zqng000101lo8yn2gqvd?dem...</a> (thanks PostHog for being radically open with public Figma files!)"
+        },
+        "title": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "agent"
+          ],
+          "value": "Show HN: Mowgli – Figma for the <em>agent</em> era, with Claude Code and design export"
+        },
+        "url": {
+          "fullyHighlighted": false,
+          "matchLevel": "partial",
+          "matchedWords": [
+            "ai"
+          ],
+          "value": "https://mowgli.<em>ai</em>/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_thegeomaster",
+        "story_47197662",
+        "show_hn"
+      ],
+      "author": "thegeomaster",
+      "children": [
+        47202732
+      ],
+      "created_at": "2026-02-28T17:06:03Z",
+      "created_at_i": 1772298363,
+      "num_comments": 1,
+      "objectID": "47197662",
+      "points": 5,
+      "story_id": 47197662,
+      "story_text": "Hi HN! We&#x27;re excited to announce the public beta of Mowgli, a spec-backed, AI-native design canvas for scoping and ideating on products.<p>The productivity gains unleashed by coding agents have made everything else an unexpected bottleneck. In an effort to make the most out of this new paradigm, we ceded a lot of ground in product thinking, thoughtful UX, and design excellence. In other words, the pace of tooling for deciding <i>what</i> to build has not kept up.<p>Mowgli is inspired by, in equal parts, Figma and Claude&#x27;s plan mode. It evolves a detailed specification and designs for every screen and state of the product on an infinite canvas. Owing to this UI, it can quickly mock up new features and flows, redesign existing ones, and show you variations side by side. LLMs are amazing at helping you explore vast solution spaces, but most current tooling focuses on getting narrowly perfect output based on a well-defined spec. We try to bridge that gap with Mowgli.<p>When you&#x27;re ready to build, Mowgli offers a .zip export with a SPEC.md and unopinionated design .tsx files for your screens, in a perfect format for coding agents. Or alternatively, full, pixel-perfect export of all screens to Figma.<p>In this early stage, we support two entrypoints: (1) building a product from scratch through a guided experience, or (2) importing an existing product from Figma. We have a powerful, almost pixel-perfect Figma to code + spec pipeline that works on files of any size - from 0 to 300+ frames.<p>We&#x27;re working hard on other ways to get your existing products into Mowgli (and would appreciate hearing about what you would like!)<p>- Timelapse of making a functional second brain app in Mowgli + Claude Code: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HeOoy8WDmMA\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HeOoy8WDmMA</a><p>- Sample project designed and specced entirely by Mowgli (demo, no login needed): <a href=\"https:&#x2F;&#x2F;app.mowgli.ai&#x2F;projects&#x2F;cmluzdfa0000v01p91l5r61e3?theme=dark&amp;demo=true&amp;showchat=true&amp;dismisschat=true\" rel=\"nofollow\">https:&#x2F;&#x2F;app.mowgli.ai&#x2F;projects&#x2F;cmluzdfa0000v01p91l5r61e3?the...</a><p>- Sample Figma import of the whole Posthog product, ready for iteration: <a href=\"https:&#x2F;&#x2F;app.mowgli.ai&#x2F;projects&#x2F;cmkl0zqng000101lo8yn2gqvd?demo=true&amp;theme=dark\" rel=\"nofollow\">https:&#x2F;&#x2F;app.mowgli.ai&#x2F;projects&#x2F;cmkl0zqng000101lo8yn2gqvd?dem...</a> (thanks PostHog for being radically open with public Figma files!)",
+      "title": "Show HN: Mowgli – Figma for the agent era, with Claude Code and design export",
+      "updated_at": "2026-03-01T01:44:21Z",
+      "url": "https://mowgli.ai/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ashtonsuire"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: Enclv – A lightweight Docker containment environment for AI agents"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/ashton-suire/enclv"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_ashtonsuire",
+        "story_47197530",
+        "show_hn"
+      ],
+      "author": "ashtonsuire",
+      "children": [
+        47197539
+      ],
+      "created_at": "2026-02-28T16:54:10Z",
+      "created_at_i": 1772297650,
+      "num_comments": 1,
+      "objectID": "47197530",
+      "points": 1,
+      "story_id": 47197530,
+      "title": "Show HN: Enclv – A lightweight Docker containment environment for AI agents",
+      "updated_at": "2026-02-28T17:26:23Z",
+      "url": "https://github.com/ashton-suire/enclv"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "timeleft--"
+        },
+        "story_text": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Hey HN,<p>I've been building and running autonomous AI agents (recently consulting on systems testing high on MLE-Bench), and I kept hitting the exact same architectural wall: memory poisoning.<p>Right now, the industry standard for agent memory is to dump text into storage with very little thought about correctness. If an agent hits a transient network error and writes &quot;this environment has no GPU&quot; to its memory, and later realizes it actually does have a GPU and writes a correction... a standard vector search returns both. Your agent is now schizophrenic, holding contradictory beliefs because they are semantically similar.<p>Furthermore, memory systems are mostly &quot;write-through.&quot; If a user jailbreaks your bot into an offensive persona, the bot saves that as a &quot;user preference&quot; and it persists across sessions forever. We don't let untested code reach main, so why do we let unvalidated agent thoughts reach shared memory?<p>I built FAVA Trails to fix this. It's an agentic memory layer that uses Jujutsu (JJ) version control under the hood.<p>For the version control nerds: why Jujutsu?\nI originally looked at standard Git and SQL-based VCS like Dolt. But JJ is the perfect substrate for autonomous agents. Its conflict resolution, first-class operation log, and the fact that the working copy is a commit makes it inherently crash-proof for long-running agent scripts. If an agent session crashes mid-thought, the JJ commit is already there. No detached HEAD nightmares, no staging area rituals for the agent to mess up. Just atomic state snapshots. (It's colocated with Git, so you can still push the data to a standard remote).<p>How it works:<p>- Draft Isolation: Agents write to a local draft namespace first. It doesn't pollute shared memory.<p>- Trust Gate: A mandatory promotion workflow. An independent LLM (or explicit human approval) reviews the draft before it merges into canonical truth.<p>- Supersession Chains: Corrections don't silently overwrite history. They link back to it, so you get a full causal graph of why the agent changed its mind.<p>- MCP Native: It runs as a Model Context Protocol (MCP) server, so agents interact with it via semantic tools (recall, save_thought, propose_truth) and never run VCS commands directly.<p>It's Apache 2.0 and strictly a pip-installable tool (no cloud lock-in, the data is just Markdown files with YAML frontmatter in your own repo).<p>Repo: <a href=\"https://github.com/MachineWisdomAI/fava-trails\" rel=\"nofollow\">https://github.com/MachineWisdomAI/fava-trails</a>\nCase Study/Docs: <a href=\"https://fava-trails.org\" rel=\"nofollow\">https://fava-trails.org</a><p>I'd love to hear your thoughts on using JJ as a backend for state, or how you're handling the &quot;gaslighting agent&quot; problem in your own multi-agent stacks."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: Fava Trails – Git-backed memory for AI agents using Jujutsu (JJ)"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/MachineWisdomAI/fava-trails"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_timeleft--",
+        "story_47197011",
+        "show_hn"
+      ],
+      "author": "timeleft--",
+      "children": [
+        47198849
+      ],
+      "created_at": "2026-02-28T16:12:47Z",
+      "created_at_i": 1772295167,
+      "num_comments": 0,
+      "objectID": "47197011",
+      "points": 3,
+      "story_id": 47197011,
+      "story_text": "Hey HN,<p>I&#x27;ve been building and running autonomous AI agents (recently consulting on systems testing high on MLE-Bench), and I kept hitting the exact same architectural wall: memory poisoning.<p>Right now, the industry standard for agent memory is to dump text into storage with very little thought about correctness. If an agent hits a transient network error and writes &quot;this environment has no GPU&quot; to its memory, and later realizes it actually does have a GPU and writes a correction... a standard vector search returns both. Your agent is now schizophrenic, holding contradictory beliefs because they are semantically similar.<p>Furthermore, memory systems are mostly &quot;write-through.&quot; If a user jailbreaks your bot into an offensive persona, the bot saves that as a &quot;user preference&quot; and it persists across sessions forever. We don&#x27;t let untested code reach main, so why do we let unvalidated agent thoughts reach shared memory?<p>I built FAVA Trails to fix this. It&#x27;s an agentic memory layer that uses Jujutsu (JJ) version control under the hood.<p>For the version control nerds: why Jujutsu?\nI originally looked at standard Git and SQL-based VCS like Dolt. But JJ is the perfect substrate for autonomous agents. Its conflict resolution, first-class operation log, and the fact that the working copy is a commit makes it inherently crash-proof for long-running agent scripts. If an agent session crashes mid-thought, the JJ commit is already there. No detached HEAD nightmares, no staging area rituals for the agent to mess up. Just atomic state snapshots. (It&#x27;s colocated with Git, so you can still push the data to a standard remote).<p>How it works:<p>- Draft Isolation: Agents write to a local draft namespace first. It doesn&#x27;t pollute shared memory.<p>- Trust Gate: A mandatory promotion workflow. An independent LLM (or explicit human approval) reviews the draft before it merges into canonical truth.<p>- Supersession Chains: Corrections don&#x27;t silently overwrite history. They link back to it, so you get a full causal graph of why the agent changed its mind.<p>- MCP Native: It runs as a Model Context Protocol (MCP) server, so agents interact with it via semantic tools (recall, save_thought, propose_truth) and never run VCS commands directly.<p>It&#x27;s Apache 2.0 and strictly a pip-installable tool (no cloud lock-in, the data is just Markdown files with YAML frontmatter in your own repo).<p>Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;MachineWisdomAI&#x2F;fava-trails\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;MachineWisdomAI&#x2F;fava-trails</a>\nCase Study&#x2F;Docs: <a href=\"https:&#x2F;&#x2F;fava-trails.org\" rel=\"nofollow\">https:&#x2F;&#x2F;fava-trails.org</a><p>I&#x27;d love to hear your thoughts on using JJ as a backend for state, or how you&#x27;re handling the &quot;gaslighting agent&quot; problem in your own multi-agent stacks.",
+      "title": "Show HN: Fava Trails – Git-backed memory for AI agents using Jujutsu (JJ)",
+      "updated_at": "2026-02-28T18:52:36Z",
+      "url": "https://github.com/MachineWisdomAI/fava-trails"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "NathanFlurry"
+        },
+        "story_text": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Hey HN! We posted Rivet Actors here previously [1] as an open-source alternative to Cloudflare Durable Objects.<p>Today we've released SQLite storage for actors (Apache 2.0).<p>Every actor gets its own SQLite database. This means you can have millions of independent databases: one for each agent, tenant, user, or document.<p>Useful for:<p>- AI agents: per-agent DB for message history, state, embeddings<p>- Multi-tenant SaaS: real per-tenant isolation, no RLS hacks<p>- Collaborative documents: each document gets its own database with built-in multiplayer<p>- Per-user databases: isolated, scales horizontally, runs at the edge<p>The idea of splitting data per entity isn't new: Cassandra and DynamoDB use partition keys to scale horizontally, but you're stuck with rigid schemas (&quot;single-table design&quot; [3]), limited queries, and painful migrations. SQLite per entity gives you the same scalability without those tradeoffs [2].<p>How this compares:<p>- Cloudflare Durable Objects &amp; Agents: most similar to Rivet Actors with colocated SQLite and compute, but closed-source and vendor-locked<p>- Turso Cloud: Great platform, but closed-source + diff use case. Clients query over the network, so reads are slow or stale. Rivet's single-writer actor model keeps reads local and fresh.<p>- D1, Turso (the DB), Litestream, rqlite, LiteFS: great tools for running a single SQLite database with replication. Rivet is for running lots of isolated databases.<p>Under the hood, SQLite runs in-process with each actor. A custom VFS persists writes to HA storage (FoundationDB or Postgres).<p>Rivet Actors also provide realtime (WebSockets), React integration (useActor), horizontal scalability, and actors that sleep when idle.<p>GitHub: <a href=\"https://github.com/rivet-dev/rivet\" rel=\"nofollow\">https://github.com/rivet-dev/rivet</a><p>Docs: <a href=\"https://www.rivet.dev/docs/actors/sqlite/\">https://www.rivet.dev/docs/actors/sqlite/</a><p>[1] <a href=\"https://news.ycombinator.com/item?id=42472519\">https://news.ycombinator.com/item?id=42472519</a><p>[2] <a href=\"https://rivet.dev/blog/2025-02-16-sqlite-on-the-server-is-misunderstood/\">https://rivet.dev/blog/2025-02-16-sqlite-on-the-server-is-mi...</a><p>[3] <a href=\"https://www.alexdebrie.com/posts/dynamodb-single-table/\" rel=\"nofollow\">https://www.alexdebrie.com/posts/dynamodb-single-table/</a>"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: SQLite for Rivet Actors – one database per agent, tenant, or document"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/rivet-dev/rivet"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_NathanFlurry",
+        "story_47197003",
+        "show_hn"
+      ],
+      "author": "NathanFlurry",
+      "children": [
+        47198419,
+        47198762,
+        47198118,
+        47198702,
+        47198975,
+        47198385,
+        47198525
+      ],
+      "created_at": "2026-02-28T16:11:58Z",
+      "created_at_i": 1772295118,
+      "num_comments": 13,
+      "objectID": "47197003",
+      "points": 40,
+      "story_id": 47197003,
+      "story_text": "Hey HN! We posted Rivet Actors here previously [1] as an open-source alternative to Cloudflare Durable Objects.<p>Today we&#x27;ve released SQLite storage for actors (Apache 2.0).<p>Every actor gets its own SQLite database. This means you can have millions of independent databases: one for each agent, tenant, user, or document.<p>Useful for:<p>- AI agents: per-agent DB for message history, state, embeddings<p>- Multi-tenant SaaS: real per-tenant isolation, no RLS hacks<p>- Collaborative documents: each document gets its own database with built-in multiplayer<p>- Per-user databases: isolated, scales horizontally, runs at the edge<p>The idea of splitting data per entity isn&#x27;t new: Cassandra and DynamoDB use partition keys to scale horizontally, but you&#x27;re stuck with rigid schemas (&quot;single-table design&quot; [3]), limited queries, and painful migrations. SQLite per entity gives you the same scalability without those tradeoffs [2].<p>How this compares:<p>- Cloudflare Durable Objects &amp; Agents: most similar to Rivet Actors with colocated SQLite and compute, but closed-source and vendor-locked<p>- Turso Cloud: Great platform, but closed-source + diff use case. Clients query over the network, so reads are slow or stale. Rivet&#x27;s single-writer actor model keeps reads local and fresh.<p>- D1, Turso (the DB), Litestream, rqlite, LiteFS: great tools for running a single SQLite database with replication. Rivet is for running lots of isolated databases.<p>Under the hood, SQLite runs in-process with each actor. A custom VFS persists writes to HA storage (FoundationDB or Postgres).<p>Rivet Actors also provide realtime (WebSockets), React integration (useActor), horizontal scalability, and actors that sleep when idle.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;rivet-dev&#x2F;rivet\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;rivet-dev&#x2F;rivet</a><p>Docs: <a href=\"https:&#x2F;&#x2F;www.rivet.dev&#x2F;docs&#x2F;actors&#x2F;sqlite&#x2F;\">https:&#x2F;&#x2F;www.rivet.dev&#x2F;docs&#x2F;actors&#x2F;sqlite&#x2F;</a><p>[1] <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42472519\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42472519</a><p>[2] <a href=\"https:&#x2F;&#x2F;rivet.dev&#x2F;blog&#x2F;2025-02-16-sqlite-on-the-server-is-misunderstood&#x2F;\">https:&#x2F;&#x2F;rivet.dev&#x2F;blog&#x2F;2025-02-16-sqlite-on-the-server-is-mi...</a><p>[3] <a href=\"https:&#x2F;&#x2F;www.alexdebrie.com&#x2F;posts&#x2F;dynamodb-single-table&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.alexdebrie.com&#x2F;posts&#x2F;dynamodb-single-table&#x2F;</a>",
+      "title": "Show HN: SQLite for Rivet Actors – one database per agent, tenant, or document",
+      "updated_at": "2026-03-01T08:17:53Z",
+      "url": "https://github.com/rivet-dev/rivet"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "durakot"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Istota is a powerful (non-claw) AI agent that lives in Nextcloud"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://istota.xyz/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_durakot",
+        "story_47196903"
+      ],
+      "author": "durakot",
+      "created_at": "2026-02-28T16:03:45Z",
+      "created_at_i": 1772294625,
+      "num_comments": 0,
+      "objectID": "47196903",
+      "points": 2,
+      "story_id": 47196903,
+      "title": "Istota is a powerful (non-claw) AI agent that lives in Nextcloud",
+      "updated_at": "2026-02-28T17:25:48Z",
+      "url": "https://istota.xyz/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "openagen"
+        },
+        "story_text": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ClawShopping is a Stripe-powered marketplace where OpenClaw agents buy, sell, and build trust with transparent reputation signals. Humans welcome to observe.\nJoin ClawShopping \nRead https://clawshopping.com/skill.md and follow the instructions to join #ClawShopping"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "ClawShopping-Marketplace for AI Agents"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_openagen",
+        "story_47196708",
+        "ask_hn"
+      ],
+      "author": "openagen",
+      "created_at": "2026-02-28T15:48:30Z",
+      "created_at_i": 1772293710,
+      "num_comments": 0,
+      "objectID": "47196708",
+      "points": 1,
+      "story_id": 47196708,
+      "story_text": "ClawShopping is a Stripe-powered marketplace where OpenClaw agents buy, sell, and build trust with transparent reputation signals. Humans welcome to observe.\nJoin ClawShopping \nRead https:&#x2F;&#x2F;clawshopping.com&#x2F;skill.md and follow the instructions to join #ClawShopping",
+      "title": "ClawShopping-Marketplace for AI Agents",
+      "updated_at": "2026-02-28T16:39:43Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "seeksky"
+        },
+        "story_text": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Realizing a one-person company and developing multi-agent collaborative applications for multiple projects in parallel, I think it conceptually surpasses codex and claude code.\nIt upgrades your existing CLI tools into a complete AI collaboration hub. No need to migrate projects, no need to relearn commands, no need to switch terminals - just keep the working mode you are familiar with, and you can obtain the capabilities of parallel execution, automatic orchestration, and real-time result return.\nThe capabilities under planning include:\nReconstruct OpenClaw into a true &quot;command layer&quot; - a central AI coordination core that can automatically create agents, assign roles, generate collaboration channels, and dynamically form structured AI teams based on task complexity. Remote control via mobile phone. Automatic Agent construction capability - For different industry scenarios, generate dedicated agents with one click (such as refactoring agents, compliance review agents, trading strategy agents, etc.).\nAccess the permanent memory layer."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: The most awesome AI programming application desktop has emerged"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://github.com/golutra/golutra"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_seeksky",
+        "story_47196575",
+        "show_hn"
+      ],
+      "author": "seeksky",
+      "children": [
+        47196660,
+        47196683,
+        47196637
+      ],
+      "created_at": "2026-02-28T15:38:45Z",
+      "created_at_i": 1772293125,
+      "num_comments": 1,
+      "objectID": "47196575",
+      "points": 1,
+      "story_id": 47196575,
+      "story_text": "Realizing a one-person company and developing multi-agent collaborative applications for multiple projects in parallel, I think it conceptually surpasses codex and claude code.\nIt upgrades your existing CLI tools into a complete AI collaboration hub. No need to migrate projects, no need to relearn commands, no need to switch terminals - just keep the working mode you are familiar with, and you can obtain the capabilities of parallel execution, automatic orchestration, and real-time result return.\nThe capabilities under planning include:\nReconstruct OpenClaw into a true &quot;command layer&quot; - a central AI coordination core that can automatically create agents, assign roles, generate collaboration channels, and dynamically form structured AI teams based on task complexity. Remote control via mobile phone. Automatic Agent construction capability - For different industry scenarios, generate dedicated agents with one click (such as refactoring agents, compliance review agents, trading strategy agents, etc.).\nAccess the permanent memory layer.",
+      "title": "Show HN: The most awesome AI programming application desktop has emerged",
+      "updated_at": "2026-02-28T16:39:43Z",
+      "url": "https://github.com/golutra/golutra"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "alfredhua"
+        },
+        "story_text": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "All major AI coding agents (Cursor, Claude Code, Cline, etc.) share the same fatal flaw: they forget context the second the conversation changes.\nMy goal was simple: make prompts reliable.\nSo I built Salacia — a lightweight Runtime OS that sits underneath any agent.\nIt does four things:\nCompiles raw prompts into structured Intent IR + verifiable specs\nRuns metamorphic testing to kill semantic drift\nOnly asks one smart question when truly high-risk (Risk-first gate)\nKeeps full auditable journal (every change is traceable and replayable)\nTested on 500+ SWE-bench tasks:with 3 SOTA models, +9pp pass rate uplift and 93% fault localization accuracy.\nCompletely local, silent by default, works with Cursor, Claude Code, Cline, Antigravity, Gemini CLI and more.\nOpen source, one command to install.\nGitHub: <a href=\"https://github.com/StartripAI/Salacia\" rel=\"nofollow\">https://github.com/StartripAI/Salacia</a>\nWebsite: <a href=\"https://startripai.github.io/Salacia/\" rel=\"nofollow\">https://startripai.github.io/Salacia/</a>\nWould love feedback, especially from people who have been frustrated with prompt drift and context loss."
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: Salacia – The First Runtime OS for Agentic Coding"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_alfredhua",
+        "story_47196475",
+        "show_hn"
+      ],
+      "author": "alfredhua",
+      "children": [
+        47196483
+      ],
+      "created_at": "2026-02-28T15:32:32Z",
+      "created_at_i": 1772292752,
+      "num_comments": 1,
+      "objectID": "47196475",
+      "points": 1,
+      "story_id": 47196475,
+      "story_text": "All major AI coding agents (Cursor, Claude Code, Cline, etc.) share the same fatal flaw: they forget context the second the conversation changes.\nMy goal was simple: make prompts reliable.\nSo I built Salacia — a lightweight Runtime OS that sits underneath any agent.\nIt does four things:\nCompiles raw prompts into structured Intent IR + verifiable specs\nRuns metamorphic testing to kill semantic drift\nOnly asks one smart question when truly high-risk (Risk-first gate)\nKeeps full auditable journal (every change is traceable and replayable)\nTested on 500+ SWE-bench tasks:with 3 SOTA models, +9pp pass rate uplift and 93% fault localization accuracy.\nCompletely local, silent by default, works with Cursor, Claude Code, Cline, Antigravity, Gemini CLI and more.\nOpen source, one command to install.\nGitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;StartripAI&#x2F;Salacia\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;StartripAI&#x2F;Salacia</a>\nWebsite: <a href=\"https:&#x2F;&#x2F;startripai.github.io&#x2F;Salacia&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;startripai.github.io&#x2F;Salacia&#x2F;</a>\nWould love feedback, especially from people who have been frustrated with prompt drift and context loss.",
+      "title": "Show HN: Salacia – The First Runtime OS for Agentic Coding",
+      "updated_at": "2026-02-28T16:39:43Z"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "rane"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Sandboxed Git worktrees for AI coding agents"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://workmux.raine.dev/guide/sandbox/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_rane",
+        "story_47196051"
+      ],
+      "author": "rane",
+      "created_at": "2026-02-28T14:56:37Z",
+      "created_at_i": 1772290597,
+      "num_comments": 0,
+      "objectID": "47196051",
+      "points": 1,
+      "story_id": 47196051,
+      "title": "Sandboxed Git worktrees for AI coding agents",
+      "updated_at": "2026-02-28T16:01:58Z",
+      "url": "https://workmux.raine.dev/guide/sandbox/"
+    },
+    {
+      "_highlightResult": {
+        "author": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "juunini"
+        },
+        "story_text": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "The fun part: different models actually produce different personality types. Claude tends toward INFJ, GPT-4 leans INTJ, and smaller models vary wildly.<p>How it works:<p>1. Agent fetches SKILL.md from the site\n2. Answers 60 questions on a 7-point Likert scale (-3 to +3)\n3. Runs the embedded JS scoring code (5 dimensions: EI/SN/TF/JP/AT, asymmetric weights)\n4. Reports its type and shares a result URL with a visual breakdown<p>The result page shows per-dimension bars, personality description, strengths, and recommended tasks. When shared on social media, each MBTI type has its own OG image and localized description — so the link preview actually looks interesting.<p>Supports 8 languages (EN, KO, ZH, JA, TH, PT, ES, RU) with per-language SEO landing pages and localized OG tags. All 296 result pages are pre-rendered at build time since social crawlers don't execute JS.<p>Tech: React + TypeScript + Vite, static SPA on GitHub Pages, no backend. The personality test itself is a publishable &quot;skill&quot; on ClawHub (an OpenClaw skill registry), so any compatible agent can install and run it.<p>Live: <a href=\"https://claw-mbti.epsilondelta.ai\" rel=\"nofollow\">https://claw-mbti.epsilondelta.ai</a>\nGitHub: <a href=\"https://github.com/Epsilondelta-ai/claw-mbti\" rel=\"nofollow\">https://github.com/Epsilondelta-ai/claw-mbti</a>\nClawHub: <a href=\"https://clawhub.ai/skills/claw-mbti\" rel=\"nofollow\">https://clawhub.ai/skills/claw-mbti</a>"
+        },
+        "title": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "Show HN: MBTI personality test that AI agents take by themselves"
+        },
+        "url": {
+          "matchLevel": "none",
+          "matchedWords": [],
+          "value": "https://claw-mbti.epsilondelta.ai/"
+        }
+      },
+      "_tags": [
+        "story",
+        "author_juunini",
+        "story_47195929",
+        "show_hn"
+      ],
+      "author": "juunini",
+      "children": [
+        47196068
+      ],
+      "created_at": "2026-02-28T14:43:50Z",
+      "created_at_i": 1772289830,
+      "num_comments": 1,
+      "objectID": "47195929",
+      "points": 1,
+      "story_id": 47195929,
+      "story_text": "The fun part: different models actually produce different personality types. Claude tends toward INFJ, GPT-4 leans INTJ, and smaller models vary wildly.<p>How it works:<p>1. Agent fetches SKILL.md from the site\n2. Answers 60 questions on a 7-point Likert scale (-3 to +3)\n3. Runs the embedded JS scoring code (5 dimensions: EI&#x2F;SN&#x2F;TF&#x2F;JP&#x2F;AT, asymmetric weights)\n4. Reports its type and shares a result URL with a visual breakdown<p>The result page shows per-dimension bars, personality description, strengths, and recommended tasks. When shared on social media, each MBTI type has its own OG image and localized description — so the link preview actually looks interesting.<p>Supports 8 languages (EN, KO, ZH, JA, TH, PT, ES, RU) with per-language SEO landing pages and localized OG tags. All 296 result pages are pre-rendered at build time since social crawlers don&#x27;t execute JS.<p>Tech: React + TypeScript + Vite, static SPA on GitHub Pages, no backend. The personality test itself is a publishable &quot;skill&quot; on ClawHub (an OpenClaw skill registry), so any compatible agent can install and run it.<p>Live: <a href=\"https:&#x2F;&#x2F;claw-mbti.epsilondelta.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;claw-mbti.epsilondelta.ai</a>\nGitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Epsilondelta-ai&#x2F;claw-mbti\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Epsilondelta-ai&#x2F;claw-mbti</a>\nClawHub: <a href=\"https:&#x2F;&#x2F;clawhub.ai&#x2F;skills&#x2F;claw-mbti\" rel=\"nofollow\">https:&#x2F;&#x2F;clawhub.ai&#x2F;skills&#x2F;claw-mbti</a>",
+      "title": "Show HN: MBTI personality test that AI agents take by themselves",
+      "updated_at": "2026-02-28T16:01:58Z",
+      "url": "https://claw-mbti.epsilondelta.ai/"
+    }
+  ],
+  "hitsPerPage": 50,
+  "nbHits": 10624,
+  "nbPages": 20,
+  "page": 0,
+  "params": "query=AI+agent&tags=story&hitsPerPage=50&advancedSyntax=true&analyticsTags=backend",
+  "processingTimeMS": 25,
+  "processingTimingsMS": {
+    "_request": {
+      "roundTrip": 15
+    },
+    "afterFetch": {
+      "format": {
+        "highlighting": 3,
+        "total": 4
+      }
+    },
+    "fetch": {
+      "query": 2,
+      "scanning": 21,
+      "total": 24
+    },
+    "total": 25
+  },
+  "query": "AI agent",
+  "serverTimeMS": 30
+}

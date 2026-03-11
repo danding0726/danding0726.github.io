@@ -1,0 +1,29 @@
+<div class="wrapper-sidebar">
+  <header class="sidebar clearfix sidebar-branding">
+    <a class="brand-title" href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <p class="brand-subtitle">技术 / AI / 工程实践</p>
+  </header>
+
+  <div class="navlist sidebar-panel">
+    <p class="panel-label">导航</p>
+    <nav>
+      {% for nav in site.navigation %}
+      {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+      <a href="{{ nav.url }}">{{ nav.name }}</a>
+      {% else %}
+      <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+
+  <div class="sidebar-note">
+    <p>持续记录可复用的方法、实践经验与工程复盘。</p>
+  </div>
+
+  <div class="wrapper-footer-desktop">
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+  </div>
+</div>

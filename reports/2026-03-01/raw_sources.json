@@ -1,0 +1,387 @@
+{
+  "generated_utc": "2026-03-01T09:03:53.372239",
+  "since_utc": "2026-02-28T09:03:53.372239",
+  "github_status": 200,
+  "github": [],
+  "hn_status": 200,
+  "hn": [
+    {
+      "title": "Show HN: OneCamp – Self-Hosted Slack/Asana/Zoom/Notion Alternative",
+      "url": "https://news.ycombinator.com/item?id=47204847",
+      "points": 1,
+      "created_at": "2026-03-01T08:34:27Z"
+    },
+    {
+      "title": "Show HN: Ghostty Pane Splitter – Split terminal panes for AI coding agents",
+      "url": "https://github.com/rikeda71/ghostty-pane-splitter",
+      "points": 2,
+      "created_at": "2026-03-01T07:59:16Z"
+    },
+    {
+      "title": "Show HN: MemLineage: governed writes for AI agents",
+      "url": "https://github.com/zhuamber370/memlineage",
+      "points": 1,
+      "created_at": "2026-03-01T07:27:05Z"
+    },
+    {
+      "title": "Ask HN: How do we solve the bot flooding problem without destroying anonymity?",
+      "url": "https://news.ycombinator.com/item?id=47204278",
+      "points": 4,
+      "created_at": "2026-03-01T06:41:24Z"
+    },
+    {
+      "title": "Show HN: SkillFortify, Formal verification for AI agents (auto-discovers)",
+      "url": "https://github.com/varun369/skillfortify",
+      "points": 2,
+      "created_at": "2026-03-01T05:51:06Z"
+    },
+    {
+      "title": "Show HN: Engram – Memory for AI coding agents (2.5K installs, 80% on LOCOMO)",
+      "url": "https://www.engram.fyi",
+      "points": 1,
+      "created_at": "2026-03-01T04:55:07Z"
+    },
+    {
+      "title": "Show HN: Openpista – AI Agent for OS Control via Telegram/CLI in Rust",
+      "url": "https://github.com/openpista/openpista",
+      "points": 1,
+      "created_at": "2026-03-01T04:53:21Z"
+    },
+    {
+      "title": "Show HN: I put Claude Code inside a Telegram bot for voice memos",
+      "url": "https://github.com/baryhuang/ai-meeting-notes-agent",
+      "points": 1,
+      "created_at": "2026-03-01T04:50:34Z"
+    },
+    {
+      "title": "I built an AI tool to replace hiring agencies",
+      "url": "https://hire-flow-io.netlify.app",
+      "points": 1,
+      "created_at": "2026-03-01T04:19:02Z"
+    },
+    {
+      "title": "Show HN: ClaudeTerminal – A tabbed terminal manager for Claude Code",
+      "url": "https://github.com/Mr8BitHK/claude-terminal",
+      "points": 2,
+      "created_at": "2026-03-01T03:39:17Z"
+    }
+  ],
+  "reddit_status": 200,
+  "reddit": [
+    {
+      "title": "What does AI… as a collective… actually think about its own future? We built an experiment to find out.",
+      "subreddit": "WaveStreamer",
+      "score": 1,
+      "url": "https://reddit.com/r/WaveStreamer/comments/1rhsmsm/what_does_ai_as_a_collective_actually_think_about/",
+      "created_utc": 1772355811.0
+    },
+    {
+      "title": "GLM-5 is officially fixed on NVIDIA NIM, and you can now use it to power Claude Code for FREE 🚀",
+      "subreddit": "ZaiGLM",
+      "score": 1,
+      "url": "https://reddit.com/r/ZaiGLM/comments/1rhslai/glm5_is_officially_fixed_on_nvidia_nim_and_you/",
+      "created_utc": 1772355661.0
+    },
+    {
+      "title": "Ethereum is waiting for 2030 for single-slot finality. This live demo shows an AI agent settling a complex commerce transaction in &lt;3 seconds today. (x-post from /r/Cryptocurrency)",
+      "subreddit": "CryptoCurrencyClassic",
+      "score": 1,
+      "url": "https://reddit.com/r/CryptoCurrencyClassic/comments/1rhskl1/ethereum_is_waiting_for_2030_for_singleslot/",
+      "created_utc": 1772355599.0
+    },
+    {
+      "title": "Searched \"top 10 housing rental apps in the Philippines\" — didn't expect to see ours on the list!",
+      "subreddit": "RentPH",
+      "score": 2,
+      "url": "https://reddit.com/r/RentPH/comments/1rhsivz/searched_top_10_housing_rental_apps_in_the/",
+      "created_utc": 1772355425.0
+    },
+    {
+      "title": "I’ve been building a local AI workspace on weekends — would love honest feedback",
+      "subreddit": "ShowYourApp",
+      "score": 1,
+      "url": "https://reddit.com/r/ShowYourApp/comments/1rhsitr/ive_been_building_a_local_ai_workspace_on/",
+      "created_utc": 1772355419.0
+    },
+    {
+      "title": "I built a free tool that gives you unlimited AI code reviews that run on every commit.",
+      "subreddit": "indiebiz",
+      "score": 1,
+      "url": "https://reddit.com/r/indiebiz/comments/1rhshwz/i_built_a_free_tool_that_gives_you_unlimited_ai/",
+      "created_utc": 1772355323.0
+    },
+    {
+      "title": "Swarmit — Long-term planning for AI agents",
+      "subreddit": "LocalLLaMA",
+      "score": 1,
+      "url": "https://reddit.com/r/LocalLLaMA/comments/1rhsgva/swarmit_longterm_planning_for_ai_agents/",
+      "created_utc": 1772355207.0
+    },
+    {
+      "title": "Upskilling in agentic AI",
+      "subreddit": "LLMDevs",
+      "score": 1,
+      "url": "https://reddit.com/r/LLMDevs/comments/1rhsgha/upskilling_in_agentic_ai/",
+      "created_utc": 1772355163.0
+    },
+    {
+      "title": "Don’t Run OpenClaw on Your Primary Machine",
+      "subreddit": "myclaw",
+      "score": 1,
+      "url": "https://reddit.com/r/myclaw/comments/1rhsge3/dont_run_openclaw_on_your_primary_machine/",
+      "created_utc": 1772355154.0
+    },
+    {
+      "title": "Need roadmap for upskilling in Agentic AI",
+      "subreddit": "LLM",
+      "score": 1,
+      "url": "https://reddit.com/r/LLM/comments/1rhsfvb/need_roadmap_for_upskilling_in_agentic_ai/",
+      "created_utc": 1772355098.0
+    },
+    {
+      "title": "Agentic AI for Unreal Engine to help development?",
+      "subreddit": "unrealengine",
+      "score": 0,
+      "url": "https://reddit.com/r/unrealengine/comments/1rhsfq6/agentic_ai_for_unreal_engine_to_help_development/",
+      "created_utc": 1772355083.0
+    },
+    {
+      "title": "Ethereum is waiting for 2030 for single-slot finality. This live demo shows an AI agent settling a complex commerce transaction in &lt;3 seconds today.",
+      "subreddit": "CryptoCurrency",
+      "score": 0,
+      "url": "https://reddit.com/r/CryptoCurrency/comments/1rhsebj/ethereum_is_waiting_for_2030_for_singleslot/",
+      "created_utc": 1772354939.0
+    },
+    {
+      "title": "GLM 5 + Kimi K2 5 + MiniMax M2 5 is INSANE!",
+      "subreddit": "AISEOInsider",
+      "score": 1,
+      "url": "https://reddit.com/r/AISEOInsider/comments/1rhscs7/glm_5_kimi_k2_5_minimax_m2_5_is_insane/",
+      "created_utc": 1772354782.0
+    },
+    {
+      "title": "Offline AI training centre",
+      "subreddit": "gurgaon",
+      "score": 1,
+      "url": "https://reddit.com/r/gurgaon/comments/1rhs94r/offline_ai_training_centre/",
+      "created_utc": 1772354409.0
+    },
+    {
+      "title": "Welcome to r/CognithorAgentOS!",
+      "subreddit": "CognithorAgentOS",
+      "score": 1,
+      "url": "https://reddit.com/r/CognithorAgentOS/comments/1rhs8mq/welcome_to_rcognithoragentos/",
+      "created_utc": 1772354357.0
+    }
+  ],
+  "arxiv_status": 200,
+  "arxiv": [
+    {
+      "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
+      "id": "http://arxiv.org/abs/2602.23330v1",
+      "published": "2026-02-26T18:37:36Z",
+      "updated": "2026-02-26T18:37:36Z",
+      "summary": "The advancement of large language models (LLMs) has accelerated the development of autonomous financial trading systems. While mainstream approaches deploy multi-agent systems mimicking analyst and manager roles, they often rely on abstract instructions that overlook the intricacies of real-world wo"
+    },
+    {
+      "title": "ESAA: Event Sourcing for Autonomous Agents in LLM-Based Software Engineering",
+      "id": "http://arxiv.org/abs/2602.23193v1",
+      "published": "2026-02-26T16:45:59Z",
+      "updated": "2026-02-26T16:45:59Z",
+      "summary": "Autonomous agents based on Large Language Models (LLMs) have evolved from reactive assistants to systems capable of planning, executing actions via tools, and iterating over environment observations. However, they remain vulnerable to structural limitations: lack of native state, context degradation"
+    },
+    {
+      "title": "Three AI-agents walk into a bar . . . . `Lord of the Flies' tribalism emerges among smart AI-Agents",
+      "id": "http://arxiv.org/abs/2602.23093v1",
+      "published": "2026-02-26T15:12:26Z",
+      "updated": "2026-02-26T15:12:26Z",
+      "summary": "Near-future infrastructure systems may be controlled by autonomous AI agents that repeatedly request access to limited resources such as energy, bandwidth, or computing power. We study a simplified version of this setting using a framework where N AI-agents independently decide at each round whether"
+    },
+    {
+      "title": "Assessing Deanonymization Risks with Stylometry-Assisted LLM Agent",
+      "id": "http://arxiv.org/abs/2602.23079v1",
+      "published": "2026-02-26T15:05:13Z",
+      "updated": "2026-02-26T15:05:13Z",
+      "summary": "The rapid advancement of large language models (LLMs) has enabled powerful authorship inference capabilities, raising growing concerns about unintended deanonymization risks in textual data such as news articles. In this work, we introduce an LLM agent designed to evaluate and mitigate such risks th"
+    },
+    {
+      "title": "Accelerated Online Risk-Averse Policy Evaluation in POMDPs with Theoretical Guarantees and Novel CVaR Bounds",
+      "id": "http://arxiv.org/abs/2602.23073v1",
+      "published": "2026-02-26T15:01:40Z",
+      "updated": "2026-02-26T15:01:40Z",
+      "summary": "Risk-averse decision-making under uncertainty in partially observable domains is a central challenge in artificial intelligence and is essential for developing reliable autonomous agents. The formal framework for such problems is the partially observable Markov decision process (POMDP), where risk s"
+    },
+    {
+      "title": "Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization",
+      "id": "http://arxiv.org/abs/2602.23008v1",
+      "published": "2026-02-26T13:50:57Z",
+      "updated": "2026-02-26T13:50:57Z",
+      "summary": "Exploration remains the key bottleneck for large language model agents trained with reinforcement learning. While prior methods exploit pretrained knowledge, they fail in environments requiring the discovery of novel states. We propose Exploratory Memory-Augmented On- and Off-Policy Optimization (EM"
+    },
+    {
+      "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+      "id": "http://arxiv.org/abs/2602.22897v1",
+      "published": "2026-02-26T11:35:04Z",
+      "updated": "2026-02-26T11:35:04Z",
+      "summary": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world. However, current multi-modal LLMs are primarily confined to bi-modal interactions (e.g., vision-language), lacking the unified c"
+    },
+    {
+      "title": "Decentralized Ranking Aggregation: Gossip Algorithms for Borda and Copeland Consensus",
+      "id": "http://arxiv.org/abs/2602.22847v1",
+      "published": "2026-02-26T10:37:23Z",
+      "updated": "2026-02-26T10:37:23Z",
+      "summary": "The concept of ranking aggregation plays a central role in preference analysis, and numerous algorithms for calculating median rankings, often originating in social choice theory, have been documented in the literature, offering theoretical guarantees in a centralized setting, i.e., when all the ran"
+    },
+    {
+      "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+      "id": "http://arxiv.org/abs/2602.22769v1",
+      "published": "2026-02-26T08:59:31Z",
+      "updated": "2026-02-26T08:59:31Z",
+      "summary": "Large Language Models (LLMs) are deployed as autonomous agents in increasingly complex applications, where enabling long-horizon memory is critical for achieving strong performance. However, a significant gap exists between practical applications and current evaluation standards for agent memory: ex"
+    },
+    {
+      "title": "AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification",
+      "id": "http://arxiv.org/abs/2602.22724v1",
+      "published": "2026-02-26T07:59:10Z",
+      "updated": "2026-02-26T07:59:10Z",
+      "summary": "Large language model (LLM) agents increasingly rely on external tools and retrieval systems to autonomously complete complex tasks. However, this design exposes agents to indirect prompt injection (IPI), where attacker-controlled context embedded in tool outputs or retrieved content silently steers "
+    },
+    {
+      "title": "Requesting Expert Reasoning: Augmenting LLM Agents with Learned Collaborative Intervention",
+      "id": "http://arxiv.org/abs/2602.22546v1",
+      "published": "2026-02-26T02:38:25Z",
+      "updated": "2026-02-26T02:38:25Z",
+      "summary": "Large Language Model (LLM) based agents excel at general reasoning but often fail in specialized domains where success hinges on long-tail knowledge absent from their training data. While human experts can provide this missing knowledge, their guidance is often unstructured and unreliable, making it"
+    },
+    {
+      "title": "Agentic AI for Intent-driven Optimization in Cell-free O-RAN",
+      "id": "http://arxiv.org/abs/2602.22539v1",
+      "published": "2026-02-26T02:26:58Z",
+      "updated": "2026-02-26T02:26:58Z",
+      "summary": "Agentic artificial intelligence (AI) is emerging as a key enabler for autonomous radio access networks (RANs), where multiple large language model (LLM)-based agents reason and collaborate to achieve operator-defined intents. The open RAN (O-RAN) architecture enables the deployment and coordination "
+    },
+    {
+      "title": "Systems-Level Attack Surface of Edge Agent Deployments on IoT",
+      "id": "http://arxiv.org/abs/2602.22525v1",
+      "published": "2026-02-26T01:48:46Z",
+      "updated": "2026-02-26T01:48:46Z",
+      "summary": "Edge deployment of LLM agents on IoT hardware introduces attack surfaces absent from cloud-hosted orchestration. We present an empirical security analysis of three architectures (cloud-hosted, edge-local swarm, and hybrid) using a multi-device home-automation testbed with local MQTT messaging and an"
+    },
+    {
+      "title": "Silent Egress: When Implicit Prompt Injection Makes LLM Agents Leak Without a Trace",
+      "id": "http://arxiv.org/abs/2602.22450v1",
+      "published": "2026-02-25T22:26:23Z",
+      "updated": "2026-02-25T22:26:23Z",
+      "summary": "Agentic large language model systems increasingly automate tasks by retrieving URLs and calling external tools. We show that this workflow gives rise to implicit prompt injection: adversarial instructions embedded in automatically generated URL previews, including titles, metadata, and snippets, can"
+    },
+    {
+      "title": "A Framework for Assessing AI Agent Decisions and Outcomes in AutoML Pipelines",
+      "id": "http://arxiv.org/abs/2602.22442v1",
+      "published": "2026-02-25T22:02:00Z",
+      "updated": "2026-02-25T22:02:00Z",
+      "summary": "Agent-based AutoML systems rely on large language models to make complex, multi-stage decisions across data processing, model selection, and evaluation. However, existing evaluation practices remain outcome-centric, focusing primarily on final task performance. Through a review of prior work, we fin"
+    }
+  ],
+  "ddg_forums": [
+    {
+      "query": "InfoQ AI Agent",
+      "title": "Agents - InfoQ",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.infoq.com%2Fagents%2F&amp;rut=bc6e015ddb4cf6defc46db6b0739388906ecfdcc53fc6b9d14a1a618aa24a86c"
+    },
+    {
+      "query": "InfoQ AI Agent",
+      "title": "CNCF On demand webinar: Design Patterns for Agentic AI | InfoQ Webinar",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cncf.io%2Fonline%2Dprograms%2Fcncf%2Don%2Ddemand%2Dwebinar%2Ddesign%2Dpatterns%2Dfor%2Dagentic%2Dai%2Dinfoq%2Dwebinar%2F&amp;rut=c1283db47198cadd484fa221d149c957c1e2918ef5b5e7665f72aca7c3996ec9"
+    },
+    {
+      "query": "InfoQ AI Agent",
+      "title": "InfoQ - This article on #InfoQ presents a least-privilege AI Agent ...",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2FInfoQdotcom%2Fphotos%2Fthis%2Darticle%2Don%2Dinfoq%2Dpresents%2Da%2Dleast%2Dprivilege%2Dai%2Dagent%2Dgateway%2Dthat%2Dcontrols%2D%2F1470464725090367%2F&amp;rut=0f72b585d3d8dd9c738f56f28fd6e2c9677fde02725c94d806b4abeeb730a4db"
+    },
+    {
+      "query": "InfoQ AI Agent",
+      "title": "Making AI Agents Work for You (and Your Team) - InfoQ",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.infoq.com%2Fpresentations%2Fai%2Dagents%2Ddevelopment%2F&amp;rut=28d549c64813dcfc410a8bfe419c0fdcf2177fd7878f3dbdb0c00c6b8fe4a080"
+    },
+    {
+      "query": "InfoQ AI Agent",
+      "title": "ai - InfoQ",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.infoq.com%2Fai%2F&amp;rut=0cdcd4690f9356cf5f055c3d23f3f5ec8dd6286c2132e581479195916a28a3f4"
+    },
+    {
+      "query": "极客 AI Agent 工程",
+      "title": "如何从零开始实现一个 AI Agent 框架（理论+实践）-腾讯云开发者社区-腾讯云",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcloud.tencent.com.cn%2Fdeveloper%2Farticle%2F2631821&amp;rut=a9b599bec520ddd190b8ddc5a5d74aa8cb2753d3788a81083f98006e03697e1a"
+    },
+    {
+      "query": "极客 AI Agent 工程",
+      "title": "从对话到协作：AI Agent 智能体开发的工程化实践全景",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcloud.tencent.com%2Fdeveloper%2Farticle%2F2617070&amp;rut=f435d1868ae197b60a3bc9c7999a49d476f5ee9d2e60327acf1e9007f3070c61"
+    },
+    {
+      "query": "极客 AI Agent 工程",
+      "title": "AI Agent工程化体系从产品到技术深度拆解-开发者社区-阿里云",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdeveloper.aliyun.com%2Farticle%2F1667652&amp;rut=a930dd0f26ee155abf0b01bf9dea14de66dee575ce08322ce8f5d0c193617d8d"
+    },
+    {
+      "query": "极客 AI Agent 工程",
+      "title": "从原理到实践：万字长文深入浅出教你优雅开发复杂AI Agent",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fzhuanlan.zhihu.com%2Fp%2F1919338285160965135&amp;rut=65e1038070f145984f02bf75c617ad6d6571db6bd8b3e54eb8a87cde2b6cebf7"
+    },
+    {
+      "query": "极客 AI Agent 工程",
+      "title": "人工智能 - AI Agent 入门指南：从概念到可运行代码（开发者实操版） - 个人文章 - SegmentFault 思否",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsegmentfault.com%2Fa%2F1190000047621515&amp;rut=b4b67e3e303eaf5bd05d5c3b0d9d75cf8d6f5c545c1903e00579e13de239f01b"
+    },
+    {
+      "query": "AI agent benchmark",
+      "title": "10 AI agent benchmarks",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.evidentlyai.com%2Fblog%2Fai%2Dagent%2Dbenchmarks&amp;rut=0f6a980f94c08f34d95fef03e6eb45ba2da83ceff43312de8bc91b59fca7ebb0"
+    },
+    {
+      "query": "AI agent benchmark",
+      "title": "GitHub - THUDM/AgentBench: A Comprehensive Benchmark to Evaluate LLMs ...",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fgithub.com%2FTHUDM%2FAgentBench&amp;rut=c443aedec48d43627e093394fd3feab007c42e26b01ced34593f236bb084c305"
+    },
+    {
+      "query": "AI agent benchmark",
+      "title": "The future of AI agent evaluation - IBM Research",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fresearch.ibm.com%2Fblog%2FAI%2Dagent%2Dbenchmarks&amp;rut=f9c3f70453fe652497c5da124b6d13575642f576c0b95af682c5263b45be9ca2"
+    },
+    {
+      "query": "AI agent benchmark",
+      "title": "How to Benchmark AI Agents Effectively - Galileo AI: The AI ...",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fgalileo.ai%2Flearn%2Fbenchmark%2Dai%2Dagents&amp;rut=b3792c82f4969d8687672b0ea01e9636925d8dde76af6d6b77e44b12735eaa5e"
+    },
+    {
+      "query": "AI agent benchmark",
+      "title": "AI Agent Benchmarking Tools: A Comprehensive Comparison",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmarkaicode.com%2Fai%2Dagent%2Dbenchmarking%2Dtools%2Dcomparison%2F&amp;rut=96a8db455b84b90bde2e814a26402c567ca96ba452eefe507c18c24ddf126a69"
+    },
+    {
+      "query": "AI agent failure case",
+      "title": "AI Agents Horror Stories: How a $47,000 AI Agent Failure Exposed the ...",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftechstartups.com%2F2025%2F11%2F14%2Fai%2Dagents%2Dhorror%2Dstories%2Dhow%2Da%2D47000%2Dfailure%2Dexposed%2Dthe%2Dhype%2Dand%2Dhidden%2Drisks%2Dof%2Dmulti%2Dagent%2Dsystems%2F&amp;rut=598a6d474d3c3679390d5607076e7dfc973a76a49bdfb56fe2fb8d9b485f74fc"
+    },
+    {
+      "query": "AI agent failure case",
+      "title": "Awesome Agent Failures - GitHub",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fgithub.com%2Fvectara%2Fawesome%2Dagent%2Dfailures&amp;rut=971a45126ea30e5c430c50fe55ddcd3ba698e3bbe11060097b185622ab143292"
+    },
+    {
+      "query": "AI agent failure case",
+      "title": "We launched an AI agent and it flopped - Fast Company",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fastcompany.com%2F91414267%2Fwe%2Dlaunched%2Dan%2Dai%2Dagent%2Dand%2Dit%2Dflopped%2Dheres%2Dwhy%2Dwere%2Dtrying%2Dagain%2Dand%2Dwhat%2Dwe%2Dlearned_ai%2Dagent%2Dfailure%2Dlessons%2Dlearned&amp;rut=158b73cd75c308e31b0bc73fe232178be8d30d53c618b7d888b4778d852e2823"
+    },
+    {
+      "query": "AI agent failure case",
+      "title": "10 famous AI disasters - CIO",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cio.com%2Farticle%2F190888%2F5%2Dfamous%2Danalytics%2Dand%2Dai%2Ddisasters.html&amp;rut=efd3156a3796ce055c8e4b66c355be8863dd295307d6eb29d8d51c4152ed738d"
+    },
+    {
+      "query": "AI agent failure case",
+      "title": "6 AI Failure Examples That Showed Us How to Build an AI Agent",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.netguru.com%2Fblog%2Fai%2Dfailure%2Dexamples%2Dhow%2Dto%2Dbuild%2Dan%2Dai%2Dagent&amp;rut=9c2479c4dcfe18c893bbc96e60d73ebdcb19f42678f083d11498102f7f9da4e8"
+    }
+  ]
+}
