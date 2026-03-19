@@ -2,6 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-13｜Nvidia 的 260 亿美元豪赌：卖铲人为什么开始自己造模型
 date: 2026-03-13 09:10:00 +0800
+content_type: tech_notes
 tags: [AI, Nvidia, 开放权重, Nemotron, 模型竞争]
 ---
 

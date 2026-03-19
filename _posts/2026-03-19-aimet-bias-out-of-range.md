@@ -2,6 +2,7 @@
 layout: post
 title: "AIMET 量化踩坑实录：为什么 W16 比 W8 更容易触发 bias out of range？"
 date: 2026-03-19 15:20:00 +0800
+content_type: tech_notes
 tags:
   - AIMET
   - 模型量化

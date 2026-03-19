@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-03｜当 AI Agent 组成「球队」：多 agent 系统的设计实践"
 date: 2026-03-03 11:40:00 +0800
+content_type: tech_notes
 tags: [深度解读, Agent, 多 agent 系统, 并行编排, 分布式工程]
 ---
 

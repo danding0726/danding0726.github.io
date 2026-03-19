@@ -6,6 +6,17 @@ layout: default
   <p>聚焦可落地的方法、部署经验与工程复盘。</p>
 </section>
 
+<section class="content-split-entry">
+  <a class="split-card" href="{{ site.baseurl }}/ai-daily/">
+    <h2>AI 日报</h2>
+    <p>查看每日 AI 热点与趋势追踪。</p>
+  </a>
+  <a class="split-card" href="{{ site.baseurl }}/tech-notes/">
+    <h2>个人技术总结</h2>
+    <p>查看我个人撰写的技术实践与深度总结。</p>
+  </a>
+</section>
+
 <div class="search-container">
   <input type="text" id="search-input" placeholder="搜索文章 / Search posts...">
   <ul id="results-container"></ul>
@@ -43,6 +54,12 @@ layout: default
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
+
+        {% if post.content_type == 'ai_daily' %}
+          <span class="content-type-badge">AI 日报</span>
+        {% elsif post.content_type == 'tech_notes' %}
+          <span class="content-type-badge">个人技术总结</span>
+        {% endif %}
 
         <ul class="tag">
           {% for tag in post.tags %}

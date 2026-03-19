@@ -2,6 +2,7 @@
 layout: post
 title: 【AI 日报】2026-03-10｜开源共识正在动摇
 date: 2026-03-10 10:00:00 +0800
+content_type: ai_daily
 tags: [AI, 开源, 版权, Agent, 英国, 投资]
 ---
 

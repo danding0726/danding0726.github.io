@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-01｜TOP5 热点"
 date: 2026-03-01 10:00:00 +0800
+content_type: ai_daily
 tags: [AI, 日报, 热点]
 ---
 

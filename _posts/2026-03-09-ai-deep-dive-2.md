@@ -2,6 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-09｜当造机器人的人开始害怕机器人
 date: 2026-03-09 10:00:00 +0800
+content_type: tech_notes
 tags: [AI, OpenAI, 军事合同, 伦理, 自动武器, Caitlin Kalinowski]
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-13｜Agent 时代，为什么检索层反而更重要了
 date: 2026-03-13 09:10:00 +0800
+content_type: tech_notes
 tags: [AI, Agent, 检索, Qdrant, 向量搜索, 基础设施]
 ---
 

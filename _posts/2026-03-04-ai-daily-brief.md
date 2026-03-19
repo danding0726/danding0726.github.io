@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-04｜TOP5热点 + 深度解读"
 date: 2026-03-04 10:00:00 +0800
+content_type: ai_daily
 tags: [AI日报, ai-daily, 大模型, 国防合作, 开源生态]
 ---
 

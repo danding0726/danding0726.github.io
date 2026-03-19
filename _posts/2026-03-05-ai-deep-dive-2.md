@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-05｜AI巨头的伦理分歧：OpenAI与Anthropic的国防部博弈"
 date: 2026-03-05 10:00:00 +0800
+content_type: tech_notes
 tags: [AI, 深度解读, OpenAI, Anthropic, 军事AI, AI伦理]
 ---
 

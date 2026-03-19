@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-07｜LLM 永远写不出正确的代码？理解语言模型的本质局限"
 date: 2026-03-07 10:00:00 +0800
+content_type: tech_notes
 tags: [AI, 深度解读, LLM, 代码生成, 编程辅助]
 ---
 

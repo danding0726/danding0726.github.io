@@ -2,6 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-13｜当生成式 AI 进入目标排序：五角大楼把它放进了哪一环
 date: 2026-03-13 09:10:00 +0800
+content_type: tech_notes
 tags: [AI, 军事, Pentagon, Maven, OpenAI, xAI]
 ---
 

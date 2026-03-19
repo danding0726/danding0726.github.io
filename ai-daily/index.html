@@ -1,0 +1,20 @@
+---
+layout: page
+title: AI 日报
+permalink: /ai-daily/
+---
+
+<section class="hero-card">
+  <h1>AI 日报</h1>
+  <p>聚合每日 AI 热点、行业信号与趋势判断。</p>
+</section>
+
+<ul class="archive">
+  {% assign daily_posts = site.posts | where: "content_type", "ai_daily" %}
+  {% for post in daily_posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+    </li>
+  {% endfor %}
+</ul>

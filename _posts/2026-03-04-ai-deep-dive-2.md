@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-04｜从文本到语音：AI 交互范式转移进行时"
 date: 2026-03-04 10:00:00 +0800
+content_type: tech_notes
 tags: [深度解读, 语音交互, Claude Code, GPT-5, 人机交互]
 ---
 

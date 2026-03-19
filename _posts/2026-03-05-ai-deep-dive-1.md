@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-05｜阿里Qwen团队突变：开源大模型黄金时代的隐忧"
 date: 2026-03-05 10:00:00 +0800
+content_type: tech_notes
 tags: [AI, 深度解读, Qwen, 阿里巴巴, 开源模型]
 ---
 

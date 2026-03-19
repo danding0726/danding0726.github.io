@@ -2,6 +2,7 @@
 layout: post
 title: "vLLM 大模型部署实战：从入门到生产"
 date: 2026-03-02 10:20:00 +0800
+content_type: tech_notes
 tags: [AI, 大模型, 工程实践]
 ---
 

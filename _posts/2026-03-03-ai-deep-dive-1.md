@@ -2,6 +2,7 @@
 layout: post
 title: "Grantex：Agent 时代的授权协议，会成为下一个 OAuth 吗？"
 date: 2026-03-03 10:17:00 +0800
+content_type: tech_notes
 tags: [深度解读, Agent, 安全, 权限治理, OAuth, 协议]
 ---
 

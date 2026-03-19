@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-06｜AI 真的在冲击就业吗？Anthropic 用数据说话"
 date: 2026-03-06 10:00:00 +0800
+content_type: tech_notes
 tags: [AI, 深度解读, Anthropic, 劳动力市场, 就业, AI影响]
 ---
 

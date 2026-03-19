@@ -2,6 +2,7 @@
 layout: post
 title: 【AI 日报】2026-03-09｜Agent 爆火与 AI 伦理风暴
 date: 2026-03-09 10:00:00 +0800
+content_type: ai_daily
 tags: [AI, Agent, OpenClaw, OpenAI, 大模型]
 ---
 

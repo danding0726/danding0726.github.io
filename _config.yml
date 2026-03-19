@@ -22,6 +22,10 @@ favicon: /images/favicon.svg
 navigation:
   - name: 首页
     url: /
+  - name: AI 日报
+    url: /ai-daily
+  - name: 个人技术总结
+    url: /tech-notes
   - name: 归档
     url: /archive
   - name: 标签

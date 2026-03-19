@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-06｜GPT-5.4 登场与 AI 伦理新战线"
 date: 2026-03-06 10:00:00 +0800
+content_type: ai_daily
 tags: [AI, 日报, GPT-5.4, OpenAI, Anthropic, 国防部]
 ---
 

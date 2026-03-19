@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-12｜便宜模型为什么比更强模型更危险"
 date: 2026-03-12 09:10:00 +0800
+content_type: tech_notes
 tags:
   - AI
   - 深度解读

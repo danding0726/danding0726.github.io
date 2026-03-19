@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-07｜代码能力反思与模型安全新博弈"
 date: 2026-03-07 10:00:00 +0800
+content_type: ai_daily
 tags: [AI, 日报, LLM代码, OBLITERATUS, 模型安全, seomachine]
 ---
 

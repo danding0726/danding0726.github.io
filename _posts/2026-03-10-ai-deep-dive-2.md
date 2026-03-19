@@ -2,6 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-10｜英国 AI 投资“幻影”：数十亿承诺背后的资金困境
 date: 2026-03-10 10:00:00 +0800
+content_type: tech_notes
 tags: [AI, 英国, 投资, 政策, 科技]
 ---
 

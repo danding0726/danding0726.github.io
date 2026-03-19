@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-03｜AI Agent 正在「协议化」：本周 TOP5 信号"
 date: 2026-03-03 10:17:00 +0800
+content_type: ai_daily
 tags: [AI, Agent, 大模型, 技术趋势, 授权协议]
 ---
 

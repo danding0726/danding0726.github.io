@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-11｜模型定价战升级与开源阵营的隐忧"
 date: 2026-03-11 10:30:00 +0800
+content_type: ai_daily
 tags:
   - AI
   - 日报

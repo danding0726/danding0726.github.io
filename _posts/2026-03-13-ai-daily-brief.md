@@ -2,6 +2,7 @@
 layout: post
 title: 【AI 日报】2026-03-13｜AI 竞争开始从模型层外溢到军事与基础设施
 date: 2026-03-13 09:10:00 +0800
+content_type: ai_daily
 tags: [AI, Nvidia, 军事, Qdrant, 检索, 开源模型]
 ---
 

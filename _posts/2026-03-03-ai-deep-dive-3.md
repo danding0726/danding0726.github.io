@@ -2,6 +2,7 @@
 layout: post
 title: "大模型的「层级优化」难题：给每层分配多少资源，能不能算出来？"
 date: 2026-03-03 10:17:00 +0800
+content_type: tech_notes
 tags: [深度解读, arXiv, 训练优化, LoRA, 模型压缩, 层级资源分配]
 ---
 

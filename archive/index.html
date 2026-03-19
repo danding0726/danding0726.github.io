@@ -8,6 +8,17 @@ permalink: /archive/
   <h2>No post found</h2>
 {% endif %}
 
+<section class="content-split-entry content-split-entry--compact">
+  <a class="split-card" href="{{ site.baseurl }}/ai-daily/">
+    <h2>AI 日报</h2>
+    <p>进入 AI 日报列表</p>
+  </a>
+  <a class="split-card" href="{{ site.baseurl }}/tech-notes/">
+    <h2>个人技术总结</h2>
+    <p>进入个人技术总结列表</p>
+  </a>
+</section>
+
 <ul class="archive">
   {% for post in site.posts %}
     {% unless post.next %}

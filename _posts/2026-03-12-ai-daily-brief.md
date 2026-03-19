@@ -2,6 +2,7 @@
 layout: post
 title: "【AI 日报】2026-03-12｜便宜模型继续下探，代理开始从会说话走向会干活"
 date: 2026-03-12 09:00:00 +0800
+content_type: ai_daily
 tags:
   - AI
   - 日报

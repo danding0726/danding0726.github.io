@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-11｜长上下文训练的临界突破：87% 内存削减意味着什么"
 date: 2026-03-11 10:40:00 +0800
+content_type: tech_notes
 tags:
   - AI
   - 深度解读

@@ -2,6 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-11｜开源大模型的可维护性危机：从 Qwen 震荡看生态脆弱性"
 date: 2026-03-11 10:35:00 +0800
+content_type: tech_notes
 tags:
   - AI
   - 深度解读
