@@ -2,7 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-10｜当 AI 重新实现开源库：一场关于“合法即正当”的大辩论
 date: 2026-03-10 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, 开源, chardet, LGPL, copyleft, 许可证]
 ---
 

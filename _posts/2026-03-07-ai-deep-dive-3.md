@@ -2,7 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-07｜seomachine 爆火背后：AI 原生内容生产范式的崛起"
 date: 2026-03-07 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, 深度解读, seomachine, AI内容生成, SEO, Claude Code]
 ---
 

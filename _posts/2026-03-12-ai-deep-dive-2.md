@@ -2,7 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-12｜Agent 正在从演示品变成产品零件"
 date: 2026-03-12 09:20:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags:
   - AI
   - 深度解读

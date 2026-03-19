@@ -6,11 +6,11 @@ permalink: /ai-daily/
 
 <section class="hero-card">
   <h1>AI 日报</h1>
-  <p>聚合每日 AI 热点、行业信号与趋势判断。</p>
+  <p>聚合每日 AI 热点与深度解读（含 AI 观察）。</p>
 </section>
 
 <ul class="archive">
-  {% assign daily_posts = site.posts | where: "content_type", "ai_daily" %}
+  {% assign daily_posts = site.posts | where_exp: "post", "post.content_type == 'ai_daily' or post.content_type == 'ai_insight'" %}
   {% for post in daily_posts %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

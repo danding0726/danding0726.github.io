@@ -2,7 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-06｜GPT-5.4 原生计算机使用：AI Agent 的临界点突破"
 date: 2026-03-06 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, 深度解读, GPT-5.4, OpenAI, Agent, 计算机使用]
 ---
 

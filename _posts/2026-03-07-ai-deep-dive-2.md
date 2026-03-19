@@ -2,7 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-07｜OBLITERATUS 与模型安全的持续博弈"
 date: 2026-03-07 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, 深度解读, OBLITERATUS, 模型安全, 对齐, 开源模型]
 ---
 

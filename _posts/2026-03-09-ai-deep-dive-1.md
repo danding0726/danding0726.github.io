@@ -2,7 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-09｜OpenClaw风暴：巨头为何集体“摆摊”推Agent
 date: 2026-03-09 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, Agent, OpenClaw, 腾讯, 阿里, 小米, 大模型]
 ---
 

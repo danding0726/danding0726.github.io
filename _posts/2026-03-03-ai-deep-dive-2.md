@@ -2,7 +2,7 @@
 layout: post
 title: "Ollama 正在变成「模型入口」：它想要的不仅仅是本地运行"
 date: 2026-03-03 10:17:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [深度解读, Ollama, 本地部署, 开源生态, 模型入口, 工程化]
 ---
 

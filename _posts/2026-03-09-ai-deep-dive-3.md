@@ -2,7 +2,7 @@
 layout: post
 title: 【深度解读】2026-03-09｜为什么所有视频模型都“学不会”数数
 date: 2026-03-09 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, 视频生成, Sora, Runway, 大模型, 物理理解]
 ---
 

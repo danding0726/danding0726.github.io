@@ -2,7 +2,7 @@
 layout: post
 title: "【深度解读】2026-03-05｜BMW工厂引入类人机器人：工业自动化的临界点是否已至"
 date: 2026-03-05 10:00:00 +0800
-content_type: tech_notes
+content_type: ai_insight
 tags: [AI, 深度解读, BMW, 类人机器人, 工业自动化]
 ---
 
