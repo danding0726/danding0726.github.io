@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【深度解读】2026-03-06｜Anthropic 被列"供应链风险"：AI 伦理争议进入法律阶段"
+title: '【深度解读】2026-03-06｜Anthropic 被列"供应链风险"：AI 伦理争议进入法律阶段'
 date: 2026-03-06 10:00:00 +0800
 content_type: tech_notes
 tags: [AI, 深度解读, Anthropic, 国防部, OpenAI, AI伦理]

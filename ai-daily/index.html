@@ -10,8 +10,10 @@ permalink: /ai-daily/
 </section>
 
 <ul class="archive">
-  {% assign daily_posts = site.posts | where_exp: "post", "post.content_type == 'ai_daily' or post.content_type == 'ai_insight'" %}
-  {% for post in daily_posts %}
+  {% assign daily_posts = site.posts | where: "content_type", "ai_daily" %}
+  {% assign insight_posts = site.posts | where: "content_type", "ai_insight" %}
+  {% assign combined_posts = daily_posts | concat: insight_posts | sort: "date" | reverse %}
+  {% for post in combined_posts %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       <time>{{ post.date | date: "%Y-%m-%d" }}</time>
