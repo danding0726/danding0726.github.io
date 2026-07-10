@@ -6,33 +6,52 @@ layout: default
 {% assign ai_insight_posts = site.posts | where: "content_type", "ai_insight" %}
 {% assign ai_posts_count = ai_daily_posts.size | plus: ai_insight_posts.size %}
 
-<section class="hero-card">
+<section class="home-hero">
   <div class="hero-copy">
-    <p class="hero-kicker">Danding's Lab</p>
-    <h1>技术实践与工程复盘</h1>
-    <p>首页只保留个人写作的技术文章；AI 日报和深度解读已沉入归档，作为历史资料检索。</p>
+    <p class="eyebrow"><span></span>DANDING'S DIGITAL GARDEN</p>
+    <h1>把复杂技术，<br>整理成可以复用的<span>方法。</span></h1>
+    <p class="hero-lead">记录 AI 系统、模型部署与工程实践中的真实问题，也分享我如何拆解、验证和解决它们。</p>
+    <div class="hero-actions">
+      <a class="button button--primary" href="#latest-writing">开始阅读 <span aria-hidden="true">↓</span></a>
+      <a class="button button--text" href="{{ site.baseurl }}/about/">认识我 <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
-  <div class="hero-stats" aria-label="站点内容统计">
-    <span><strong>{{ featured_posts.size }}</strong>技术文章</span>
-    <span><strong>{{ ai_posts_count }}</strong>AI 归档</span>
-    <span><strong>{{ site.posts.size }}</strong>全部记录</span>
-  </div>
+  <aside class="profile-card" aria-label="个人简介">
+    <div class="profile-card__top">
+      <img src="{{ site.baseurl }}/images/images.jpg" alt="Danding 的头像">
+      <span class="status-dot">持续学习中</span>
+    </div>
+    <p class="profile-card__quote">“比起追逐答案，我更在意如何建立一套稳定找到答案的方法。”</p>
+    <dl>
+      <div><dt>关注</dt><dd>AI / LLM / Infra</dd></div>
+      <div><dt>写作</dt><dd>{{ featured_posts.size }} 篇技术总结</dd></div>
+      <div><dt>坐标</dt><dd>China · GMT+8</dd></div>
+    </dl>
+  </aside>
 </section>
 
-<section class="content-split-entry content-split-entry--single">
-  <a class="split-card" href="{{ site.baseurl }}/tech-notes/">
-    <h2>个人技术总结</h2>
-    <p>查看我个人撰写的技术实践与深度总结。</p>
-  </a>
-  <a class="split-card split-card--quiet" href="{{ site.baseurl }}/archive/">
-    <h2>完整归档</h2>
-    <p>包含历史 AI 日报、深度解读与全部旧文章。</p>
-  </a>
+<section class="home-about">
+  <p class="section-index">01 / ABOUT</p>
+  <div>
+    <h2>你好，我是 Danding。</h2>
+    <p>一名关注人工智能与工程落地的技术创作者。这里不是新闻流，而是我的工作台：把踩过的坑、做过的实验和想明白的问题，沉淀为下一次仍然有用的知识。</p>
+  </div>
+  <a href="{{ site.baseurl }}/about/" aria-label="查看完整个人介绍">个人介绍 <span aria-hidden="true">↗</span></a>
 </section>
+
+<section class="writing-section" id="latest-writing">
+  <header class="section-heading">
+    <p class="section-index">02 / WRITING</p>
+    <div>
+      <h2>最近写作</h2>
+      <p>经由实践验证的技术笔记与工程复盘。</p>
+    </div>
+    <a href="{{ site.baseurl }}/tech-notes/">查看全部 <span aria-hidden="true">↗</span></a>
+  </header>
 
 <div class="search-container">
   <div class="search-box">
-    <input type="text" id="search-input" placeholder="搜索个人技术文章">
+    <input type="text" id="search-input" placeholder="搜索文章、主题或关键词" aria-label="搜索技术文章">
     <button type="button" data-search-clear aria-label="清空搜索" hidden>×</button>
   </div>
   <ul id="results-container"></ul>
@@ -57,13 +76,15 @@ layout: default
   <h2>No post found</h2>
 {% endif %}
 
-<div class="posts">
+<div class="posts home-posts">
   {% for post in featured_posts %}
   {% unless post.draft or post.title == nil or post.title == "" %}
-    <article class="post">
-      <h1>
+    <article class="post home-post">
+      <div class="post-order" aria-hidden="true">0{{ forloop.index }}</div>
+      <div class="post-main">
+      <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
+      </h3>
 
       <div class="meta">
         <span class="date">
@@ -94,17 +115,28 @@ layout: default
         {{ clean_excerpt | truncate: 200 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读全文</a>
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="post-arrow" aria-label="阅读《{{ post.title }}》">↗</a>
     </article>
   {% endunless %}
 {% endfor %}
 </div>
+</section>
+
+<section class="home-archive-callout">
+  <div>
+    <p class="section-index">03 / ARCHIVE</p>
+    <h2>所有探索，都有迹可循。</h2>
+  </div>
+  <p>AI 日报、深度解读与历史文章统一保留在归档中，方便按内容类型和时间回看。</p>
+  <a class="button button--primary" href="{{ site.baseurl }}/archive/">浏览完整归档 <span aria-hidden="true">↗</span></a>
+</section>
 
 <!--不算子网站访客统计-->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 <!-- pv的方式，单个用户连续点击n篇文章，记录n次访问量 -->
-<div align="center">
+<div class="visitor-stats">
 	<span id="busuanzi_container_site_pv" style="font-family:Consolas;color:Silver;font-size:12px;">
 		View:<span id="busuanzi_value_site_pv" style="font-family:Consolas;color:Silver;font-size:12px;"></span>
 	</span>
