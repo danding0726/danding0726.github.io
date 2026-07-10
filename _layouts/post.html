@@ -2,33 +2,49 @@
 layout: default
 ---
 
-<article class="posts">
-  
-  {% if page.title %}
-  <h1>{{ page.title }}</h1>
-  {% else %}
-  <h1>无标题文章</h1>
-  {% endif %}
+<article class="posts article-page">
+  <a class="post-breadcrumb" href="{{ site.baseurl }}/tech-notes/">← 返回个人技术总结</a>
 
-  <div class="meta">
-    <span class="date">
-      {{ page.date | date: "%Y-%m-%d" }}
-    </span>
+  <header class="post-header">
+    <p class="post-kicker">
+      {% if page.content_type == 'tech_notes' %}ENGINEERING NOTE{% elsif page.content_type == 'ai_insight' %}AI INSIGHT{% else %}FIELD NOTE{% endif %}
+      <span>{{ page.date | date: "%Y.%m.%d" }}</span>
+    </p>
 
-    <ul class="tag">
-      {% for tag in page.tags %}
-      <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-          {{ tag }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+    {% if page.title %}
+    <h1>{{ page.title }}</h1>
+    {% else %}
+    <h1>无标题文章</h1>
+    {% endif %}
+
+    {% if page.description %}
+    <p class="post-deck">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="meta post-meta">
+      <span>Written by Danding</span>
+      <span aria-hidden="true">·</span>
+      <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+
+      <ul class="tag">
+        {% for tag in page.tags limit:4 %}
+        <li>
+          <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </header>
 
   <div class="entry post-entry">
     {{ content }}
   </div>
+
+  <footer class="post-end">
+    <span aria-hidden="true">D.</span>
+    <p>感谢阅读。希望这篇记录能为你的下一次实践提供参考。</p>
+    <a href="{{ site.baseurl }}/archive/">继续浏览归档 ↗</a>
+  </footer>
 
   {% include disqus.html %}
   {% include gitalk.html %}
@@ -38,14 +54,16 @@ layout: default
   {% if page.previous.url %}
     <span class="prev" >
       <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-        ← 上一篇
+        <small>上一篇</small>
+        <strong>{{ page.previous.title | default: "继续阅读" }}</strong>
       </a>
     </span>
   {% endif %}
   {% if page.next.url %}
     <span class="next" >
       <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-        下一篇 →
+        <small>下一篇</small>
+        <strong>{{ page.next.title | default: "继续阅读" }}</strong>
       </a>
     </span>
   {% endif %}
