@@ -1,24 +1,40 @@
 ---
 layout: default
 ---
+{% assign featured_posts = site.posts | where: "content_type", "tech_notes" %}
+{% assign ai_daily_posts = site.posts | where: "content_type", "ai_daily" %}
+{% assign ai_insight_posts = site.posts | where: "content_type", "ai_insight" %}
+{% assign ai_posts_count = ai_daily_posts.size | plus: ai_insight_posts.size %}
+
 <section class="hero-card">
-  <h1>技术与 AI 实践记录</h1>
-  <p>聚焦可落地的方法、部署经验与工程复盘。</p>
+  <div class="hero-copy">
+    <p class="hero-kicker">Danding's Lab</p>
+    <h1>技术实践与工程复盘</h1>
+    <p>首页只保留个人写作的技术文章；AI 日报和深度解读已沉入归档，作为历史资料检索。</p>
+  </div>
+  <div class="hero-stats" aria-label="站点内容统计">
+    <span><strong>{{ featured_posts.size }}</strong>技术文章</span>
+    <span><strong>{{ ai_posts_count }}</strong>AI 归档</span>
+    <span><strong>{{ site.posts.size }}</strong>全部记录</span>
+  </div>
 </section>
 
-<section class="content-split-entry">
-  <a class="split-card" href="{{ site.baseurl }}/ai-daily/">
-    <h2>AI 日报</h2>
-    <p>查看每日 AI 热点与趋势追踪。</p>
-  </a>
+<section class="content-split-entry content-split-entry--single">
   <a class="split-card" href="{{ site.baseurl }}/tech-notes/">
     <h2>个人技术总结</h2>
     <p>查看我个人撰写的技术实践与深度总结。</p>
   </a>
+  <a class="split-card split-card--quiet" href="{{ site.baseurl }}/archive/">
+    <h2>完整归档</h2>
+    <p>包含历史 AI 日报、深度解读与全部旧文章。</p>
+  </a>
 </section>
 
 <div class="search-container">
-  <input type="text" id="search-input" placeholder="搜索文章 / Search posts...">
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索个人技术文章">
+    <button type="button" data-search-clear aria-label="清空搜索" hidden>×</button>
+  </div>
   <ul id="results-container"></ul>
 </div>
 
@@ -30,20 +46,19 @@ layout: default
 	searchInput: document.getElementById('search-input'),
 	resultsContainer: document.getElementById('results-container'),
 	json: '{{ site.baseurl }}/search.json',
-	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-	noResultsText: 'No results found',
+	searchResultTemplate: '<li><a href="{url}?query={query}"><span>{title}</span><time>{date}</time></a></li>',
+	noResultsText: '没有找到匹配的个人技术文章',
 	limit: 10,
 	fuzzy: false,
 	exclude: ['Welcome']
   })
 </script>
- 
-{% if site.posts.size == 0 %}
+{% if featured_posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in featured_posts %}
   {% unless post.draft or post.title == nil or post.title == "" %}
     <article class="post">
       <h1>
@@ -75,30 +90,14 @@ layout: default
       </div>
 
       <div class="entry">
-        {{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}
+        {% assign clean_excerpt = post.excerpt | replace: '<div class="blog-only" markdown="1">', '' | replace: '<div class="deep-only" markdown="1">', '' | replace: '</div>', '' | strip_html | strip_newlines %}
+        {{ clean_excerpt | truncate: 200 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">阅读全文</a>
     </article>
   {% endunless %}
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <span class="prev">
-      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        ← 上一页
-      </a>
-    </span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <span class="next">
-      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        下一页 →
-      </a>
-    </span>
-  {% endif %}
+{% endfor %}
 </div>
 
 <!--不算子网站访客统计-->

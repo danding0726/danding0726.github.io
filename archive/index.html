@@ -2,22 +2,47 @@
 layout: page
 title: 归档
 permalink: /archive/
+hide_title: true
 ---
 
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
 
+{% assign tech_posts = site.posts | where: "content_type", "tech_notes" %}
+{% assign daily_posts = site.posts | where: "content_type", "ai_daily" %}
+{% assign insight_posts = site.posts | where: "content_type", "ai_insight" %}
+{% assign ai_posts_count = daily_posts.size | plus: insight_posts.size %}
+
+<section class="hero-card archive-hero">
+  <div class="hero-copy">
+    <p class="hero-kicker">Archive</p>
+    <h1>完整归档</h1>
+    <p>所有文章都保留在这里。默认展示全部，也可以按个人技术与 AI 生成内容快速过滤。</p>
+  </div>
+  <div class="hero-stats" aria-label="归档统计">
+    <span><strong>{{ site.posts.size }}</strong>全部</span>
+    <span><strong>{{ tech_posts.size }}</strong>个人技术</span>
+    <span><strong>{{ ai_posts_count }}</strong>AI 生成</span>
+  </div>
+</section>
+
 <section class="content-split-entry content-split-entry--compact">
-  <a class="split-card" href="{{ site.baseurl }}/ai-daily/">
-    <h2>AI 日报</h2>
-    <p>进入 AI 日报列表</p>
-  </a>
   <a class="split-card" href="{{ site.baseurl }}/tech-notes/">
     <h2>个人技术总结</h2>
     <p>进入个人技术总结列表</p>
   </a>
+  <a class="split-card split-card--quiet" href="{{ site.baseurl }}/">
+    <h2>首页精选</h2>
+    <p>只展示个人技术文章</p>
+  </a>
 </section>
+
+<div class="archive-filter" aria-label="归档筛选">
+  <button type="button" class="active" data-archive-filter="all" aria-pressed="true">全部 <span>{{ site.posts.size }}</span></button>
+  <button type="button" data-archive-filter="tech" aria-pressed="false">个人技术 <span>{{ tech_posts.size }}</span></button>
+  <button type="button" data-archive-filter="ai" aria-pressed="false">AI 生成 <span>{{ ai_posts_count }}</span></button>
+</div>
 
 <ul class="archive">
   {% for post in site.posts %}
@@ -31,7 +56,21 @@ permalink: /archive/
       {% endif %}
     {% endunless %}
 
-    <li>
+    {% assign archive_kind = "other" %}
+    {% assign archive_label = "文章" %}
+    {% if post.content_type == "tech_notes" %}
+      {% assign archive_kind = "tech" %}
+      {% assign archive_label = "个人技术" %}
+    {% elsif post.content_type == "ai_daily" or post.content_type == "ai_insight" %}
+      {% assign archive_kind = "ai" %}
+      {% if post.content_type == "ai_daily" %}
+        {% assign archive_label = "AI 日报" %}
+      {% else %}
+        {% assign archive_label = "AI 深度" %}
+      {% endif %}
+    {% endif %}
+
+    <li data-archive-kind="{{ archive_kind }}">
       {% if post.link %}
       <a href="{{ post.link }}">
       {% else %}
@@ -39,6 +78,7 @@ permalink: /archive/
       {% endif %}
         {{ post.title }}
       </a>
+      <span class="archive-badge archive-badge--{{ archive_kind }}">{{ archive_label }}</span>
       <time>{{ post.date | date: "%Y-%m-%d" }}</time>
     </li>
   {% endfor %}

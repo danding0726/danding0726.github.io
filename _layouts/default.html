@@ -16,11 +16,19 @@
       </div>
     </div>
 
+    <div class="wrapper-footer-mobile">
+      <footer class="footer">
+        {% include footer.html %}
+      </footer>
+    </div>
+
     {% include analytics.html %}
 
 <script>
 (function () {
   const body = document.body;
+  const navToggle = document.querySelector('.mobile-nav-toggle');
+  const sidebar = document.querySelector('.wrapper-sidebar');
 
   function applyMode(mode) {
     body.classList.remove('reading-blog', 'reading-deep', 'theme-light', 'theme-dark');
@@ -35,6 +43,7 @@
     document.querySelectorAll('.reading-toggle button').forEach(btn => {
       const active = btn.getAttribute('data-reading-mode') === mode;
       btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
   }
 
@@ -51,6 +60,42 @@
   document.querySelectorAll('.reading-toggle button').forEach(btn => {
     btn.addEventListener('click', () => applyMode(btn.getAttribute('data-reading-mode')));
   });
+
+  if (navToggle && sidebar) {
+    navToggle.addEventListener('click', () => {
+      const open = sidebar.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  document.querySelectorAll('[data-archive-filter]').forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-archive-filter');
+      document.querySelectorAll('[data-archive-filter]').forEach(item => {
+        const active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      document.querySelectorAll('[data-archive-kind]').forEach(item => {
+        const match = filter === 'all' || item.getAttribute('data-archive-kind') === filter;
+        item.hidden = !match;
+      });
+    });
+  });
+
+  const searchInput = document.getElementById('search-input');
+  const searchClear = document.querySelector('[data-search-clear]');
+  if (searchInput && searchClear) {
+    const syncClear = () => searchClear.hidden = searchInput.value.length === 0;
+    searchInput.addEventListener('input', syncClear);
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+      searchInput.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
+      searchInput.focus();
+    });
+    syncClear();
+  }
 })();
 </script>
 
@@ -67,18 +112,11 @@ window.MathJax = {
 };
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-  </body>
 
   {% if page.toc==true %}
   <script>
     document.getElementById("main").classList.add("withtoc");
   </script>
   {% endif %}
-
-  <div class="wrapper-footer-mobile">
-    <footer class="footer">
-      {% include footer.html %}
-    </footer>
-
-
+  </body>
 </html>
