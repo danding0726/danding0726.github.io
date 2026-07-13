@@ -47,11 +47,8 @@ body.cosmos-shell::after {
   z-index: 60;
   inset: 0;
   pointer-events: none;
-  background:
-    repeating-linear-gradient(0deg, rgba(220, 213, 187, .018) 0 1px, transparent 1px 4px),
-    radial-gradient(ellipse at center, transparent 52%, rgba(0, 0, 0, .38) 100%);
-  mix-blend-mode: screen;
-  opacity: .48;
+  background: radial-gradient(ellipse at center, transparent 64%, rgba(0, 0, 0, .28) 100%);
+  opacity: .32;
 }
 
 body.cosmos-shell.theme-light {
@@ -62,8 +59,7 @@ body.cosmos-shell.theme-light {
 }
 
 body.cosmos-shell.theme-light::after {
-  mix-blend-mode: multiply;
-  opacity: .28;
+  opacity: .12;
 }
 
 ::selection {
@@ -75,19 +71,7 @@ body.cosmos-shell.theme-light::after {
 .orbital-header {
   border-bottom-color: color-mix(in srgb, var(--signal) 34%, var(--line));
   background: color-mix(in srgb, var(--paper) 88%, transparent);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, .14);
-}
-
-.orbital-header::before {
-  content: "RECOVERY CHANNEL 07 · O₂ NOMINAL";
-  position: absolute;
-  bottom: -17px;
-  left: 34px;
-  padding: 3px 7px;
-  background: var(--signal);
-  color: #ece4ce;
-  font: 650 6px/1 var(--sans);
-  letter-spacing: .15em;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .09);
 }
 
 .orbital-header::after {
@@ -160,30 +144,18 @@ body.theme-light .reading-toggle--orbital button.active {
     linear-gradient(145deg, #dfd7c3, #d2cbb7 58%, #c3bca9);
 }
 
-.cosmos-dust,
-.cosmos-scratches {
+.cosmos-dust {
   position: absolute;
-  z-index: 6;
+  z-index: 1;
   inset: 0;
   pointer-events: none;
 }
 
 .cosmos-dust {
-  z-index: 1;
   background:
-    radial-gradient(ellipse at 18% 92%, rgba(133, 95, 54, .15), transparent 32%),
-    radial-gradient(ellipse at 86% 82%, rgba(150, 73, 38, .11), transparent 25%),
-    linear-gradient(9deg, transparent 61%, rgba(165, 140, 95, .035) 62%, transparent 67%);
-  filter: blur(2px);
-}
-
-.cosmos-scratches {
-  opacity: .22;
-  background-image:
-    linear-gradient(105deg, transparent 0 22%, rgba(219, 206, 170, .15) 22.05%, transparent 22.12%),
-    linear-gradient(76deg, transparent 0 73%, rgba(219, 206, 170, .11) 73.04%, transparent 73.1%),
-    repeating-linear-gradient(0deg, transparent 0 5px, rgba(255, 255, 255, .015) 5px 6px);
-  mix-blend-mode: screen;
+    radial-gradient(ellipse at 18% 92%, rgba(133, 95, 54, .09), transparent 32%),
+    radial-gradient(ellipse at 86% 82%, rgba(150, 73, 38, .07), transparent 25%);
+  filter: blur(3px);
 }
 
 .cosmos-nebula {
@@ -194,20 +166,9 @@ body.theme-light .reading-toggle--orbital button.active {
 }
 
 .cosmos-grid {
-  opacity: .27;
+  opacity: .15;
   background-size: 64px 64px;
   transform: perspective(900px) rotateX(2deg);
-}
-
-.cosmos-grid::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 36%;
-  width: 1px;
-  background: var(--cosmos-line);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
 }
 
 .cosmos-kicker,
@@ -263,19 +224,9 @@ body.theme-light .reading-toggle--orbital button.active {
   46% { opacity: .18; }
 }
 
-.cosmos-location::before {
-  content: "△";
-  color: var(--cosmos-signal);
-}
-
 .cosmos-route line {
   stroke-dasharray: 2 6;
-}
-
-.cosmos-route text {
-  paint-order: stroke;
-  stroke: var(--cosmos-bg);
-  stroke-width: 5px;
+  opacity: .62;
 }
 
 /* Every world has its own dead ecology. */
@@ -296,18 +247,6 @@ body.theme-light .reading-toggle--orbital button.active {
 .planet-scan {
   background: linear-gradient(92deg, transparent 47%, rgba(205, 96, 52, .17) 49%, transparent 51%);
   animation-duration: 11s;
-}
-
-.cosmos-planet::before {
-  content: "";
-  position: absolute;
-  top: 7%;
-  right: -6%;
-  width: 15px;
-  height: 15px;
-  border-top: 1px solid var(--cosmos-signal);
-  border-right: 1px solid var(--cosmos-signal);
-  opacity: .58;
 }
 
 .cosmos-planet--core .planet-sphere {
@@ -401,30 +340,12 @@ body.theme-light .reading-toggle--orbital button.active {
   box-shadow: 0 0 8px #c76037;
 }
 
-.planet-panel__topic {
-  margin: 9px 0 0;
-  color: var(--cosmos-soft) !important;
-  font-size: 7px;
-  letter-spacing: .14em;
-}
-
 .planet-panel__description {
-  border-left: 1px solid var(--cosmos-signal);
-  padding-left: 13px;
+  padding-left: 0;
 }
 
 .planet-panel__index {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 12px;
-}
-
-.planet-panel__index span:last-child {
-  overflow: hidden;
-  color: color-mix(in srgb, var(--cosmos-signal) 75%, var(--cosmos-soft));
-  text-align: right;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: block;
 }
 
 .planet-regions span,
@@ -462,36 +383,16 @@ body.theme-light .reading-toggle--orbital button.active {
 }
 
 /* Recovered records */
-body.cosmos-shell.is-post-page .article-page {
-  border-left: 1px solid color-mix(in srgb, var(--signal) 55%, var(--line));
-  padding-left: clamp(24px, 4vw, 58px);
-}
-
 body.cosmos-shell.is-post-page .article-page::before {
-  content: "FILE / PARTIAL · AUTH / 0726";
-  position: absolute;
-  top: 116px;
-  left: 13px;
-  padding-left: 6px;
-  border-left: 1px solid var(--signal);
-  color: var(--ink-faint);
-  font: 650 6px/1.4 "SFMono-Regular", Consolas, monospace;
-  letter-spacing: .1em;
-  white-space: nowrap;
-  writing-mode: vertical-rl;
+  display: none;
 }
 
 body.cosmos-shell.is-machine-record .article-page::before {
-  content: "FILE / SYNTHETIC · AUTH / NONE";
-}
-
-body.cosmos-shell.is-machine-record .post-header::before {
-  content: "AUTOMATED RELAY / UNVERIFIED ORIGIN";
+  display: none;
 }
 
 body.cosmos-shell.is-post-page .post-header::before {
-  color: var(--signal);
-  font-family: "SFMono-Regular", Consolas, monospace;
+  display: none;
 }
 
 .post-kicker,
@@ -505,12 +406,6 @@ body.cosmos-shell.is-post-page .post-header::before {
 .archive-badge,
 .archive time {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-}
-
-.post-pipeline span i {
-  border-radius: 0;
-  background: var(--signal);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--signal) 12%, transparent);
 }
 
 .post-entry h2 {
@@ -551,23 +446,11 @@ body.cosmos-shell .hero-card,
 body.cosmos-shell .content-split-entry .split-card,
 body.cosmos-shell .archive-filter {
   border-radius: 1px;
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--paper-raised) 82%, transparent), color-mix(in srgb, var(--paper) 70%, transparent));
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  background: color-mix(in srgb, var(--paper-raised) 70%, transparent);
 }
 
 .hero-card {
   position: relative;
-}
-
-.hero-card::after {
-  content: "AUTHORIZED RECOVERY CREW ONLY";
-  position: absolute;
-  right: 18px;
-  bottom: 13px;
-  color: var(--ink-faint);
-  font: 650 6px/1 monospace;
-  letter-spacing: .15em;
 }
 
 .archive-filter button {
@@ -618,8 +501,7 @@ body.cosmos-shell .archive-filter {
 
 .about-grid article {
   border-radius: 1px;
-  background:
-    repeating-linear-gradient(135deg, transparent 0 8px, color-mix(in srgb, var(--line) 25%, transparent) 8px 9px);
+  background: transparent;
 }
 
 .about-grid article > span {
@@ -664,26 +546,16 @@ body.cosmos-shell .archive-filter {
 }
 
 .orbital-footer::before {
-  content: "END OF RECOVERED SECTOR";
-  display: block;
-  margin-bottom: 14px;
-  color: var(--signal);
-  font: 650 6px/1 monospace;
-  letter-spacing: .15em;
+  display: none;
 }
 
 @media screen and (max-width: 680px) {
   .knowledge-cosmos.is-planet-view { min-height: 900px; }
-  .orbital-header::before { left: 14px; }
   .cosmos-header h1 + p { max-width: 460px; }
-  .planet-panel__index { grid-template-columns: 1fr; }
-  .planet-panel__index span:last-child { text-align: left; }
   body.cosmos-shell.is-post-page .article-page {
     border-left: 0;
     padding-left: 0;
   }
-  body.cosmos-shell.is-post-page .article-page::before { display: none; }
-  .hero-card::after { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

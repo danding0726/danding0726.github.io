@@ -7,12 +7,11 @@
     <span class="orbital-brand__mark" aria-hidden="true">Δ</span>
     <span>
       <strong>DANDING / LAST TRACE ARCHIVE</strong>
-      <small>DEAD STAR RECOVERY MISSION · 0726</small>
+      <small>NOTES FROM DEAD WORLDS</small>
     </span>
   </a>
 
   <div class="orbital-sector" aria-label="Current coordinates">
-    <span>COORDINATE LOCK</span>
     <strong>{% if current_planet %}{{ current_planet.code }} / {{ current_planet.title }}{% elsif page.title %}{{ page.title }}{% else %}UNKNOWN SECTOR{% endif %}</strong>
   </div>
 

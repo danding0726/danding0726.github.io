@@ -7,7 +7,6 @@ layout: default
 <section class="knowledge-cosmos" data-knowledge-cosmos aria-labelledby="cosmos-title">
   <canvas class="cosmos-particles" data-cosmos-particles aria-hidden="true"></canvas>
   <div class="cosmos-dust" aria-hidden="true"></div>
-  <div class="cosmos-scratches" aria-hidden="true"></div>
   <div class="cosmos-grid" aria-hidden="true"></div>
   <div class="cosmos-stars" aria-hidden="true"></div>
   <div class="cosmos-nebula" aria-hidden="true"></div>
@@ -21,8 +20,7 @@ layout: default
     <div class="cosmos-header__systems">
       <div class="cosmos-telemetry" aria-label="远征状态">
         <span><i aria-hidden="true"></i>SUIT LINK / STABLE</span>
-        <span>{{ site.data.knowledge.planets.size | prepend: "0" }} DEAD WORLDS CHARTED</span>
-        <span>{{ original_graph_posts.size | prepend: "0" }} PRECURSOR TRACES FOUND</span>
+        <span>{{ site.data.knowledge.planets.size | prepend: "0" }} WORLDS · {{ original_graph_posts.size | prepend: "0" }} TRACES</span>
       </div>
       {% include reading-toggle.html %}
     </div>
@@ -45,7 +43,6 @@ layout: default
       {% for relation in site.data.knowledge.relations %}
       <g class="cosmos-route cosmos-route--{{ relation.kind }}" data-route-from="{{ relation.from }}" data-route-to="{{ relation.to }}">
         <line x1="{{ relation.x1 }}" y1="{{ relation.y1 }}" x2="{{ relation.x2 }}" y2="{{ relation.y2 }}"{% if relation.kind == 'knowledge' %} marker-end="url(#route-arrow)"{% endif %}></line>
-        <text x="{{ relation.x1 | plus: relation.x2 | divided_by: 2 }}" y="{{ relation.y1 | plus: relation.y2 | divided_by: 2 | minus: 9 }}">{{ relation.label }}</text>
       </g>
       {% endfor %}
     </svg>
@@ -94,9 +91,8 @@ layout: default
       {% for planet in site.data.knowledge.planets %}
         {% assign planet_posts = graph_posts | where: "planet", planet.id %}
         <section id="planet-panel-{{ planet.id }}" class="planet-panel" data-planet-panel="{{ planet.id }}" hidden>
-          <p class="planet-panel__code">LANDING ZONE / {{ planet.code }} · {{ planet.signature }}</p>
+          <p class="planet-panel__code">{{ planet.code }} · {{ planet.topic }}</p>
           <h2>{{ planet.title }}</h2>
-          <p class="planet-panel__topic">RECOVERED DOMAIN / {{ planet.topic }}</p>
           <p class="planet-panel__description">{{ planet.description }}</p>
 
           <div class="planet-regions" aria-label="已扫描区域">
@@ -105,7 +101,6 @@ layout: default
 
           <div class="planet-panel__index">
             <span>{% if planet.kind == 'identity' %}03{% else %}{{ planet_posts.size | prepend: "0" }}{% endif %} RECOVERABLE TRACES</span>
-            <span>HAZARD / {{ planet.hazard }}</span>
           </div>
 
           <nav class="station-list" aria-label="{{ planet.title_zh }}痕迹列表">
@@ -133,21 +128,19 @@ layout: default
     <nav class="cosmos-relays" aria-label="轨道残骸与中继站">
       <a class="cosmos-relay cosmos-relay--archive" href="{{ site.baseurl }}/archive/">
         <span aria-hidden="true"><i></i></span>
-        <strong>BLACK BOX VAULT</strong>
-        <small>ALL RECOVERED RECORDS</small>
+        <strong>ARCHIVE</strong>
+        <small>ALL RECORDS</small>
       </a>
       <a class="cosmos-relay cosmos-relay--signal" href="{{ site.baseurl }}/ai-daily/">
         <span aria-hidden="true"><i></i></span>
-        <strong>AUTOMATED ECHOES</strong>
-        <small>NON-HUMAN TRANSMISSIONS</small>
+        <strong>AI SIGNALS</strong>
+        <small>MACHINE ECHOES</small>
       </a>
     </nav>
   </div>
 
   <footer class="cosmos-footer">
-    <span>MISSION / RECOVER THE PATHFINDER'S TRACES</span>
-    <span>O₂ 87% · SIGNAL DELAY 04:17</span>
-    <span>MOVE TO SCAN · CLICK TO DESCEND</span>
+    <span>SELECT A WORLD · CLICK TO DESCEND</span>
   </footer>
 
   <noscript>
