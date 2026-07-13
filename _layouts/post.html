@@ -8,14 +8,14 @@ layout: default
 {% endif %}
 <article class="posts article-page">
   {% if current_planet %}
-  <a class="post-breadcrumb" href="{{ site.baseurl }}/?planet={{ current_planet.id }}">← RETURN TO LANDING ZONE / {{ current_planet.title }}</a>
+  <a class="post-breadcrumb" href="{{ site.baseurl }}/?planet={{ current_planet.id }}">← 返回「{{ current_planet.title_zh }}」主题</a>
   {% else %}
-  <a class="post-breadcrumb" href="{{ site.baseurl }}/archive/">← RETURN TO BLACK BOX VAULT</a>
+  <a class="post-breadcrumb" href="{{ site.baseurl }}/archive/">← 返回文章归档</a>
   {% endif %}
 
   <header class="post-header">
     <p class="post-kicker">
-      {% if page.content_type == 'tech_notes' %}RECOVERED FIELD LOG{% elsif page.content_type == 'ai_insight' %}MACHINE ECHO / ANALYSIS{% elsif page.content_type == 'ai_daily' %}AUTOMATED TRANSMISSION{% else %}UNCLASSIFIED TRACE{% endif %}
+      {% if page.content_type == 'tech_notes' %}{% if page.authorship == 'curated' %}转载技术文章{% else %}原创技术文章{% endif %}{% elsif page.content_type == 'ai_insight' %}AI 深度解读{% elsif page.content_type == 'ai_daily' %}AI 日报{% else %}博客文章{% endif %}
       <span>{{ page.date | date: "%Y.%m.%d" }}</span>
     </p>
 
@@ -30,7 +30,7 @@ layout: default
     {% endif %}
 
     <div class="meta post-meta">
-      <span>{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}Relay origin / Automated Station 0726{% else %}Trace signature / Pathfinder Danding{% endif %}</span>
+      <span>{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}内容来源 / AI 自动整理{% elsif page.authorship == 'curated' %}文章来源 / {{ page.source_author | default: "外部作者" }}{% else %}作者 / Danding{% endif %}</span>
       <span aria-hidden="true">·</span>
       <span>{{ page.date | date: "%Y-%m-%d" }}</span>
 
@@ -51,11 +51,11 @@ layout: default
 
   <footer class="post-end">
     <span aria-hidden="true">{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}□{% else %}Δ{% endif %}</span>
-    <p>{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}END OF MACHINE ECHO · NO HUMAN SIGNATURE DETECTED.{% else %}TRACE RECOVERED · THE PATHFINDER MOVED ON.{% endif %}</p>
+    <p>{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}本文结束 · 该内容由 AI 自动整理{% elsif page.authorship == 'curated' %}本文结束 · 转载内容版权归原作者所有{% else %}本文结束 · Danding 的原创技术记录{% endif %}</p>
     {% if current_planet %}
-    <a href="{{ site.baseurl }}/?planet={{ current_planet.id }}">RETURN TO LANDING ZONE ↗</a>
+    <a href="{{ site.baseurl }}/?planet={{ current_planet.id }}">返回主题星球 ↗</a>
     {% else %}
-    <a href="{{ site.baseurl }}/archive/">RETURN TO VAULT ↗</a>
+    <a href="{{ site.baseurl }}/archive/">返回文章归档 ↗</a>
     {% endif %}
   </footer>
 
@@ -66,14 +66,14 @@ layout: default
 <div class="pagination">
   <span class="prev">
     <a href="{% if current_planet %}{{ site.baseurl }}/?planet={{ current_planet.id }}{% else %}{{ site.baseurl }}/archive/{% endif %}">
-      <small>{% if current_planet %}LAST KNOWN COORDINATE{% else %}BLACK BOX VAULT{% endif %}</small>
-      <strong>{% if current_planet %}{{ current_planet.code }} / {{ current_planet.title }}{% else %}Recovered human and machine records{% endif %}</strong>
+      <small>{% if current_planet %}所属主题{% else %}文章归档{% endif %}</small>
+      <strong>{% if current_planet %}{{ current_planet.title_zh }}{% else %}浏览全部博客文章{% endif %}</strong>
     </a>
   </span>
   <span class="next">
     <a href="{{ site.baseurl }}/">
-      <small>DEAD STAR CHART</small>
-      <strong>Choose another landing zone</strong>
+      <small>博客星图</small>
+      <strong>浏览其他文章主题</strong>
     </a>
   </span>
 </div>

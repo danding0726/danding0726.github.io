@@ -1,17 +1,17 @@
 system:
-  name: DANDING DEAD STAR ARCHIVE
+  name: DANDING'S BLOG
   version: "0726"
-  description: 一组散落在死寂行星上的先行者日志。信号已经中断，痕迹仍可回收。
+  description: 一座以星球组织内容的个人技术博客，记录 AI、模型量化与推理部署。
 
 planets:
   - id: danding-core
     code: ARES-00
     title: FIRST CAMP
-    title_zh: 先行者营地
+    title_zh: 关于博主
     kind: identity
-    topic: PATHFINDER DOSSIER
+    topic: PROFILE & BLOG
     hazard: LOW SIGNAL / STRUCTURE UNSTABLE
-    description: 最早被发现的废弃营地。舱壁上仍留有 Danding 的身份编号、任务方向和一条尚未完全熄灭的通讯线路。
+    description: 认识博客作者 Danding，了解我关注的技术方向、写作方式与联系方式。世界观里，这里是先行者留下的第一座营地。
     x: 23
     y: 48
     size: 142
@@ -25,11 +25,11 @@ planets:
   - id: model-quantization
     code: KHEPRI-16
     title: GLASS WASTE
-    title_zh: 玻璃荒原
+    title_zh: 模型量化
     kind: knowledge
     topic: MODEL QUANTIZATION
     hazard: RADIATION / SHARP SILICA STORMS
-    description: 一颗被量化实验烧成玻璃的荒原星。先行者把精度、性能与硬件约束刻进晶化地层，部分 AIMET 日志仍能读取。
+    description: 收录模型量化相关的原创文章，包括精度、性能、硬件约束与 AIMET 工程实践。它在星图中的名字是“玻璃荒原”。
     x: 58
     y: 28
     size: 168
@@ -44,11 +44,11 @@ planets:
   - id: inference-serving
     code: ORPHEUS-09
     title: ASHEN RELAY
-    title_zh: 灰烬中继站
+    title_zh: 推理与部署
     kind: knowledge
     topic: INFERENCE & SERVING
     hazard: TOXIC ATMOSPHERE / RELAY INTERMITTENT
-    description: 巨型推理阵列早已停摆，热风仍穿过断裂的散热塔。遗留日志记录着显存预算、路由、观测与系统存活的方法。
+    description: 收录大模型推理与部署相关的原创文章，包括 vLLM、显存预算、可观测性与系统可靠性。它在星图中的名字是“灰烬中继站”。
     x: 76
     y: 65
     size: 134

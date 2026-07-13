@@ -3,20 +3,20 @@
   {% assign current_planet = site.data.knowledge.planets | where: "id", page.planet | first %}
 {% endif %}
 <header class="orbital-header">
-  <a class="orbital-brand" href="{{ site.baseurl }}/" aria-label="Return to dead star chart">
+  <a class="orbital-brand" href="{{ site.baseurl }}/" aria-label="返回博客首页">
     <span class="orbital-brand__mark" aria-hidden="true">Δ</span>
     <span>
-      <strong>DANDING / LAST TRACE ARCHIVE</strong>
-      <small>NOTES FROM DEAD WORLDS</small>
+      <strong>DANDING'S BLOG</strong>
+      <small>技术文章与学习记录</small>
     </span>
   </a>
 
-  <div class="orbital-sector" aria-label="Current coordinates">
-    <strong>{% if current_planet %}{{ current_planet.code }} / {{ current_planet.title }}{% elsif page.title %}{{ page.title }}{% else %}UNKNOWN SECTOR{% endif %}</strong>
+  <div class="orbital-sector" aria-label="当前页面">
+    <strong>{% if current_planet %}{{ current_planet.title_zh }}{% elsif page.title %}{{ page.title }}{% else %}博客文章{% endif %}</strong>
   </div>
 
   <div class="orbital-actions">
     {% include reading-toggle.html %}
-    <a class="orbital-return" href="{{ site.baseurl }}/"><span aria-hidden="true">←</span> RETURN TO STAR CHART</a>
+    <a class="orbital-return" href="{{ site.baseurl }}/"><span aria-hidden="true">←</span> 返回博客星图</a>
   </div>
 </header>

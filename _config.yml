@@ -3,9 +3,9 @@
 #
 
 # Name of your site (displayed in the header)
-name: "Danding / Last Trace Archive"
+name: "Danding's Blog"
 # Short bio or description (displayed in the header)
-description: "死星远征档案｜回收先行者留下的工程痕迹"
+description: "个人技术博客｜AI、模型量化与推理部署"
 
 #
 # Flags below are optional
@@ -20,17 +20,17 @@ favicon: /images/favicon.svg
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: 死星星图
+  - name: 博客首页
     url: /
-  - name: 先行者档案
+  - name: 关于博主
     url: /about
-  - name: 现场日志
+  - name: 原创技术
     url: /tech-notes
-  - name: 黑匣子档案库
+  - name: 文章归档
     url: /archive
-  - name: 痕迹索引
+  - name: 文章标签
     url: /tags
-  - name: 密封研读舱
+  - name: 技术研读
     url: /deepread
 
 # Pagination
@@ -61,7 +61,7 @@ footer-links:
   youtube:
 
 # Text under the icons in footer
-footer-text: PATHFINDER SIGNAL 0726 · HUMAN TRACE PRESERVED
+footer-text: DANDING'S BLOG · 技术文章与学习记录
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

@@ -33,7 +33,7 @@
     });
 
     if (overviewLabel) {
-      overviewLabel.textContent = target.getAttribute('data-planet-title') + ' / DESCENT IN PROGRESS';
+      overviewLabel.textContent = target.getAttribute('data-planet-title') + ' / 主题文章';
     }
     if (backButton) backButton.hidden = false;
 
@@ -62,7 +62,7 @@
       if (button) button.setAttribute('aria-expanded', 'false');
     });
     panels.forEach(panel => { panel.hidden = true; });
-    if (overviewLabel) overviewLabel.textContent = 'ORBITAL SURVEY / SELECT A LANDING ZONE';
+    if (overviewLabel) overviewLabel.textContent = '博客星图 / 选择一个主题';
     if (backButton) backButton.hidden = true;
 
     try { sessionStorage.removeItem('cosmosPlanet'); } catch (error) {}

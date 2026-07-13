@@ -16,14 +16,14 @@ layout: default
 
   <header class="cosmos-header">
     <div>
-      <p class="cosmos-kicker"><span aria-hidden="true"></span>DEAD STAR EXPEDITION / LOG 0726</p>
-      <h1 id="cosmos-title">The signal ended years ago.<br>Your descent begins here.</h1>
-      <p>你是一名迟到的宇航员。这些行星早已荒凉；先行者 Danding 留下的日志、设备与坐标，仍散落在地表。</p>
+      <p class="cosmos-kicker"><span aria-hidden="true"></span>DANDING'S BLOG / KNOWLEDGE PLANETS</p>
+      <h1 id="cosmos-title">把技术文章，放进一张<br>可以探索的星图。</h1>
+      <p>这里是 Danding 的个人技术博客。你可以像宇航员一样造访不同主题星球，阅读我在模型量化、推理部署与工程实践中留下的记录。</p>
     </div>
     <div class="cosmos-header__systems">
-      <div class="cosmos-telemetry" aria-label="远征状态">
-        <span><i aria-hidden="true"></i>SUIT LINK / STABLE</span>
-        <span>{{ site.data.knowledge.planets.size | prepend: "0" }} WORLDS · {{ original_graph_posts.size | prepend: "0" }} TRACES</span>
+      <div class="cosmos-telemetry" aria-label="博客内容概览">
+        <span><i aria-hidden="true"></i>BLOG ONLINE</span>
+        <span>{{ site.data.knowledge.planets.size }} 个主题 · {{ original_graph_posts.size }} 篇原创文章</span>
       </div>
       {% include reading-toggle.html %}
     </div>
@@ -31,9 +31,9 @@ layout: default
 
   <div class="cosmos-location" aria-live="polite">
     <button type="button" class="cosmos-back" data-cosmos-back hidden>
-      <span aria-hidden="true">←</span> ABORT DESCENT
+      <span aria-hidden="true">←</span> 返回博客星图
     </button>
-    <span data-cosmos-location>ORBITAL SURVEY / SELECT A LANDING ZONE</span>
+    <span data-cosmos-location>博客星图 / 选择一个主题</span>
   </div>
 
   <div class="cosmos-stage">
@@ -50,12 +50,12 @@ layout: default
       {% endfor %}
     </svg>
 
-    <div class="cosmos-planets" aria-label="可登陆的荒凉星球">
+    <div class="cosmos-planets" aria-label="博客主题星球">
       {% for planet in site.data.knowledge.planets %}
         {% assign planet_posts = graph_posts | where: "planet", planet.id %}
         <div class="cosmos-planet cosmos-planet--{{ planet.tone }}"
              data-planet="{{ planet.id }}"
-             data-planet-title="{{ planet.title }}"
+             data-planet-title="{{ planet.title_zh }}"
              style="--planet-x: {{ planet.x }}%; --planet-y: {{ planet.y }}%; --planet-size: {{ planet.size }}px;">
           <button class="planet-target" type="button" data-planet-open aria-expanded="false" aria-controls="planet-panel-{{ planet.id }}">
             <span class="planet-aura" aria-hidden="true"></span>
@@ -68,20 +68,20 @@ layout: default
             </span>
             <span class="planet-identity">
               <small>{{ planet.code }}</small>
-              <strong>{{ planet.title }}</strong>
-              <em>{{ planet.signature }} / {{ planet.topic }}</em>
+              <strong>{{ planet.title_zh }}</strong>
+              <em>{{ planet.title }} / {{ planet.topic }}</em>
             </span>
           </button>
 
           <div class="planet-stations" aria-label="{{ planet.title_zh }}遗留痕迹">
             {% if planet.kind == 'identity' %}
-              <a class="planet-station station--1" data-station href="{{ site.baseurl }}/about/#profile"><span>01</span><strong>ID TRACE</strong></a>
-              <a class="planet-station station--2" data-station href="{{ site.baseurl }}/about/#current-mission"><span>02</span><strong>MISSION</strong></a>
-              <a class="planet-station station--3" data-station href="{{ site.baseurl }}/about/#contact"><span>03</span><strong>BEACON</strong></a>
+              <a class="planet-station station--1" data-station href="{{ site.baseurl }}/about/#profile"><span>01</span><strong>简介</strong></a>
+              <a class="planet-station station--2" data-station href="{{ site.baseurl }}/about/#current-mission"><span>02</span><strong>方向</strong></a>
+              <a class="planet-station station--3" data-station href="{{ site.baseurl }}/about/#contact"><span>03</span><strong>联系</strong></a>
             {% else %}
               {% for post in planet_posts %}
               <a class="planet-station station--{{ forloop.index }}" data-station href="{{ site.baseurl }}{{ post.url }}" aria-label="阅读《{{ post.title }}》">
-                <span>0{{ forloop.index }}</span><strong>TRACE</strong>
+                <span>0{{ forloop.index }}</span><strong>文章</strong>
               </a>
               {% endfor %}
             {% endif %}
@@ -90,12 +90,12 @@ layout: default
       {% endfor %}
     </div>
 
-    <aside class="cosmos-detail" aria-label="登陆区域扫描结果">
+    <aside class="cosmos-detail" aria-label="主题文章列表">
       {% for planet in site.data.knowledge.planets %}
         {% assign planet_posts = graph_posts | where: "planet", planet.id %}
         <section id="planet-panel-{{ planet.id }}" class="planet-panel" data-planet-panel="{{ planet.id }}" hidden>
-          <p class="planet-panel__code">{{ planet.code }} · {{ planet.topic }}</p>
-          <h2>{{ planet.title }}</h2>
+          <p class="planet-panel__code">{{ planet.title }} · {{ planet.topic }}</p>
+          <h2>{{ planet.title_zh }}</h2>
           <p class="planet-panel__description">{{ planet.description }}</p>
 
           <div class="planet-regions" aria-label="已扫描区域">
@@ -103,20 +103,20 @@ layout: default
           </div>
 
           <div class="planet-panel__index">
-            <span>{% if planet.kind == 'identity' %}03{% else %}{{ planet_posts.size | prepend: "0" }}{% endif %} RECOVERABLE TRACES</span>
+            <span>{% if planet.kind == 'identity' %}3 个信息入口{% else %}{{ planet_posts.size }} 篇相关文章{% endif %}</span>
           </div>
 
           <nav class="station-list" aria-label="{{ planet.title_zh }}痕迹列表">
             {% if planet.kind == 'identity' %}
-              <a data-station href="{{ site.baseurl }}/about/#profile"><span>01</span><div><small>RECOVERED ID FRAGMENT</small><strong>先行者身份与关注方向</strong></div><em>↗</em></a>
-              <a data-station href="{{ site.baseurl }}/about/#current-mission"><span>02</span><div><small>MISSION WALL</small><strong>营地中留下的研究坐标</strong></div><em>↗</em></a>
-              <a data-station href="{{ site.baseurl }}/about/#contact"><span>03</span><div><small>OPEN BEACON</small><strong>仍可尝试连接的通讯频段</strong></div><em>↗</em></a>
+              <a data-station href="{{ site.baseurl }}/about/#profile"><span>01</span><div><small>ABOUT DANDING</small><strong>个人简介与关注方向</strong></div><em>↗</em></a>
+              <a data-station href="{{ site.baseurl }}/about/#current-mission"><span>02</span><div><small>WRITING & RESEARCH</small><strong>博客内容与研究方向</strong></div><em>↗</em></a>
+              <a data-station href="{{ site.baseurl }}/about/#contact"><span>03</span><div><small>CONTACT</small><strong>GitHub 与邮箱</strong></div><em>↗</em></a>
             {% else %}
               {% for post in planet_posts %}
               <a data-station href="{{ site.baseurl }}{{ post.url }}">
                 <span>0{{ forloop.index }}</span>
                 <div>
-                  <small>{% if post.authorship == 'original' %}PATHFINDER TRACE{% elsif post.authorship == 'curated' %}SALVAGED RECORD{% else %}FOREIGN SIGNAL{% endif %}{% if post.source_author %} / {{ post.source_author }}{% endif %} · {{ post.date | date: "%Y.%m.%d" }}</small>
+                  <small>{% if post.authorship == 'original' %}原创文章{% elsif post.authorship == 'curated' %}转载文章{% else %}外部文章{% endif %}{% if post.source_author %} / {{ post.source_author }}{% endif %} · {{ post.date | date: "%Y.%m.%d" }}</small>
                   <strong>{{ post.title }}</strong>
                 </div>
                 <em>↗</em>
@@ -135,7 +135,7 @@ layout: default
         </span>
         <span class="cosmos-relay__copy">
           <strong>全部文章</strong>
-          <small>ARCHIVE · {{ site.posts.size }} 篇</small>
+          <small>BLOG ARCHIVE · {{ site.posts.size }} 篇</small>
         </span>
         <span class="cosmos-relay__arrow" aria-hidden="true">→</span>
       </a>
@@ -144,8 +144,8 @@ layout: default
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"></circle><path d="M7.5 7.5a6.4 6.4 0 0 0 0 9M16.5 7.5a6.4 6.4 0 0 1 0 9M4.5 4.5a10.6 10.6 0 0 0 0 15M19.5 4.5a10.6 10.6 0 0 1 0 15"></path></svg>
         </span>
         <span class="cosmos-relay__copy">
-          <strong>AI 日报与解读</strong>
-          <small>AI SIGNALS · {{ ai_posts_count }} 篇</small>
+          <strong>AI 生成内容</strong>
+          <small>日报与深度解读 · {{ ai_posts_count }} 篇</small>
         </span>
         <span class="cosmos-relay__arrow" aria-hidden="true">→</span>
       </a>
@@ -153,15 +153,15 @@ layout: default
   </div>
 
   <footer class="cosmos-footer">
-    <span>SELECT A WORLD · CLICK TO DESCEND</span>
+    <span>选择一个主题星球 · 点击查看文章</span>
   </footer>
 
   <noscript>
     <div class="cosmos-noscript">
-      <p>导航系统离线。你仍可通过以下已恢复日志继续任务。</p>
+      <p>星图暂时无法加载，你仍可以直接阅读以下文章。</p>
       {% for post in graph_posts %}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{% endfor %}
     </div>
   </noscript>
 </section>
 
-<script src="{{ site.baseurl }}/js/knowledge-cosmos.js"></script>
+<script src="{{ site.baseurl }}/js/knowledge-cosmos.js?v=20260713-clear-blog"></script>
