@@ -4,6 +4,9 @@ layout: default
 
 {% assign graph_posts = site.posts | where: "graph", true %}
 {% assign original_graph_posts = graph_posts | where: "authorship", "original" %}
+{% assign daily_posts = site.posts | where: "content_type", "ai_daily" %}
+{% assign insight_posts = site.posts | where: "content_type", "ai_insight" %}
+{% assign ai_posts_count = daily_posts.size | plus: insight_posts.size %}
 <section class="knowledge-cosmos" data-knowledge-cosmos aria-labelledby="cosmos-title">
   <canvas class="cosmos-particles" data-cosmos-particles aria-hidden="true"></canvas>
   <div class="cosmos-dust" aria-hidden="true"></div>
@@ -125,16 +128,26 @@ layout: default
       {% endfor %}
     </aside>
 
-    <nav class="cosmos-relays" aria-label="轨道残骸与中继站">
+    <nav class="cosmos-relays" aria-label="博客内容导航">
       <a class="cosmos-relay cosmos-relay--archive" href="{{ site.baseurl }}/archive/">
-        <span aria-hidden="true"><i></i></span>
-        <strong>ARCHIVE</strong>
-        <small>ALL RECORDS</small>
+        <span class="cosmos-relay__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3.5 7.5h6l2-2h3l2 2h4v11h-17z"></path><path d="M3.5 10.5h17"></path></svg>
+        </span>
+        <span class="cosmos-relay__copy">
+          <strong>全部文章</strong>
+          <small>ARCHIVE · {{ site.posts.size }} 篇</small>
+        </span>
+        <span class="cosmos-relay__arrow" aria-hidden="true">→</span>
       </a>
       <a class="cosmos-relay cosmos-relay--signal" href="{{ site.baseurl }}/ai-daily/">
-        <span aria-hidden="true"><i></i></span>
-        <strong>AI SIGNALS</strong>
-        <small>MACHINE ECHOES</small>
+        <span class="cosmos-relay__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"></circle><path d="M7.5 7.5a6.4 6.4 0 0 0 0 9M16.5 7.5a6.4 6.4 0 0 1 0 9M4.5 4.5a10.6 10.6 0 0 0 0 15M19.5 4.5a10.6 10.6 0 0 1 0 15"></path></svg>
+        </span>
+        <span class="cosmos-relay__copy">
+          <strong>AI 日报与解读</strong>
+          <small>AI SIGNALS · {{ ai_posts_count }} 篇</small>
+        </span>
+        <span class="cosmos-relay__arrow" aria-hidden="true">→</span>
       </a>
     </nav>
   </div>

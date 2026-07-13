@@ -360,26 +360,91 @@ body.theme-light .reading-toggle--orbital button.active {
     repeating-linear-gradient(135deg, color-mix(in srgb, var(--cosmos-signal) 7%, transparent) 0 5px, transparent 5px 10px);
 }
 
-.cosmos-relay > span,
-.cosmos-relay > span::before {
-  border-radius: 2px;
+.cosmos-relays {
+  gap: 10px;
 }
 
-.cosmos-relay > span::before {
-  border-style: solid;
-  border-top-color: var(--cosmos-signal);
-  transform: rotate(45deg);
+.cosmos-relay {
+  display: grid;
+  grid-template-columns: 34px minmax(110px, 1fr) 18px;
+  grid-template-rows: 1fr;
+  gap: 11px;
+  align-items: center;
+  min-width: 210px;
+  padding: 11px 13px;
+  border: 1px solid var(--cosmos-line);
+  background: color-mix(in srgb, var(--cosmos-bg) 82%, transparent);
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
 }
 
-.cosmos-relay i {
+.cosmos-relay > span {
+  grid-row: auto;
+  width: auto;
+  height: auto;
+  border: 0;
   border-radius: 0;
-  background: #9f9b63;
-  box-shadow: 0 0 9px rgba(159, 155, 99, .7);
 }
 
-.cosmos-relay--signal i {
-  background: #b6502c;
-  box-shadow: 0 0 10px rgba(182, 80, 44, .74);
+.cosmos-relay > span::before {
+  display: none;
+}
+
+.cosmos-relay .cosmos-relay__icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--cosmos-line);
+  color: #a5a171;
+}
+
+.cosmos-relay--signal .cosmos-relay__icon {
+  color: var(--cosmos-signal);
+}
+
+.cosmos-relay__icon svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.4;
+}
+
+.cosmos-relay .cosmos-relay__copy {
+  display: block;
+  min-width: 0;
+}
+
+.cosmos-relay strong,
+.cosmos-relay small {
+  display: block;
+}
+
+.cosmos-relay strong {
+  color: var(--cosmos-ink);
+  font: 550 12px/1.2 var(--sans);
+  letter-spacing: .04em;
+}
+
+.cosmos-relay small {
+  margin-top: 5px;
+  color: var(--cosmos-soft);
+  font: 600 7px/1 var(--sans);
+  letter-spacing: .09em;
+}
+
+.cosmos-relay__arrow {
+  color: var(--cosmos-soft);
+  font-size: 15px;
+}
+
+.cosmos-relay:hover,
+.cosmos-relay:focus-visible {
+  border-color: color-mix(in srgb, var(--cosmos-signal) 65%, var(--cosmos-line));
+  background: color-mix(in srgb, var(--cosmos-signal) 7%, var(--cosmos-bg));
+  transform: translateY(-2px);
 }
 
 /* Recovered records */
@@ -556,6 +621,21 @@ body.cosmos-shell .archive-filter {
     border-left: 0;
     padding-left: 0;
   }
+  .cosmos-relay {
+    grid-template-columns: 28px minmax(0, 1fr);
+    flex: 1 1 0;
+    gap: 8px;
+    min-width: 0;
+    padding: 9px;
+  }
+  .cosmos-relay .cosmos-relay__icon {
+    width: 26px;
+    height: 26px;
+  }
+  .cosmos-relay__icon svg { width: 14px; height: 14px; }
+  .cosmos-relay strong { font-size: 10px; white-space: nowrap; }
+  .cosmos-relay small { display: none; }
+  .cosmos-relay > .cosmos-relay__arrow { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
