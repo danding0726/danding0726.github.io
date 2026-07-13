@@ -4,6 +4,10 @@ title: "模型量化：从基础概念到工程落地"
 date: 2026-03-02 09:30:00 +0800
 content_type: tech_notes
 tags: [AI, 大模型, 工程实践]
+graph: true
+authorship: original
+planet: model-quantization
+knowledge_points: [PTQ, QAT, 对称量化, 非对称量化, Per-Channel, GPTQ, AWQ, AIMET]
 ---
 
 <div class="blog-only" markdown="1">

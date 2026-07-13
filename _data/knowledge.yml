@@ -1,0 +1,80 @@
+system:
+  name: DANDING KNOWLEDGE SYSTEM
+  version: "01"
+  description: 一张由原创实践持续扩张的个人知识星图。
+
+planets:
+  - id: danding-core
+    code: HOME-00
+    title: DANDING CORE
+    title_zh: 丹丁核心
+    kind: identity
+    description: 这张知识星图的观测起点，记录我的方向、项目与持续关注的问题。
+    x: 23
+    y: 48
+    size: 116
+    tone: core
+    regions:
+      - PROFILE
+      - CURRENT MISSION
+      - CONTACT
+
+  - id: model-quantization
+    code: MQ-01
+    title: MODEL QUANTIZATION
+    title_zh: 模型量化
+    kind: knowledge
+    description: 从数值表示、量化策略到 AIMET 工程排障，研究精度、性能与硬件约束之间的平衡。
+    x: 58
+    y: 28
+    size: 132
+    tone: cyan
+    regions:
+      - PTQ / QAT
+      - QUANT SCALE
+      - BIAS ENCODING
+      - AIMET
+
+  - id: inference-serving
+    code: IS-02
+    title: INFERENCE & SERVING
+    title_zh: 推理与部署
+    kind: knowledge
+    description: 围绕模型服务化、显存预算、路由、可观测性与稳定运行建立工程方法。
+    x: 76
+    y: 65
+    size: 104
+    tone: amber
+    regions:
+      - VLLM
+      - MEMORY BUDGET
+      - OBSERVABILITY
+      - RELIABILITY
+
+relations:
+  - from: danding-core
+    to: model-quantization
+    x1: 230
+    y1: 336
+    x2: 580
+    y2: 196
+    label: OBSERVATION
+    kind: identity
+
+  - from: danding-core
+    to: inference-serving
+    x1: 230
+    y1: 336
+    x2: 760
+    y2: 455
+    label: PRACTICE
+    kind: identity
+
+  - from: model-quantization
+    to: inference-serving
+    x1: 580
+    y1: 196
+    x2: 760
+    y2: 455
+    label: APPLIES TO
+    kind: knowledge

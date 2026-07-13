@@ -5,7 +5,7 @@ permalink: /about/
 hide_title: true
 ---
 
-<section class="about-hero">
+<section class="about-hero" id="profile">
   <div class="about-portrait">
     <img src="{{ site.baseurl }}/images/images.jpg" alt="Danding 的头像">
     <span>DANDING · 个人主页</span>
@@ -17,7 +17,7 @@ hide_title: true
   </div>
 </section>
 
-<section class="about-story">
+<section class="about-story" id="current-mission">
   <p class="section-index">01 / PROFILE</p>
   <div class="about-prose">
     <h2>我在做什么</h2>
@@ -44,7 +44,7 @@ hide_title: true
   </article>
 </section>
 
-<section class="about-contact">
+<section class="about-contact" id="contact">
   <p class="section-index">02 / CONTACT</p>
   <div>
     <h2>保持交流。</h2>

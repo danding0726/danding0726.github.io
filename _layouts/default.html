@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body{% if page.layout == 'post' %} class="is-post-page"{% endif %}>
+  <body{% if page.layout == 'post' %} class="is-post-page"{% elsif page.url == '/' %} class="is-home-page"{% endif %}>
     {% include nav.html %}
 
     {% if page.toc==true %}
