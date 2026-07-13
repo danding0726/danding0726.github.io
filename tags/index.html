@@ -1,12 +1,19 @@
 ---
 layout: page
-title: 标签
+title: 痕迹索引
 permalink: /tags/
+hide_title: true
 ---
 
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
+
+<section class="hero-card">
+  <p class="hero-kicker">TRACE INDEX / SEMANTIC MARKERS</p>
+  <h1>灰尘覆盖了路径，<br>索引仍能指向原来的坐标。</h1>
+  <p>这里按技术标记整理先行者日志。选择一个标记，可以追踪它曾在哪些故障现场出现。</p>
+</section>
 
 <div class="tags">
   {% assign visible_posts = site.posts | where: "content_type", "tech_notes" %}

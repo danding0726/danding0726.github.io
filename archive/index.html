@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 归档
+title: 黑匣子档案库
 permalink: /archive/
 hide_title: true
 ---
@@ -16,32 +16,32 @@ hide_title: true
 
 <section class="hero-card archive-hero">
   <div class="hero-copy">
-    <p class="hero-kicker">Archive</p>
-    <h1>完整归档</h1>
-    <p>所有文章都保留在这里。默认展示全部，也可以按个人技术与 AI 生成内容快速过滤。</p>
+    <p class="hero-kicker">BLACK BOX VAULT / RECOVERY INDEX</p>
+    <h1>所有被找回的声音，<br>都封存在这里。</h1>
+    <p>人类留下的工程日志与无人中继站生成的机器回声共同保存在档案库中。它们来源不同，不应混为同一种证据。</p>
   </div>
   <div class="hero-stats" aria-label="归档统计">
-    <span><strong>{{ site.posts.size }}</strong>全部</span>
-    <span><strong>{{ tech_posts.size }}</strong>个人技术</span>
-    <span><strong>{{ ai_posts_count }}</strong>AI 生成</span>
+    <span><strong>{{ site.posts.size }}</strong>全部记录</span>
+    <span><strong>{{ tech_posts.size }}</strong>先行者痕迹</span>
+    <span><strong>{{ ai_posts_count }}</strong>机器回声</span>
   </div>
 </section>
 
 <section class="content-split-entry content-split-entry--compact">
   <a class="split-card" href="{{ site.baseurl }}/tech-notes/">
-    <h2>个人技术总结</h2>
-    <p>进入个人技术总结列表</p>
+    <h2>PATHFINDER FIELD LOGS</h2>
+    <p>只查看由 Danding 留下的可验证工程记录</p>
   </a>
   <a class="split-card split-card--quiet" href="{{ site.baseurl }}/">
-    <h2>首页精选</h2>
-    <p>只展示个人技术文章</p>
+    <h2>RETURN TO ORBIT</h2>
+    <p>从星图选择下一处登陆区</p>
   </a>
 </section>
 
 <div class="archive-filter" aria-label="归档筛选">
-  <button type="button" class="active" data-archive-filter="all" aria-pressed="true">全部 <span>{{ site.posts.size }}</span></button>
-  <button type="button" data-archive-filter="tech" aria-pressed="false">个人技术 <span>{{ tech_posts.size }}</span></button>
-  <button type="button" data-archive-filter="ai" aria-pressed="false">AI 生成 <span>{{ ai_posts_count }}</span></button>
+  <button type="button" class="active" data-archive-filter="all" aria-pressed="true">ALL SIGNALS <span>{{ site.posts.size }}</span></button>
+  <button type="button" data-archive-filter="tech" aria-pressed="false">HUMAN TRACES <span>{{ tech_posts.size }}</span></button>
+  <button type="button" data-archive-filter="ai" aria-pressed="false">MACHINE ECHOES <span>{{ ai_posts_count }}</span></button>
 </div>
 
 <ul class="archive">
@@ -57,16 +57,16 @@ hide_title: true
     {% endunless %}
 
     {% assign archive_kind = "other" %}
-    {% assign archive_label = "文章" %}
+    {% assign archive_label = "未分类信号" %}
     {% if post.content_type == "tech_notes" %}
       {% assign archive_kind = "tech" %}
-      {% assign archive_label = "个人技术" %}
+      {% assign archive_label = "先行者日志" %}
     {% elsif post.content_type == "ai_daily" or post.content_type == "ai_insight" %}
       {% assign archive_kind = "ai" %}
       {% if post.content_type == "ai_daily" %}
-        {% assign archive_label = "AI 日报" %}
+        {% assign archive_label = "自动广播" %}
       {% else %}
-        {% assign archive_label = "AI 深度" %}
+        {% assign archive_label = "机器分析" %}
       {% endif %}
     {% endif %}
 

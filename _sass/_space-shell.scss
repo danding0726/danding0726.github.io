@@ -1,0 +1,277 @@
+/* Shared space shell — one visual language beyond the universe view. */
+body.cosmos-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 14% 17%, rgba(83, 160, 165, .08), transparent 24%),
+    radial-gradient(circle at 86% 9%, rgba(205, 127, 66, .06), transparent 19%),
+    #070a0d;
+}
+
+body.cosmos-shell::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 9% 19%, rgba(202, 232, 230, .46) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 29% 72%, rgba(202, 232, 230, .26) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 52% 13%, rgba(202, 232, 230, .30) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 78% 64%, rgba(202, 232, 230, .32) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 92% 34%, rgba(202, 232, 230, .24) 0 1px, transparent 1.5px);
+  background-size: 330px 280px, 420px 360px, 510px 430px, 620px 520px, 760px 650px;
+  opacity: .52;
+}
+
+body.cosmos-shell.theme-light {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(34, 123, 128, .08), transparent 22%),
+    linear-gradient(145deg, #efeee8, #e5e6e1 58%, #dcdfdc);
+}
+
+body.cosmos-shell.theme-light::before {
+  opacity: .26;
+  filter: invert(1);
+}
+
+body.cosmos-shell .wrapper-content,
+body.cosmos-shell.theme-light .wrapper-content,
+body.cosmos-shell.theme-dark .wrapper-content {
+  float: none;
+  width: 100%;
+  background: transparent;
+}
+
+body.cosmos-shell:not(.is-home-page) .wrapper-content {
+  min-height: calc(100vh - 72px);
+  padding-top: 30px;
+}
+
+.orbital-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(270px, 1fr) auto minmax(330px, 1fr);
+  align-items: center;
+  min-height: 72px;
+  padding: 0 34px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  backdrop-filter: blur(18px) saturate(120%);
+}
+
+.orbital-header::after {
+  content: "";
+  position: absolute;
+  right: 34px;
+  bottom: -1px;
+  left: 34px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--signal), transparent);
+  opacity: .26;
+}
+
+.orbital-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink) !important;
+}
+
+.orbital-brand__mark {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--signal);
+  font: italic 700 17px/1 var(--serif);
+  box-shadow: inset 0 0 18px color-mix(in srgb, var(--signal) 10%, transparent), 0 0 18px color-mix(in srgb, var(--signal) 8%, transparent);
+}
+
+.orbital-brand strong,
+.orbital-brand small {
+  display: block;
+  line-height: 1;
+}
+
+.orbital-brand strong {
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.orbital-brand small {
+  margin-top: 6px;
+  color: var(--ink-faint);
+  font-size: 7px;
+  letter-spacing: .13em;
+}
+
+.orbital-sector {
+  position: relative;
+  min-width: 210px;
+  padding: 0 28px;
+  text-align: center;
+}
+
+.orbital-sector::before,
+.orbital-sector::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 1px;
+  background: var(--line);
+}
+
+.orbital-sector::before { left: 0; }
+.orbital-sector::after { right: 0; }
+.orbital-sector span,
+.orbital-sector strong { display: block; }
+.orbital-sector span {
+  color: var(--ink-faint);
+  font-size: 7px;
+  letter-spacing: .16em;
+}
+.orbital-sector strong {
+  max-width: 260px;
+  margin-top: 5px;
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: .1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.orbital-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.reading-toggle--orbital,
+body.theme-light .reading-toggle--orbital {
+  display: inline-flex;
+  gap: 0;
+  margin: 0;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.reading-toggle--orbital button,
+body.theme-light .reading-toggle--orbital button {
+  min-height: 23px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-faint);
+  font: 650 7px/1 var(--sans);
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+
+.reading-toggle--orbital button.active,
+body.theme-light .reading-toggle--orbital button.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.orbital-return {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink-soft) !important;
+  font-size: 8px;
+  font-weight: 650;
+  letter-spacing: .11em;
+  white-space: nowrap;
+}
+
+.orbital-return:hover { color: var(--signal) !important; }
+
+.orbital-footer {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 22px 56px 34px;
+  border-top: 1px solid var(--line);
+}
+
+.orbital-footer footer { padding: 0; }
+.orbital-footer .svg-icon { margin: 0; }
+.orbital-footer .svg-icon svg { fill: var(--ink-faint); }
+.orbital-footer footer p {
+  margin: 7px 0 0;
+  color: var(--ink-faint);
+  font-size: 8px;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+/* Reading pages inherit the same observatory geometry. */
+body.cosmos-shell.is-post-page .article-page {
+  position: relative;
+}
+
+body.cosmos-shell.is-post-page .post-breadcrumb {
+  color: var(--signal) !important;
+  font-size: 8px;
+  letter-spacing: .12em;
+}
+
+body.cosmos-shell.is-post-page .post-header::before {
+  content: "PRECURSOR DATA / PARTIAL RECOVERY";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--ink-faint);
+  font-size: 7px;
+  letter-spacing: .16em;
+}
+
+body.cosmos-shell .hero-card,
+body.cosmos-shell .content-split-entry .split-card,
+body.cosmos-shell .archive-filter {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--paper-raised) 72%, transparent);
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+}
+
+@media screen and (max-width: 900px) {
+  .orbital-header {
+    grid-template-columns: minmax(220px, 1fr) auto;
+    padding: 0 20px;
+  }
+  .orbital-sector { display: none; }
+  .orbital-header::after { right: 20px; left: 20px; }
+}
+
+@media screen and (max-width: 640px) {
+  body.cosmos-shell:not(.is-home-page) .wrapper-content { padding-top: 12px; }
+  .orbital-header {
+    min-height: 60px;
+    padding: 0 14px;
+  }
+  .orbital-brand { gap: 8px; }
+  .orbital-brand__mark { width: 30px; height: 30px; font-size: 14px; }
+  .orbital-brand strong { font-size: 7px; }
+  .orbital-brand small { display: none; }
+  .orbital-actions { gap: 8px; }
+  .reading-toggle--orbital button,
+  body.theme-light .reading-toggle--orbital button { padding: 0 6px; font-size: 6px; }
+  .orbital-return { width: 28px; height: 28px; justify-content: center; font-size: 0; }
+  .orbital-return span { font-size: 14px; }
+  .orbital-footer { padding: 18px 20px 28px; }
+  body.cosmos-shell.is-post-page .post-header::before { display: none; }
+}

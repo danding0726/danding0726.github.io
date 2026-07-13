@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body{% if page.layout == 'post' %} class="is-post-page"{% elsif page.url == '/' %} class="is-home-page"{% endif %}>
-    {% include nav.html %}
+  <body class="cosmos-shell{% if page.layout == 'post' %} is-post-page{% if page.content_type == 'ai_daily' or page.content_type == 'ai_insight' %} is-machine-record{% else %} is-human-trace{% endif %}{% elsif page.url == '/' %} is-home-page{% else %} is-orbital-page{% endif %}">
+    {% unless page.url == '/' %}
+      {% include orbital-header.html %}
+    {% endunless %}
 
     {% if page.toc==true %}
       <aside class="toc">
@@ -11,57 +13,24 @@
     {% endif %}
 
     <div id="main" role="main" class="wrapper-content">
-      <div class="system-rail" aria-label="站点系统状态">
-        <span class="system-rail__status"><i aria-hidden="true"></i>SYSTEM ONLINE</span>
-        <span>AI INFRA · FIELD NOTES</span>
-        <time data-system-clock>GMT+8</time>
-      </div>
       <div class="container">
         {{ content }}
       </div>
     </div>
 
-    <div class="wrapper-footer-mobile">
+    {% unless page.url == '/' %}
+    <div class="orbital-footer">
       <footer class="footer">
         {% include footer.html %}
       </footer>
     </div>
+    {% endunless %}
 
     {% include analytics.html %}
-
-    <button class="command-trigger" type="button" data-command-open aria-label="打开快速导航">
-      <span aria-hidden="true"></span> SYS / <kbd>⌘K</kbd>
-    </button>
-
-    <div class="command-palette" data-command-palette hidden>
-      <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="command-title">
-        <header>
-          <div>
-            <span class="command-panel__signal" aria-hidden="true"></span>
-            <strong id="command-title">Command Center</strong>
-          </div>
-          <button type="button" data-command-close aria-label="关闭快速导航">ESC</button>
-        </header>
-        <label class="command-search">
-          <span aria-hidden="true">&gt;_</span>
-          <input type="text" data-command-input placeholder="输入页面名称或指令…" autocomplete="off">
-        </label>
-        <nav class="command-list" aria-label="快速导航">
-          {% for nav in site.navigation %}
-          <a class="command-item" href="{{ site.baseurl }}{{ nav.url }}" data-command-label="{{ nav.name | downcase }}">
-            <span>0{{ forloop.index }}</span><strong>{{ nav.name }}</strong><em>↗</em>
-          </a>
-          {% endfor %}
-        </nav>
-        <footer><span>↑↓ 浏览</span><span>ENTER 打开</span><span>ESC 关闭</span></footer>
-      </div>
-    </div>
 
 <script>
 (function () {
   const body = document.body;
-  const navToggle = document.querySelector('.mobile-nav-toggle');
-  const sidebar = document.querySelector('.wrapper-sidebar');
 
   function applyMode(mode) {
     body.classList.remove('reading-blog', 'reading-deep', 'theme-light', 'theme-dark');
@@ -86,20 +55,12 @@
   if (saved === 'blog' || saved === 'deep') {
     applyMode(saved);
   } else {
-    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-    applyMode(prefersLight ? 'blog' : 'deep');
+    applyMode('deep');
   }
 
   document.querySelectorAll('.reading-toggle button').forEach(btn => {
     btn.addEventListener('click', () => applyMode(btn.getAttribute('data-reading-mode')));
   });
-
-  if (navToggle && sidebar) {
-    navToggle.addEventListener('click', () => {
-      const open = sidebar.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
 
   document.querySelectorAll('[data-archive-filter]').forEach(button => {
     button.addEventListener('click', () => {
@@ -129,96 +90,22 @@
     });
     syncClear();
   }
-
-  const systemClock = document.querySelector('[data-system-clock]');
-  const commandPalette = document.querySelector('[data-command-palette]');
-  const commandOpen = document.querySelector('[data-command-open]');
-  const commandClose = document.querySelector('[data-command-close]');
-  const commandInput = document.querySelector('[data-command-input]');
-  const commandItems = Array.from(document.querySelectorAll('.command-item'));
-  let lastFocused = null;
-
-  function updateSystemClock() {
-    if (!systemClock) return;
-    try {
-      systemClock.textContent = new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false
-      }).format(new Date()) + ' · GMT+8';
-    } catch (e) {
-      systemClock.textContent = 'GMT+8';
-    }
-  }
-
-  function openCommand() {
-    if (!commandPalette) return;
-    lastFocused = document.activeElement;
-    commandPalette.hidden = false;
-    body.classList.add('command-is-open');
-    if (commandInput) {
-      commandInput.value = '';
-      commandItems.forEach(item => item.hidden = false);
-      requestAnimationFrame(() => commandInput.focus());
-    }
-  }
-
-  function closeCommand() {
-    if (!commandPalette) return;
-    commandPalette.hidden = true;
-    body.classList.remove('command-is-open');
-    if (lastFocused && lastFocused.focus) lastFocused.focus();
-  }
-
-  updateSystemClock();
-  window.setInterval(updateSystemClock, 30000);
-  if (commandOpen) commandOpen.addEventListener('click', openCommand);
-  if (commandClose) commandClose.addEventListener('click', closeCommand);
-  if (commandPalette) {
-    commandPalette.addEventListener('click', event => {
-      if (event.target === commandPalette) closeCommand();
-    });
-  }
-  if (commandInput) {
-    commandInput.addEventListener('input', () => {
-      const query = commandInput.value.trim().toLowerCase();
-      commandItems.forEach(item => {
-        item.hidden = query.length > 0 && !item.getAttribute('data-command-label').includes(query);
-      });
-    });
-    commandInput.addEventListener('keydown', event => {
-      if (event.key !== 'Enter') return;
-      const visibleItem = commandItems.find(item => !item.hidden);
-      if (visibleItem) window.location.href = visibleItem.href;
-    });
-  }
-  document.addEventListener('keydown', event => {
-    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
-      event.preventDefault();
-      commandPalette && !commandPalette.hidden ? closeCommand() : openCommand();
-    } else if (event.key === 'Escape' && commandPalette && !commandPalette.hidden) {
-      closeCommand();
-    }
-  });
 })();
 </script>
 
-<!-- MathJax for math formulas -->
 <script>
 window.MathJax = {
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     displayMath: [['$$', '$$'], ['\\[', '\\]']]
   },
-  svg: {
-    fontCache: 'global'
-  }
+  svg: { fontCache: 'global' }
 };
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
   {% if page.toc==true %}
-  <script>
-    document.getElementById("main").classList.add("withtoc");
-  </script>
+  <script>document.getElementById("main").classList.add("withtoc");</script>
   {% endif %}
   </body>
 </html>

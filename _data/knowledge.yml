@@ -1,34 +1,40 @@
 system:
-  name: DANDING KNOWLEDGE SYSTEM
-  version: "01"
-  description: 一张由原创实践持续扩张的个人知识星图。
+  name: DANDING DEAD STAR ARCHIVE
+  version: "0726"
+  description: 一组散落在死寂行星上的先行者日志。信号已经中断，痕迹仍可回收。
 
 planets:
   - id: danding-core
-    code: HOME-00
-    title: DANDING CORE
-    title_zh: 丹丁核心
+    code: ARES-00
+    title: FIRST CAMP
+    title_zh: 先行者营地
     kind: identity
-    description: 这张知识星图的观测起点，记录我的方向、项目与持续关注的问题。
+    topic: PATHFINDER DOSSIER
+    hazard: LOW SIGNAL / STRUCTURE UNSTABLE
+    description: 最早被发现的废弃营地。舱壁上仍留有 Danding 的身份编号、任务方向和一条尚未完全熄灭的通讯线路。
     x: 23
     y: 48
-    size: 116
+    size: 142
     tone: core
+    signature: ORIGIN RUINS
     regions:
-      - PROFILE
-      - CURRENT MISSION
-      - CONTACT
+      - ID FRAGMENT
+      - MISSION WALL
+      - OPEN CHANNEL
 
   - id: model-quantization
-    code: MQ-01
-    title: MODEL QUANTIZATION
-    title_zh: 模型量化
+    code: KHEPRI-16
+    title: GLASS WASTE
+    title_zh: 玻璃荒原
     kind: knowledge
-    description: 从数值表示、量化策略到 AIMET 工程排障，研究精度、性能与硬件约束之间的平衡。
+    topic: MODEL QUANTIZATION
+    hazard: RADIATION / SHARP SILICA STORMS
+    description: 一颗被量化实验烧成玻璃的荒原星。先行者把精度、性能与硬件约束刻进晶化地层，部分 AIMET 日志仍能读取。
     x: 58
     y: 28
-    size: 132
+    size: 168
     tone: cyan
+    signature: SILICA GRAVEYARD
     regions:
       - PTQ / QAT
       - QUANT SCALE
@@ -36,15 +42,18 @@ planets:
       - AIMET
 
   - id: inference-serving
-    code: IS-02
-    title: INFERENCE & SERVING
-    title_zh: 推理与部署
+    code: ORPHEUS-09
+    title: ASHEN RELAY
+    title_zh: 灰烬中继站
     kind: knowledge
-    description: 围绕模型服务化、显存预算、路由、可观测性与稳定运行建立工程方法。
+    topic: INFERENCE & SERVING
+    hazard: TOXIC ATMOSPHERE / RELAY INTERMITTENT
+    description: 巨型推理阵列早已停摆，热风仍穿过断裂的散热塔。遗留日志记录着显存预算、路由、观测与系统存活的方法。
     x: 76
     y: 65
-    size: 104
+    size: 134
     tone: amber
+    signature: BURNED UPLINK
     regions:
       - VLLM
       - MEMORY BUDGET
@@ -58,7 +67,7 @@ relations:
     y1: 336
     x2: 580
     y2: 196
-    label: OBSERVATION
+    label: OLD FLIGHT PATH
     kind: identity
 
   - from: danding-core
@@ -67,7 +76,7 @@ relations:
     y1: 336
     x2: 760
     y2: 455
-    label: PRACTICE
+    label: SUPPLY ROUTE
     kind: identity
 
   - from: model-quantization
@@ -76,5 +85,5 @@ relations:
     y1: 196
     x2: 760
     y2: 455
-    label: APPLIES TO
+    label: DEAD UPLINK
     kind: knowledge

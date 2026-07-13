@@ -2,12 +2,20 @@
 layout: default
 ---
 
+{% assign current_planet = nil %}
+{% if page.planet %}
+  {% assign current_planet = site.data.knowledge.planets | where: "id", page.planet | first %}
+{% endif %}
 <article class="posts article-page">
-  <a class="post-breadcrumb" href="{{ site.baseurl }}/tech-notes/">← 返回个人技术总结</a>
+  {% if current_planet %}
+  <a class="post-breadcrumb" href="{{ site.baseurl }}/?planet={{ current_planet.id }}">← RETURN TO LANDING ZONE / {{ current_planet.title }}</a>
+  {% else %}
+  <a class="post-breadcrumb" href="{{ site.baseurl }}/archive/">← RETURN TO BLACK BOX VAULT</a>
+  {% endif %}
 
   <header class="post-header">
     <p class="post-kicker">
-      {% if page.content_type == 'tech_notes' %}ENGINEERING NOTE{% elsif page.content_type == 'ai_insight' %}AI INSIGHT{% else %}FIELD NOTE{% endif %}
+      {% if page.content_type == 'tech_notes' %}RECOVERED FIELD LOG{% elsif page.content_type == 'ai_insight' %}MACHINE ECHO / ANALYSIS{% elsif page.content_type == 'ai_daily' %}AUTOMATED TRANSMISSION{% else %}UNCLASSIFIED TRACE{% endif %}
       <span>{{ page.date | date: "%Y.%m.%d" }}</span>
     </p>
 
@@ -22,7 +30,7 @@ layout: default
     {% endif %}
 
     <div class="meta post-meta">
-      <span>Written by Danding</span>
+      <span>{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}Relay origin / Automated Station 0726{% else %}Trace signature / Pathfinder Danding{% endif %}</span>
       <span aria-hidden="true">·</span>
       <span>{{ page.date | date: "%Y-%m-%d" }}</span>
 
@@ -36,10 +44,10 @@ layout: default
     </div>
 
     <div class="post-pipeline" aria-label="文章方法流程">
-      <span><i></i>INPUT</span>
-      <span><i></i>ANALYZE</span>
+      <span><i></i>LOCATE</span>
+      <span><i></i>DECODE</span>
       <span><i></i>VERIFY</span>
-      <span><i></i>DOCUMENT</span>
+      <span><i></i>PRESERVE</span>
     </div>
   </header>
 
@@ -48,9 +56,13 @@ layout: default
   </div>
 
   <footer class="post-end">
-    <span aria-hidden="true">D.</span>
-    <p>感谢阅读。希望这篇记录能为你的下一次实践提供参考。</p>
-    <a href="{{ site.baseurl }}/archive/">继续浏览归档 ↗</a>
+    <span aria-hidden="true">{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}□{% else %}Δ{% endif %}</span>
+    <p>{% if page.content_type == 'ai_insight' or page.content_type == 'ai_daily' %}END OF MACHINE ECHO · NO HUMAN SIGNATURE DETECTED.{% else %}TRACE RECOVERED · THE PATHFINDER MOVED ON.{% endif %}</p>
+    {% if current_planet %}
+    <a href="{{ site.baseurl }}/?planet={{ current_planet.id }}">RETURN TO LANDING ZONE ↗</a>
+    {% else %}
+    <a href="{{ site.baseurl }}/archive/">RETURN TO VAULT ↗</a>
+    {% endif %}
   </footer>
 
   {% include disqus.html %}
@@ -58,20 +70,16 @@ layout: default
 </article>
 
 <div class="pagination">
-  {% if page.previous.url %}
-    <span class="prev" >
-      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-        <small>上一篇</small>
-        <strong>{{ page.previous.title | default: "继续阅读" }}</strong>
-      </a>
-    </span>
-  {% endif %}
-  {% if page.next.url %}
-    <span class="next" >
-      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-        <small>下一篇</small>
-        <strong>{{ page.next.title | default: "继续阅读" }}</strong>
-      </a>
-    </span>
-  {% endif %}
+  <span class="prev">
+    <a href="{% if current_planet %}{{ site.baseurl }}/?planet={{ current_planet.id }}{% else %}{{ site.baseurl }}/archive/{% endif %}">
+      <small>{% if current_planet %}LAST KNOWN COORDINATE{% else %}BLACK BOX VAULT{% endif %}</small>
+      <strong>{% if current_planet %}{{ current_planet.code }} / {{ current_planet.title }}{% else %}Recovered human and machine records{% endif %}</strong>
+    </a>
+  </span>
+  <span class="next">
+    <a href="{{ site.baseurl }}/">
+      <small>DEAD STAR CHART</small>
+      <strong>Choose another landing zone</strong>
+    </a>
+  </span>
 </div>
