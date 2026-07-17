@@ -121,8 +121,13 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .openai
+  - dist
   - LICENSE
   - README.md
+  - scripts
+  - sites
+  - vendor
   - CNAME
   - AGENTS.md
   - HEARTBEAT.md
